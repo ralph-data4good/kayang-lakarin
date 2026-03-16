@@ -1,0 +1,1475 @@
+[
+  {
+    "name": "Quezon Memorial Circle",
+    "lat": 14.651,
+    "lng": 121.0494,
+    "city": "Quezon City",
+    "type": "Park & Recreation",
+    "air_quality": 4,
+    "aq_note": "Large green buffer (27 ha) - tree canopy effectively filters pollutants from Quezon Avenue",
+    "area_ha": 27,
+    "activities": [
+      "jogging",
+      "cycling",
+      "picnic",
+      "playground",
+      "museum"
+    ]
+  },
+  {
+    "name": "La Mesa Eco Park",
+    "lat": 14.708,
+    "lng": 121.077,
+    "city": "Quezon City",
+    "type": "Ecological Park",
+    "air_quality": 5,
+    "aq_note": "Dense forest/watershed area - minimal vehicle traffic provides excellent air quality",
+    "area_ha": 33,
+    "activities": [
+      "hiking",
+      "swimming",
+      "fishing",
+      "picnic",
+      "bird watching"
+    ]
+  },
+  {
+    "name": "UP Diliman Sunken Garden",
+    "lat": 14.6537,
+    "lng": 121.069,
+    "city": "Quezon City",
+    "type": "Open Space",
+    "air_quality": 4,
+    "aq_note": "Large green buffer (17 ha) - tree canopy effectively filters pollutants from C-5",
+    "area_ha": 17,
+    "activities": [
+      "jogging",
+      "cycling",
+      "frisbee",
+      "yoga",
+      "kite flying"
+    ]
+  },
+  {
+    "name": "UP Academic Oval",
+    "lat": 14.655,
+    "lng": 121.065,
+    "city": "Quezon City",
+    "type": "Open Space",
+    "air_quality": 4,
+    "aq_note": "Good tree cover and distance from Commonwealth Avenue (1.2 km) - relatively clean air",
+    "area_ha": 8,
+    "activities": [
+      "jogging",
+      "cycling",
+      "walking",
+      "running"
+    ]
+  },
+  {
+    "name": "UP Lagoon",
+    "lat": 14.6555,
+    "lng": 121.072,
+    "city": "Quezon City",
+    "type": "Open Space",
+    "air_quality": 4,
+    "aq_note": "Good tree cover and distance from C-5 (0.9 km) - relatively clean air",
+    "area_ha": 2,
+    "activities": [
+      "walking",
+      "photography",
+      "picnic",
+      "nature walk"
+    ]
+  },
+  {
+    "name": "Ninoy Aquino Parks & Wildlife",
+    "lat": 14.657,
+    "lng": 121.042,
+    "city": "Quezon City",
+    "type": "Park & Wildlife",
+    "air_quality": 3,
+    "aq_note": "Urban setting with moderate traffic exposure - Quezon Avenue is 1.0 km away",
+    "area_ha": 22,
+    "activities": [
+      "nature walk",
+      "picnic",
+      "playground",
+      "lagoon",
+      "wildlife viewing"
+    ]
+  },
+  {
+    "name": "Eastwood Central Park",
+    "lat": 14.6095,
+    "lng": 121.0805,
+    "city": "Quezon City",
+    "type": "Urban Open Space",
+    "air_quality": 3,
+    "aq_note": "Urban setting with moderate traffic exposure - Marcos Highway is 1.0 km away",
+    "area_ha": 3,
+    "activities": [
+      "walking",
+      "al fresco dining",
+      "concerts",
+      "people watching"
+    ]
+  },
+  {
+    "name": "Liwasang Aurora",
+    "lat": 14.65,
+    "lng": 121.051,
+    "city": "Quezon City",
+    "type": "Urban Plaza",
+    "air_quality": 3,
+    "aq_note": "Adjacent to Quezon Avenue (0.2 km) - green cover provides partial buffer",
+    "area_ha": 1.5,
+    "activities": [
+      "walking",
+      "community events",
+      "skateboarding"
+    ]
+  },
+  {
+    "name": "N.S. Amoranto Park",
+    "lat": 14.628,
+    "lng": 121.018,
+    "city": "Quezon City",
+    "type": "Urban Park",
+    "air_quality": 3,
+    "aq_note": "Urban setting with moderate traffic exposure - Quezon Avenue is 0.8 km away",
+    "area_ha": 1.5,
+    "activities": [
+      "walking",
+      "community events",
+      "playground"
+    ]
+  },
+  {
+    "name": "Bernardo Park",
+    "lat": 14.629,
+    "lng": 121.035,
+    "city": "Quezon City",
+    "type": "Urban Park",
+    "air_quality": 3,
+    "aq_note": "Adjacent to EDSA (0.3 km) - green cover provides partial buffer",
+    "area_ha": 1,
+    "activities": [
+      "walking",
+      "picnic",
+      "playground"
+    ]
+  },
+  {
+    "name": "Corinthian Gardens Park",
+    "lat": 14.619,
+    "lng": 121.068,
+    "city": "Quezon City",
+    "type": "Residential Park",
+    "air_quality": 4,
+    "aq_note": "Good tree cover and distance from C-5 (0.6 km) - relatively clean air",
+    "area_ha": 2,
+    "activities": [
+      "walking",
+      "jogging",
+      "playground"
+    ]
+  },
+  {
+    "name": "C.P. Garcia Community Park",
+    "lat": 14.648,
+    "lng": 121.065,
+    "city": "Quezon City",
+    "type": "Community Park",
+    "air_quality": 3,
+    "aq_note": "Urban setting with moderate traffic exposure - C-5 is 1.5 km away",
+    "area_ha": 1,
+    "activities": [
+      "walking",
+      "playground",
+      "community events"
+    ]
+  },
+  {
+    "name": "Don Jose Heights Park",
+    "lat": 14.67,
+    "lng": 121.083,
+    "city": "Quezon City",
+    "type": "Community Park",
+    "air_quality": 3,
+    "aq_note": "Urban setting with moderate traffic exposure - C-5 is 1.8 km away",
+    "area_ha": 1.5,
+    "activities": [
+      "walking",
+      "playground",
+      "jogging"
+    ]
+  },
+  {
+    "name": "Acropolis Park",
+    "lat": 14.613,
+    "lng": 121.078,
+    "city": "Quezon City",
+    "type": "Residential Park",
+    "air_quality": 3,
+    "aq_note": "Urban setting with moderate traffic exposure - C-5 is 0.7 km away",
+    "area_ha": 2,
+    "activities": [
+      "walking",
+      "jogging",
+      "playground"
+    ]
+  },
+  {
+    "name": "Filinvest Park Batasan",
+    "lat": 14.681,
+    "lng": 121.09,
+    "city": "Quezon City",
+    "type": "Community Park",
+    "air_quality": 3,
+    "aq_note": "Urban setting with moderate traffic exposure - Commonwealth Avenue is 2.1 km away",
+    "area_ha": 3,
+    "activities": [
+      "jogging",
+      "walking",
+      "playground",
+      "basketball"
+    ]
+  },
+  {
+    "name": "North Olympus Park",
+    "lat": 14.71,
+    "lng": 121.055,
+    "city": "Quezon City",
+    "type": "Community Park",
+    "air_quality": 3,
+    "aq_note": "Urban setting with moderate traffic exposure - Commonwealth Avenue is 2.8 km away",
+    "area_ha": 2,
+    "activities": [
+      "walking",
+      "playground",
+      "community events"
+    ]
+  },
+  {
+    "name": "Lagro Dulo Park",
+    "lat": 14.718,
+    "lng": 121.073,
+    "city": "Quezon City",
+    "type": "Community Park",
+    "air_quality": 3,
+    "aq_note": "Urban setting with moderate traffic exposure - Commonwealth Avenue is 1.6 km away",
+    "area_ha": 1.5,
+    "activities": [
+      "walking",
+      "playground"
+    ]
+  },
+  {
+    "name": "Rosalia Park",
+    "lat": 14.677,
+    "lng": 121.042,
+    "city": "Quezon City",
+    "type": "Community Park",
+    "air_quality": 3,
+    "aq_note": "Urban setting with moderate traffic exposure - Commonwealth Avenue is 2.1 km away",
+    "area_ha": 1.5,
+    "activities": [
+      "walking",
+      "playground",
+      "picnic"
+    ]
+  },
+  {
+    "name": "Mariana Park",
+    "lat": 14.62,
+    "lng": 121.032,
+    "city": "Quezon City",
+    "type": "Neighborhood Park",
+    "air_quality": 3,
+    "aq_note": "Urban setting with moderate traffic exposure - EDSA is 1.3 km away",
+    "area_ha": 1,
+    "activities": [
+      "walking",
+      "playground"
+    ]
+  },
+  {
+    "name": "Wisdom Park",
+    "lat": 14.6175,
+    "lng": 121.035,
+    "city": "Quezon City",
+    "type": "Garden",
+    "air_quality": 3,
+    "aq_note": "Urban setting with moderate traffic exposure - EDSA is 1.4 km away",
+    "area_ha": 0.8,
+    "activities": [
+      "walking",
+      "meditation",
+      "photography"
+    ]
+  },
+  {
+    "name": "Madrigal Circle Park",
+    "lat": 14.624,
+    "lng": 121.062,
+    "city": "Quezon City",
+    "type": "Neighborhood Park",
+    "air_quality": 3,
+    "aq_note": "Urban setting with moderate traffic exposure - EDSA is 0.7 km away",
+    "area_ha": 0.5,
+    "activities": [
+      "walking",
+      "picnic"
+    ]
+  },
+  {
+    "name": "Rizal Park (Luneta)",
+    "lat": 14.5831,
+    "lng": 120.9794,
+    "city": "Manila",
+    "type": "National Park",
+    "air_quality": 3,
+    "aq_note": "Adjacent to Roxas Boulevard (0.0 km) - green cover provides partial buffer",
+    "area_ha": 58,
+    "activities": [
+      "walking",
+      "dancing",
+      "gardens",
+      "museum",
+      "cultural shows"
+    ]
+  },
+  {
+    "name": "Arroceros Forest Park",
+    "lat": 14.5907,
+    "lng": 120.9832,
+    "city": "Manila",
+    "type": "Urban Forest",
+    "air_quality": 4,
+    "aq_note": "Good tree cover and distance from Taft Avenue (0.6 km) - relatively clean air",
+    "area_ha": 2.2,
+    "activities": [
+      "nature walk",
+      "bird watching",
+      "photography",
+      "environmental education"
+    ]
+  },
+  {
+    "name": "Manila Baywalk",
+    "lat": 14.577,
+    "lng": 120.973,
+    "city": "Manila",
+    "type": "Coastal Promenade",
+    "air_quality": 3,
+    "aq_note": "Urban setting with moderate traffic exposure - Roxas Boulevard is 0.8 km away",
+    "area_ha": 1.5,
+    "activities": [
+      "sunset viewing",
+      "walking",
+      "jogging",
+      "photography"
+    ]
+  },
+  {
+    "name": "Paco Park",
+    "lat": 14.581,
+    "lng": 120.987,
+    "city": "Manila",
+    "type": "Historical Garden",
+    "air_quality": 3,
+    "aq_note": "Adjacent to Taft Avenue (0.2 km) - green cover provides partial buffer",
+    "area_ha": 0.8,
+    "activities": [
+      "walking",
+      "photography",
+      "concerts",
+      "meditation"
+    ]
+  },
+  {
+    "name": "ASEAN Garden (Intramuros)",
+    "lat": 14.5882,
+    "lng": 120.9748,
+    "city": "Manila",
+    "type": "Heritage Garden",
+    "air_quality": 3,
+    "aq_note": "Urban setting with moderate traffic exposure - Roxas Boulevard is 0.8 km away",
+    "area_ha": 0.5,
+    "activities": [
+      "walking",
+      "photography",
+      "sightseeing"
+    ]
+  },
+  {
+    "name": "Remedios Circle",
+    "lat": 14.5705,
+    "lng": 120.9868,
+    "city": "Manila",
+    "type": "Urban Plaza",
+    "air_quality": 2,
+    "aq_note": "Close to Taft Avenue (0.3 km) - limited vegetation buffer against traffic pollution",
+    "area_ha": 0.3,
+    "activities": [
+      "walking",
+      "al fresco dining",
+      "people watching"
+    ]
+  },
+  {
+    "name": "Plaza Rueda",
+    "lat": 14.581,
+    "lng": 120.985,
+    "city": "Manila",
+    "type": "Urban Plaza",
+    "air_quality": 2,
+    "aq_note": "Close to Taft Avenue (0.4 km) - limited vegetation buffer against traffic pollution",
+    "area_ha": 0.2,
+    "activities": [
+      "walking",
+      "community events"
+    ]
+  },
+  {
+    "name": "Pandacan Linear Park",
+    "lat": 14.593,
+    "lng": 120.998,
+    "city": "Manila",
+    "type": "Linear Park",
+    "air_quality": 3,
+    "aq_note": "Urban setting with moderate traffic exposure - Taft Avenue is 1.0 km away",
+    "area_ha": 1.5,
+    "activities": [
+      "walking",
+      "jogging",
+      "river walk"
+    ]
+  },
+  {
+    "name": "Earnshaw Linear Park",
+    "lat": 14.595,
+    "lng": 120.996,
+    "city": "Manila",
+    "type": "Linear Park",
+    "air_quality": 2,
+    "aq_note": "Close to Taft Avenue (0.8 km) - limited vegetation buffer against traffic pollution",
+    "area_ha": 0.8,
+    "activities": [
+      "walking",
+      "jogging"
+    ]
+  },
+  {
+    "name": "Agrifina Circle",
+    "lat": 14.585,
+    "lng": 120.979,
+    "city": "Manila",
+    "type": "Open Space",
+    "air_quality": 3,
+    "aq_note": "Adjacent to Roxas Boulevard (0.2 km) - green cover provides partial buffer",
+    "area_ha": 0.4,
+    "activities": [
+      "walking",
+      "photography"
+    ]
+  },
+  {
+    "name": "Bacood Park",
+    "lat": 14.6,
+    "lng": 120.992,
+    "city": "Manila",
+    "type": "Neighborhood Park",
+    "air_quality": 2,
+    "aq_note": "Close to Taft Avenue (0.4 km) - limited vegetation buffer against traffic pollution",
+    "area_ha": 0.5,
+    "activities": [
+      "walking",
+      "playground"
+    ]
+  },
+  {
+    "name": "Estero de Magdalena Linear Park",
+    "lat": 14.609,
+    "lng": 120.973,
+    "city": "Manila",
+    "type": "Linear Park",
+    "air_quality": 2,
+    "aq_note": "Close to Taft Avenue (1.9 km) - limited vegetation buffer against traffic pollution",
+    "area_ha": 0.5,
+    "activities": [
+      "walking",
+      "jogging"
+    ]
+  },
+  {
+    "name": "APEC Sculpture Garden",
+    "lat": 14.552,
+    "lng": 120.984,
+    "city": "Pasay",
+    "type": "Garden",
+    "air_quality": 3,
+    "aq_note": "Adjacent to Roxas Boulevard (0.1 km) - green cover provides partial buffer",
+    "area_ha": 1.5,
+    "activities": [
+      "walking",
+      "photography",
+      "sightseeing"
+    ]
+  },
+  {
+    "name": "China-Philippines Friendship Park",
+    "lat": 14.589,
+    "lng": 120.973,
+    "city": "Manila",
+    "type": "Heritage Garden",
+    "air_quality": 3,
+    "aq_note": "Urban setting with moderate traffic exposure - Roxas Boulevard is 1.0 km away",
+    "area_ha": 0.3,
+    "activities": [
+      "walking",
+      "photography",
+      "sightseeing"
+    ]
+  },
+  {
+    "name": "San Diego Garden (Intramuros)",
+    "lat": 14.587,
+    "lng": 120.971,
+    "city": "Manila",
+    "type": "Heritage Garden",
+    "air_quality": 3,
+    "aq_note": "Urban setting with moderate traffic exposure - Roxas Boulevard is 1.0 km away",
+    "area_ha": 0.4,
+    "activities": [
+      "walking",
+      "photography",
+      "weddings"
+    ]
+  },
+  {
+    "name": "Bonifacio Shrine",
+    "lat": 14.587,
+    "lng": 120.983,
+    "city": "Manila",
+    "type": "Historical Park",
+    "air_quality": 2,
+    "aq_note": "Close to Roxas Boulevard (0.6 km) - limited vegetation buffer against traffic pollution",
+    "area_ha": 0.3,
+    "activities": [
+      "walking",
+      "photography",
+      "sightseeing"
+    ]
+  },
+  {
+    "name": "Ayala Triangle Gardens",
+    "lat": 14.5565,
+    "lng": 121.024,
+    "city": "Makati",
+    "type": "Urban Park",
+    "air_quality": 3,
+    "aq_note": "Adjacent to EDSA (0.2 km) - green cover provides partial buffer",
+    "area_ha": 2,
+    "activities": [
+      "walking",
+      "lunchtime picnic",
+      "concerts",
+      "yoga"
+    ]
+  },
+  {
+    "name": "Washington Sycip Park",
+    "lat": 14.5585,
+    "lng": 121.0205,
+    "city": "Makati",
+    "type": "Urban Park",
+    "air_quality": 3,
+    "aq_note": "Urban setting with moderate traffic exposure - EDSA is 0.6 km away",
+    "area_ha": 0.8,
+    "activities": [
+      "walking",
+      "reading",
+      "relaxation",
+      "zen garden"
+    ]
+  },
+  {
+    "name": "Salcedo Park",
+    "lat": 14.56,
+    "lng": 121.021,
+    "city": "Makati",
+    "type": "Urban Park",
+    "air_quality": 3,
+    "aq_note": "Urban setting with moderate traffic exposure - EDSA is 0.7 km away",
+    "area_ha": 1.2,
+    "activities": [
+      "walking",
+      "weekend market",
+      "playground",
+      "dog park"
+    ]
+  },
+  {
+    "name": "Legazpi Active Park",
+    "lat": 14.5535,
+    "lng": 121.017,
+    "city": "Makati",
+    "type": "Fitness Park",
+    "air_quality": 3,
+    "aq_note": "Urban setting with moderate traffic exposure - EDSA is 0.8 km away",
+    "area_ha": 0.75,
+    "activities": [
+      "jogging",
+      "cycling",
+      "yoga",
+      "calisthenics",
+      "playground"
+    ]
+  },
+  {
+    "name": "Greenbelt Park",
+    "lat": 14.552,
+    "lng": 121.0195,
+    "city": "Makati",
+    "type": "Urban Park",
+    "air_quality": 3,
+    "aq_note": "Adjacent to EDSA (0.5 km) - green cover provides partial buffer",
+    "area_ha": 1,
+    "activities": [
+      "walking",
+      "photography",
+      "al fresco dining"
+    ]
+  },
+  {
+    "name": "Circuit Makati Park",
+    "lat": 14.553,
+    "lng": 121.015,
+    "city": "Makati",
+    "type": "Events Ground",
+    "air_quality": 3,
+    "aq_note": "Urban setting with moderate traffic exposure - EDSA is 1.0 km away",
+    "area_ha": 5,
+    "activities": [
+      "running",
+      "outdoor events",
+      "food festivals",
+      "concerts"
+    ]
+  },
+  {
+    "name": "Makati Poblacion Park",
+    "lat": 14.5645,
+    "lng": 121.0295,
+    "city": "Makati",
+    "type": "Urban Park",
+    "air_quality": 3,
+    "aq_note": "Adjacent to EDSA (0.4 km) - green cover provides partial buffer",
+    "area_ha": 0.5,
+    "activities": [
+      "walking",
+      "community events"
+    ]
+  },
+  {
+    "name": "Guadalupe Linear Park",
+    "lat": 14.567,
+    "lng": 121.043,
+    "city": "Makati",
+    "type": "Linear Park",
+    "air_quality": 2,
+    "aq_note": "Close to EDSA (0.4 km) - limited vegetation buffer against traffic pollution",
+    "area_ha": 1,
+    "activities": [
+      "walking",
+      "jogging",
+      "river walk"
+    ]
+  },
+  {
+    "name": "BGC Greenway Park",
+    "lat": 14.551,
+    "lng": 121.048,
+    "city": "Taguig (BGC)",
+    "type": "Linear Park",
+    "air_quality": 3,
+    "aq_note": "Adjacent to C-5 (0.2 km) - green cover provides partial buffer",
+    "area_ha": 3,
+    "activities": [
+      "walking",
+      "jogging",
+      "cycling",
+      "dog walking"
+    ]
+  },
+  {
+    "name": "Track 30th Park",
+    "lat": 14.5505,
+    "lng": 121.0495,
+    "city": "Taguig (BGC)",
+    "type": "Fitness Park",
+    "air_quality": 3,
+    "aq_note": "Adjacent to C-5 (0.0 km) - green cover provides partial buffer",
+    "area_ha": 1.5,
+    "activities": [
+      "jogging",
+      "yoga",
+      "fitness",
+      "meditation"
+    ]
+  },
+  {
+    "name": "Terra 28th Park",
+    "lat": 14.55,
+    "lng": 121.0505,
+    "city": "Taguig (BGC)",
+    "type": "Urban Park",
+    "air_quality": 3,
+    "aq_note": "Adjacent to C-5 (0.1 km) - green cover provides partial buffer",
+    "area_ha": 1,
+    "activities": [
+      "playground",
+      "walking",
+      "picnic"
+    ]
+  },
+  {
+    "name": "Burgos Circle",
+    "lat": 14.5535,
+    "lng": 121.0485,
+    "city": "Taguig (BGC)",
+    "type": "Urban Plaza",
+    "air_quality": 3,
+    "aq_note": "Adjacent to C-5 (0.2 km) - green cover provides partial buffer",
+    "area_ha": 0.3,
+    "activities": [
+      "walking",
+      "al fresco dining",
+      "people watching"
+    ]
+  },
+  {
+    "name": "Forbes Town Park",
+    "lat": 14.553,
+    "lng": 121.046,
+    "city": "Taguig (BGC)",
+    "type": "Urban Park",
+    "air_quality": 3,
+    "aq_note": "Adjacent to C-5 (0.5 km) - green cover provides partial buffer",
+    "area_ha": 0.8,
+    "activities": [
+      "walking",
+      "picnic",
+      "lagoon"
+    ]
+  },
+  {
+    "name": "De Jesus Oval Park",
+    "lat": 14.5465,
+    "lng": 121.049,
+    "city": "Taguig (BGC)",
+    "type": "Open Space",
+    "air_quality": 3,
+    "aq_note": "Adjacent to C-5 (0.4 km) - green cover provides partial buffer",
+    "area_ha": 0.5,
+    "activities": [
+      "walking",
+      "jogging",
+      "community events"
+    ]
+  },
+  {
+    "name": "Mind Museum Park",
+    "lat": 14.552,
+    "lng": 121.044,
+    "city": "Taguig (BGC)",
+    "type": "Open Space",
+    "air_quality": 3,
+    "aq_note": "Urban setting with moderate traffic exposure - C-5 is 0.6 km away",
+    "area_ha": 1,
+    "activities": [
+      "picnic",
+      "kite flying",
+      "playground",
+      "walking"
+    ]
+  },
+  {
+    "name": "Alveo Central Plaza",
+    "lat": 14.548,
+    "lng": 121.047,
+    "city": "Taguig (BGC)",
+    "type": "Urban Plaza",
+    "air_quality": 3,
+    "aq_note": "Adjacent to C-5 (0.4 km) - green cover provides partial buffer",
+    "area_ha": 0.5,
+    "activities": [
+      "walking",
+      "events",
+      "al fresco dining"
+    ]
+  },
+  {
+    "name": "J.Y. Campos Park",
+    "lat": 14.5495,
+    "lng": 121.051,
+    "city": "Taguig (BGC)",
+    "type": "Open Space",
+    "air_quality": 3,
+    "aq_note": "Adjacent to C-5 (0.2 km) - green cover provides partial buffer",
+    "area_ha": 0.5,
+    "activities": [
+      "walking",
+      "picnic",
+      "playground"
+    ]
+  },
+  {
+    "name": "DOST Plaza",
+    "lat": 14.495,
+    "lng": 121.041,
+    "city": "Taguig",
+    "type": "Urban Plaza",
+    "air_quality": 3,
+    "aq_note": "Urban setting with moderate traffic exposure - SLEX/Skyway is 1.9 km away",
+    "area_ha": 0.5,
+    "activities": [
+      "walking",
+      "events"
+    ]
+  },
+  {
+    "name": "FTI Park",
+    "lat": 14.513,
+    "lng": 121.064,
+    "city": "Taguig",
+    "type": "Open Space",
+    "air_quality": 3,
+    "aq_note": "Urban setting with moderate traffic exposure - C-5 is 4.4 km away",
+    "area_ha": 2,
+    "activities": [
+      "walking",
+      "jogging",
+      "community events"
+    ]
+  },
+  {
+    "name": "Plaza Bonifacio (Taguig)",
+    "lat": 14.526,
+    "lng": 121.071,
+    "city": "Taguig",
+    "type": "Heritage Plaza",
+    "air_quality": 3,
+    "aq_note": "Urban setting with moderate traffic exposure - C-5 is 3.6 km away",
+    "area_ha": 0.3,
+    "activities": [
+      "walking",
+      "sightseeing"
+    ]
+  },
+  {
+    "name": "Pasig RAVE Park",
+    "lat": 14.575,
+    "lng": 121.086,
+    "city": "Pasig",
+    "type": "Adventure Park",
+    "air_quality": 4,
+    "aq_note": "Good tree cover and distance from C-5 (3.0 km) - relatively clean air",
+    "area_ha": 6,
+    "activities": [
+      "ziplining",
+      "wall climbing",
+      "obstacle course",
+      "camping"
+    ]
+  },
+  {
+    "name": "Capitol Commons Park",
+    "lat": 14.574,
+    "lng": 121.061,
+    "city": "Pasig",
+    "type": "Urban Park",
+    "air_quality": 3,
+    "aq_note": "Adjacent to C-5 (0.4 km) - green cover provides partial buffer",
+    "area_ha": 2,
+    "activities": [
+      "walking",
+      "jogging",
+      "playground",
+      "events"
+    ]
+  },
+  {
+    "name": "Ortigas Park",
+    "lat": 14.587,
+    "lng": 121.06,
+    "city": "Pasig",
+    "type": "Urban Park",
+    "air_quality": 3,
+    "aq_note": "Adjacent to C-5 (0.1 km) - green cover provides partial buffer",
+    "area_ha": 1.5,
+    "activities": [
+      "walking",
+      "jogging",
+      "picnic"
+    ]
+  },
+  {
+    "name": "Kapitolyo Park",
+    "lat": 14.571,
+    "lng": 121.059,
+    "city": "Pasig",
+    "type": "Neighborhood Park",
+    "air_quality": 3,
+    "aq_note": "Adjacent to C-5 (0.3 km) - green cover provides partial buffer",
+    "area_ha": 0.5,
+    "activities": [
+      "walking",
+      "playground",
+      "community events"
+    ]
+  },
+  {
+    "name": "Plaza Rizal (Pasig)",
+    "lat": 14.574,
+    "lng": 121.08,
+    "city": "Pasig",
+    "type": "Heritage Plaza",
+    "air_quality": 2,
+    "aq_note": "Close to C-5 (2.4 km) - limited vegetation buffer against traffic pollution",
+    "area_ha": 0.3,
+    "activities": [
+      "walking",
+      "sightseeing"
+    ]
+  },
+  {
+    "name": "Marikina River Park",
+    "lat": 14.636,
+    "lng": 121.101,
+    "city": "Marikina",
+    "type": "Riverfront Park",
+    "air_quality": 4,
+    "aq_note": "Large green buffer (22 ha) - tree canopy effectively filters pollutants from Marcos Highway",
+    "area_ha": 22,
+    "activities": [
+      "biking",
+      "jogging",
+      "skateboarding",
+      "river walk",
+      "food park"
+    ]
+  },
+  {
+    "name": "Marikina Freedom Park",
+    "lat": 14.63,
+    "lng": 121.096,
+    "city": "Marikina",
+    "type": "Urban Park",
+    "air_quality": 3,
+    "aq_note": "Urban setting with moderate traffic exposure - Marcos Highway is 1.7 km away",
+    "area_ha": 2,
+    "activities": [
+      "walking",
+      "playground",
+      "community events"
+    ]
+  },
+  {
+    "name": "Evolution Park Marikina",
+    "lat": 14.635,
+    "lng": 121.115,
+    "city": "Marikina",
+    "type": "Community Park",
+    "air_quality": 3,
+    "aq_note": "Urban setting with moderate traffic exposure - Marcos Highway is 3.0 km away",
+    "area_ha": 1,
+    "activities": [
+      "walking",
+      "playground",
+      "community events"
+    ]
+  },
+  {
+    "name": "Hacienda Heights Park",
+    "lat": 14.638,
+    "lng": 121.12,
+    "city": "Marikina",
+    "type": "Residential Park",
+    "air_quality": 4,
+    "aq_note": "Good tree cover and distance from Marcos Highway (3.5 km) - relatively clean air",
+    "area_ha": 1.5,
+    "activities": [
+      "walking",
+      "jogging",
+      "playground"
+    ]
+  },
+  {
+    "name": "Hardin ng Pag-asa",
+    "lat": 14.583,
+    "lng": 121.038,
+    "city": "Mandaluyong",
+    "type": "Community Park",
+    "air_quality": 3,
+    "aq_note": "Urban setting with moderate traffic exposure - EDSA is 1.3 km away",
+    "area_ha": 1,
+    "activities": [
+      "walking",
+      "playground",
+      "community events"
+    ]
+  },
+  {
+    "name": "Maysilo Circle Park",
+    "lat": 14.577,
+    "lng": 121.038,
+    "city": "Mandaluyong",
+    "type": "Urban Park",
+    "air_quality": 2,
+    "aq_note": "Close to EDSA (0.8 km) - limited vegetation buffer against traffic pollution",
+    "area_ha": 0.5,
+    "activities": [
+      "walking",
+      "jogging"
+    ]
+  },
+  {
+    "name": "Vergara Linear Park",
+    "lat": 14.585,
+    "lng": 121.041,
+    "city": "Mandaluyong",
+    "type": "Linear Park",
+    "air_quality": 2,
+    "aq_note": "Close to EDSA (1.3 km) - limited vegetation buffer against traffic pollution",
+    "area_ha": 0.5,
+    "activities": [
+      "walking",
+      "jogging"
+    ]
+  },
+  {
+    "name": "Greenhills Central Garden",
+    "lat": 14.601,
+    "lng": 121.048,
+    "city": "San Juan",
+    "type": "Urban Park",
+    "air_quality": 3,
+    "aq_note": "Urban setting with moderate traffic exposure - EDSA is 0.7 km away",
+    "area_ha": 1.5,
+    "activities": [
+      "walking",
+      "playground",
+      "picnic"
+    ]
+  },
+  {
+    "name": "Jackson Park",
+    "lat": 14.602,
+    "lng": 121.044,
+    "city": "San Juan",
+    "type": "Neighborhood Park",
+    "air_quality": 3,
+    "aq_note": "Urban setting with moderate traffic exposure - EDSA is 1.2 km away",
+    "area_ha": 1,
+    "activities": [
+      "walking",
+      "playground"
+    ]
+  },
+  {
+    "name": "Johnson Park",
+    "lat": 14.604,
+    "lng": 121.046,
+    "city": "San Juan",
+    "type": "Neighborhood Park",
+    "air_quality": 3,
+    "aq_note": "Urban setting with moderate traffic exposure - EDSA is 1.0 km away",
+    "area_ha": 0.8,
+    "activities": [
+      "walking",
+      "playground",
+      "jogging"
+    ]
+  },
+  {
+    "name": "McKinley Park",
+    "lat": 14.605,
+    "lng": 121.045,
+    "city": "San Juan",
+    "type": "Neighborhood Park",
+    "air_quality": 3,
+    "aq_note": "Urban setting with moderate traffic exposure - EDSA is 1.1 km away",
+    "area_ha": 0.5,
+    "activities": [
+      "walking",
+      "playground"
+    ]
+  },
+  {
+    "name": "San Juan Mini Park",
+    "lat": 14.599,
+    "lng": 121.036,
+    "city": "San Juan",
+    "type": "Pocket Park",
+    "air_quality": 2,
+    "aq_note": "Close to EDSA (2.0 km) - limited vegetation buffer against traffic pollution",
+    "area_ha": 0.3,
+    "activities": [
+      "walking",
+      "playground"
+    ]
+  },
+  {
+    "name": "Ermitaño Linear Park",
+    "lat": 14.601,
+    "lng": 121.041,
+    "city": "San Juan",
+    "type": "Linear Park",
+    "air_quality": 2,
+    "aq_note": "Close to EDSA (1.5 km) - limited vegetation buffer against traffic pollution",
+    "area_ha": 0.5,
+    "activities": [
+      "walking",
+      "jogging"
+    ]
+  },
+  {
+    "name": "Filinvest City Linear Park",
+    "lat": 14.4175,
+    "lng": 121.033,
+    "city": "Muntinlupa",
+    "type": "Linear Park",
+    "air_quality": 4,
+    "aq_note": "Good tree cover and distance from SLEX/Skyway (0.6 km) - relatively clean air",
+    "area_ha": 5,
+    "activities": [
+      "jogging",
+      "cycling",
+      "walking",
+      "playground"
+    ]
+  },
+  {
+    "name": "Filinvest City Central Park",
+    "lat": 14.419,
+    "lng": 121.031,
+    "city": "Muntinlupa",
+    "type": "Urban Park",
+    "air_quality": 4,
+    "aq_note": "Good tree cover and distance from SLEX/Skyway (0.6 km) - relatively clean air",
+    "area_ha": 3,
+    "activities": [
+      "walking",
+      "events",
+      "concerts",
+      "picnic"
+    ]
+  },
+  {
+    "name": "Spectrum Linear Park",
+    "lat": 14.418,
+    "lng": 121.029,
+    "city": "Muntinlupa",
+    "type": "Linear Park",
+    "air_quality": 4,
+    "aq_note": "Good tree cover and distance from SLEX/Skyway (0.9 km) - relatively clean air",
+    "area_ha": 2,
+    "activities": [
+      "walking",
+      "jogging",
+      "outdoor art"
+    ]
+  },
+  {
+    "name": "Alabang River Park",
+    "lat": 14.415,
+    "lng": 121.04,
+    "city": "Muntinlupa",
+    "type": "Riverfront Park",
+    "air_quality": 3,
+    "aq_note": "Urban setting with moderate traffic exposure - SLEX/Skyway is 1.0 km away",
+    "area_ha": 2,
+    "activities": [
+      "walking",
+      "jogging",
+      "river walk"
+    ]
+  },
+  {
+    "name": "Muntinlupa Sunken Garden",
+    "lat": 14.41,
+    "lng": 121.05,
+    "city": "Muntinlupa",
+    "type": "Historical Park",
+    "air_quality": 3,
+    "aq_note": "Urban setting with moderate traffic exposure - SLEX/Skyway is 2.2 km away",
+    "area_ha": 1.5,
+    "activities": [
+      "walking",
+      "photography",
+      "sightseeing"
+    ]
+  },
+  {
+    "name": "Sucat People's Park",
+    "lat": 14.457,
+    "lng": 121.044,
+    "city": "Muntinlupa",
+    "type": "Community Park",
+    "air_quality": 3,
+    "aq_note": "Urban setting with moderate traffic exposure - SLEX/Skyway is 1.6 km away",
+    "area_ha": 2,
+    "activities": [
+      "walking",
+      "playground",
+      "basketball",
+      "community events"
+    ]
+  },
+  {
+    "name": "LPPCHEA Wetland Park",
+    "lat": 14.483,
+    "lng": 120.965,
+    "city": "Las Piñas / Parañaque",
+    "type": "Wetland / Ecotourism",
+    "air_quality": 5,
+    "aq_note": "Protected wetland ecosystem - sea breeze and mangroves provide pristine air quality",
+    "area_ha": 175,
+    "activities": [
+      "bird watching",
+      "kayaking",
+      "mangrove tour",
+      "nature photography"
+    ]
+  },
+  {
+    "name": "Aguirre Central Park",
+    "lat": 14.45,
+    "lng": 121.013,
+    "city": "Parañaque",
+    "type": "Community Park",
+    "air_quality": 3,
+    "aq_note": "Urban setting with moderate traffic exposure - SLEX/Skyway is 1.9 km away",
+    "area_ha": 2,
+    "activities": [
+      "walking",
+      "jogging",
+      "playground",
+      "basketball"
+    ]
+  },
+  {
+    "name": "Don Galo Park",
+    "lat": 14.481,
+    "lng": 120.981,
+    "city": "Parañaque",
+    "type": "Neighborhood Park",
+    "air_quality": 2,
+    "aq_note": "Close to SLEX/Skyway (4.7 km) - limited vegetation buffer against traffic pollution",
+    "area_ha": 0.5,
+    "activities": [
+      "walking",
+      "playground"
+    ]
+  },
+  {
+    "name": "Guadalajara Park",
+    "lat": 14.468,
+    "lng": 121.02,
+    "city": "Parañaque",
+    "type": "Residential Park",
+    "air_quality": 3,
+    "aq_note": "Urban setting with moderate traffic exposure - SLEX/Skyway is 0.8 km away",
+    "area_ha": 1,
+    "activities": [
+      "walking",
+      "jogging",
+      "playground"
+    ]
+  },
+  {
+    "name": "Sun Valley Park",
+    "lat": 14.478,
+    "lng": 121.018,
+    "city": "Parañaque",
+    "type": "Community Park",
+    "air_quality": 2,
+    "aq_note": "Close to SLEX/Skyway (0.8 km) - limited vegetation buffer against traffic pollution",
+    "area_ha": 1,
+    "activities": [
+      "walking",
+      "playground",
+      "basketball"
+    ]
+  },
+  {
+    "name": "Pilar Friendship Park",
+    "lat": 14.46,
+    "lng": 120.992,
+    "city": "Las Piñas",
+    "type": "Community Park",
+    "air_quality": 3,
+    "aq_note": "Urban setting with moderate traffic exposure - SLEX/Skyway is 3.9 km away",
+    "area_ha": 1.5,
+    "activities": [
+      "walking",
+      "playground",
+      "community events"
+    ]
+  },
+  {
+    "name": "Philamlife Village Park",
+    "lat": 14.453,
+    "lng": 120.995,
+    "city": "Las Piñas",
+    "type": "Residential Park",
+    "air_quality": 3,
+    "aq_note": "Urban setting with moderate traffic exposure - SLEX/Skyway is 3.7 km away",
+    "area_ha": 1,
+    "activities": [
+      "walking",
+      "jogging",
+      "playground"
+    ]
+  },
+  {
+    "name": "Valenzuela People's Park",
+    "lat": 14.693,
+    "lng": 120.975,
+    "city": "Valenzuela",
+    "type": "Urban Park",
+    "air_quality": 3,
+    "aq_note": "Urban setting with moderate traffic exposure - EDSA is 4.1 km away",
+    "area_ha": 5,
+    "activities": [
+      "walking",
+      "jogging",
+      "playground",
+      "basketball",
+      "events"
+    ]
+  },
+  {
+    "name": "Valenzuela Family Park",
+    "lat": 14.692,
+    "lng": 120.972,
+    "city": "Valenzuela",
+    "type": "Community Park",
+    "air_quality": 3,
+    "aq_note": "Urban setting with moderate traffic exposure - EDSA is 4.1 km away",
+    "area_ha": 2,
+    "activities": [
+      "walking",
+      "playground",
+      "picnic"
+    ]
+  },
+  {
+    "name": "Arkong Bato Park",
+    "lat": 14.685,
+    "lng": 120.971,
+    "city": "Valenzuela",
+    "type": "Heritage Park",
+    "air_quality": 3,
+    "aq_note": "Urban setting with moderate traffic exposure - EDSA is 3.4 km away",
+    "area_ha": 1,
+    "activities": [
+      "walking",
+      "sightseeing",
+      "community events"
+    ]
+  },
+  {
+    "name": "Glorieta Park (Tala)",
+    "lat": 14.75,
+    "lng": 121.007,
+    "city": "Caloocan",
+    "type": "Community Park",
+    "air_quality": 3,
+    "aq_note": "Urban setting with moderate traffic exposure - Commonwealth Avenue is 9.5 km away",
+    "area_ha": 2,
+    "activities": [
+      "walking",
+      "playground",
+      "community events"
+    ]
+  },
+  {
+    "name": "Mother Ignacia Park",
+    "lat": 14.653,
+    "lng": 120.975,
+    "city": "Caloocan",
+    "type": "Neighborhood Park",
+    "air_quality": 2,
+    "aq_note": "Close to EDSA (1.1 km) - limited vegetation buffer against traffic pollution",
+    "area_ha": 0.5,
+    "activities": [
+      "walking",
+      "playground"
+    ]
+  },
+  {
+    "name": "Navotas Centennial Park",
+    "lat": 14.666,
+    "lng": 120.95,
+    "city": "Navotas",
+    "type": "Urban Park",
+    "air_quality": 2,
+    "aq_note": "Close to EDSA (3.8 km) - limited vegetation buffer against traffic pollution",
+    "area_ha": 1.5,
+    "activities": [
+      "walking",
+      "playground",
+      "community events"
+    ]
+  },
+  {
+    "name": "Malabon People's Park",
+    "lat": 14.669,
+    "lng": 120.96,
+    "city": "Malabon",
+    "type": "Urban Park",
+    "air_quality": 2,
+    "aq_note": "Close to EDSA (2.9 km) - limited vegetation buffer against traffic pollution",
+    "area_ha": 1,
+    "activities": [
+      "walking",
+      "playground",
+      "community events"
+    ]
+  },
+  {
+    "name": "Meridian Park",
+    "lat": 14.531,
+    "lng": 120.987,
+    "city": "Pasay",
+    "type": "Urban Park",
+    "air_quality": 3,
+    "aq_note": "Urban setting with moderate traffic exposure - Roxas Boulevard is 2.2 km away",
+    "area_ha": 2,
+    "activities": [
+      "walking",
+      "jogging",
+      "events"
+    ]
+  },
+  {
+    "name": "Hinulugang Taktak",
+    "lat": 14.586,
+    "lng": 121.165,
+    "city": "Antipolo (near MM)",
+    "type": "National Park",
+    "air_quality": 5,
+    "aq_note": "Remote from major traffic corridors - natural elevation and tree cover ensure clean air",
+    "area_ha": 2,
+    "activities": [
+      "swimming",
+      "hiking",
+      "picnic",
+      "sightseeing"
+    ]
+  }
+]
