@@ -1,7 +1,7 @@
 [
   {
     "name": "Quezon Memorial Circle",
-    "lat": 14.65150,
+    "lat": 14.6515,
     "lng": 121.04932,
     "city": "Quezon City",
     "type": "Park & Recreation",
@@ -52,7 +52,7 @@
   },
   {
     "name": "UP Academic Oval",
-    "lat": 14.65389, 
+    "lat": 14.65389,
     "lng": 121.07015,
     "city": "Quezon City",
     "type": "Open Space",
@@ -68,8 +68,8 @@
   },
   {
     "name": "UP Lagoon",
-    "lat": 14.654925, 
-    "lng": 121.06750,
+    "lat": 14.654925,
+    "lng": 121.0675,
     "city": "Quezon City",
     "type": "Open Space",
     "air_quality": 4,
@@ -84,7 +84,7 @@
   },
   {
     "name": "Ninoy Aquino Parks & Wildlife",
-    "lat": 14.65102, 
+    "lat": 14.65102,
     "lng": 121.04367,
     "city": "Quezon City",
     "type": "Park & Wildlife",
@@ -101,7 +101,7 @@
   },
   {
     "name": "Eastwood Central Park",
-    "lat": 14.6099, 
+    "lat": 14.6099,
     "lng": 121.07983,
     "city": "Quezon City",
     "type": "Urban Open Space",
@@ -117,7 +117,7 @@
   },
   {
     "name": "Liwasang Aurora",
-    "lat": 14.65185, 
+    "lat": 14.65185,
     "lng": 121.04899,
     "city": "Quezon City",
     "type": "Urban Plaza",
@@ -132,7 +132,7 @@
   },
   {
     "name": "N.S. Amoranto Park",
-    "lat": 14.63011, 
+    "lat": 14.63011,
     "lng": 120.99559,
     "city": "Quezon City",
     "type": "Urban Park",
@@ -147,7 +147,7 @@
   },
   {
     "name": "Bernardo Park",
-    "lat": 14.62875, 
+    "lat": 14.62875,
     "lng": 121.04625,
     "city": "Quezon City",
     "type": "Urban Park",
@@ -163,7 +163,7 @@
   {
     "name": "Corinthian Gardens Park",
     "lat": 14.59474,
-    "lng": 121.06540,
+    "lng": 121.0654,
     "city": "Quezon City",
     "type": "Residential Park",
     "air_quality": 4,
@@ -177,7 +177,7 @@
   },
   {
     "name": "C.P. Garcia Community Park",
-    "lat": 14.64699, 
+    "lat": 14.64699,
     "lng": 121.06028,
     "city": "Quezon City",
     "type": "Community Park",
@@ -192,7 +192,7 @@
   },
   {
     "name": "Don Jose Heights Park",
-    "lat": 14.70104, 
+    "lat": 14.70104,
     "lng": 121.08026,
     "city": "Quezon City",
     "type": "Community Park",
@@ -207,7 +207,7 @@
   },
   {
     "name": "Acropolis Park",
-    "lat": 14.60625, 
+    "lat": 14.60625,
     "lng": 121.07635,
     "city": "Quezon City",
     "type": "Residential Park",
@@ -222,7 +222,7 @@
   },
   {
     "name": "Filinvest Park Batasan",
-    "lat": 14.69640, 
+    "lat": 14.6964,
     "lng": 121.10039,
     "city": "Quezon City",
     "type": "Community Park",
@@ -238,8 +238,8 @@
   },
   {
     "name": "North Olympus Park",
-    "lat": 14.73906, 
-    "lng": 121.04340,
+    "lat": 14.73906,
+    "lng": 121.0434,
     "city": "Quezon City",
     "type": "Community Park",
     "air_quality": 3,
@@ -358,7 +358,7 @@
   },
   {
     "name": "Manila Baywalk",
-    "lat": 14.59386, 
+    "lat": 14.59386,
     "lng": 120.98118,
     "city": "Manila",
     "type": "Coastal Promenade",
@@ -390,7 +390,7 @@
   },
   {
     "name": "ASEAN Gardens (Intramuros)",
-    "lat": 14.59310,
+    "lat": 14.5931,
     "lng": 120.97813,
     "city": "Manila",
     "type": "Heritage Garden",
@@ -506,7 +506,7 @@
   {
     "name": "APEC Sculpture Garden",
     "lat": 14.55514,
-    "lng": 120.98200,
+    "lng": 120.982,
     "city": "Pasay",
     "type": "Garden",
     "air_quality": 3,
@@ -783,7 +783,7 @@
   {
     "name": "Mind Museum (Jose Yao Campos) Park",
     "lat": 14.55292,
-    "lng": 121.04610,
+    "lng": 121.0461,
     "city": "Taguig (BGC)",
     "type": "Open Space",
     "air_quality": 3,
@@ -813,7 +813,7 @@
   },
   {
     "name": "DOST Wellness Garden",
-    "lat": 14.49030,
+    "lat": 14.4903,
     "lng": 121.04973,
     "city": "Taguig",
     "type": "Wellness Garden",
@@ -904,7 +904,7 @@
   {
     "name": "Kapitolyo Park 6",
     "lat": 14.57114,
-    "lng": 121.05820,
+    "lng": 121.0582,
     "city": "Pasig",
     "type": "Neighborhood Park",
     "air_quality": 3,
@@ -932,7 +932,7 @@
   },
   {
     "name": "Marikina River Park",
-    "lat": 14.63290,
+    "lat": 14.6329,
     "lng": 121.09301,
     "city": "Marikina",
     "type": "Riverfront Park",
@@ -1156,7 +1156,7 @@
   {
     "name": "Spectrum Linear Park",
     "lat": 14.41917,
-    "lng": 121.03630,
+    "lng": 121.0363,
     "city": "Muntinlupa",
     "type": "Linear Park",
     "air_quality": 4,
@@ -1371,7 +1371,7 @@
   {
     "name": "Glorieta Park (Tala)",
     "lat": 14.76802,
-    "lng": 121.05960,
+    "lng": 121.0596,
     "city": "Caloocan",
     "type": "Community Park",
     "air_quality": 3,
@@ -1386,7 +1386,7 @@
   {
     "name": "Mother Ignacia Park",
     "lat": 14.65414,
-    "lng": 120.99310,
+    "lng": 120.9931,
     "city": "Caloocan",
     "type": "Neighborhood Park",
     "air_quality": 2,
@@ -1474,14 +1474,14 @@
       "photography"
     ]
   },
-    {
+  {
     "name": "Vertis North Rain Garden",
     "lat": 14.64845,
     "lng": 121.03691,
     "city": "Quezon City",
     "type": "Urban Park",
     "air_quality": 2,
-    "aq_note": "Close to Quezon Avenue (0.4 km) Â— limited vegetation buffer",
+    "aq_note": "Close to Quezon Avenue (0.4 km) — limited vegetation buffer",
     "area_ha": 0.5,
     "activities": [
       "walking",
