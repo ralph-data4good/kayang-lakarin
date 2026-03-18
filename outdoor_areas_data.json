@@ -1473,5 +1473,21 @@
       "native tree walk",
       "photography"
     ]
+  },
+    {
+    "name": "Vertis North Rain Garden",
+    "lat": 14.64845,
+    "lng": 121.03691,
+    "city": "Quezon City",
+    "type": "Urban Park",
+    "air_quality": 2,
+    "aq_note": "Close to Quezon Avenue (0.4 km)  limited vegetation buffer",
+    "area_ha": 0.5,
+    "activities": [
+      "walking",
+      "jogging",
+      "cycling"
+    ]
   }
+]
 ]
