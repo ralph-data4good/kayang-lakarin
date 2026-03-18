@@ -1480,7 +1480,7 @@
     "lng": 121.03691,
     "city": "Quezon City",
     "type": "Urban Park",
-    "air_quality": 2,
+    "air_quality": 3,
     "aq_note": "Close to Quezon Avenue (0.4 km) - limited vegetation buffer",
     "area_ha": 0.5,
     "activities": [
