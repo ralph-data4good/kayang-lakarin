@@ -128,15 +128,15 @@ def generate_aq_note(lat, lng, aq_score, area_ha, park_type):
     road = road_names.get(nearest_road, nearest_road)
 
     if aq_score >= 5:
-        return f"Excellent air quality — far from major traffic, rich natural vegetation"
+        return f"Excellent air quality - far from major traffic, rich natural vegetation"
     elif aq_score >= 4:
-        return f"Good tree cover and distance from {road} ({min_road_dist:.1f} km) — relatively clean air"
+        return f"Good tree cover and distance from {road} ({min_road_dist:.1f} km) - relatively clean air"
     elif aq_score >= 3:
-        return f"Urban setting with moderate traffic exposure — {road} is {min_road_dist:.1f} km away"
+        return f"Urban setting with moderate traffic exposure - {road} is {min_road_dist:.1f} km away"
     elif aq_score >= 2:
-        return f"Close to {road} ({min_road_dist:.1f} km) — limited vegetation buffer"
+        return f"Close to {road} ({min_road_dist:.1f} km) - limited vegetation buffer"
     else:
-        return f"High-traffic area near {road} — minimal green buffer"
+        return f"High-traffic area near {road} - minimal green buffer"
 
 
 def main():
@@ -214,8 +214,8 @@ def main():
             print(f"  ⏭️ Skipped.")
 
     # Save updated dataset
-    with open(DATA_PATH, "w") as f:
-        json.dump(dataset, f, indent=2, ensure_ascii=False)
+    with open(DATA_PATH, "w", encoding="utf-8") as f:
+        json.dump(dataset, f, indent=2, ensure_ascii=True)
 
     print(f"\n{'='*60}")
     print(f"✅ Done! Approved: {approved_count}, Rejected: {rejected_count}")
