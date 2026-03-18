@@ -15,10 +15,34 @@ import json
 import os
 import sys
 import math
-from supabase import create_client
+import requests
 
 SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
 DATA_PATH = os.path.join(SCRIPT_DIR, "outdoor_areas_data.json")
+
+class SupabaseClient:
+    """Lightweight Supabase REST client using requests (no C++ build deps)."""
+    def __init__(self, url, key):
+        self.base = f"{url}/rest/v1"
+        self.headers = {
+            "apikey": key,
+            "Authorization": f"Bearer {key}",
+            "Content-Type": "application/json",
+        }
+
+    def select(self, table, filters=None):
+        h = {**self.headers, "Prefer": "return=representation"}
+        params = filters or {}
+        r = requests.get(f"{self.base}/{table}", headers=h, params=params)
+        r.raise_for_status()
+        return r.json()
+
+    def update(self, table, data, match_col, match_val):
+        h = {**self.headers, "Prefer": "return=representation"}
+        params = {match_col: f"eq.{match_val}"}
+        r = requests.patch(f"{self.base}/{table}", headers=h, params=params, json=data)
+        r.raise_for_status()
+        return r.json()
 
 def get_supabase():
     url = os.environ.get("SUPABASE_URL")
@@ -29,7 +53,7 @@ def get_supabase():
         print('  $env:SUPABASE_URL = "https://your-project.supabase.co"')
         print('  $env:SUPABASE_KEY = "your-anon-key"')
         sys.exit(1)
-    return create_client(url, key)
+    return SupabaseClient(url, key)
 
 # ── Major roads for AQ scoring (same as generate_data.py) ───────────────────
 MAJOR_ROADS = [
@@ -119,8 +143,7 @@ def main():
     supabase = get_supabase()
     
     print("Fetching pending submissions from Supabase...")
-    result = supabase.table("submissions").select("*").eq("status", "pending_review").execute()
-    pending = result.data
+    pending = supabase.select("submissions", {"status": "eq.pending_review"})
     
     if not pending:
         print("🎉 No pending submissions. All caught up!")
@@ -180,11 +203,11 @@ def main():
                 "activities": sub.get("activities") or ["walking"],
             }
             dataset.append(new_entry)
-            supabase.table("submissions").update({"status": "approved"}).eq("id", sub["id"]).execute()
+            supabase.update("submissions", {"status": "approved"}, "id", sub["id"])
             approved_count += 1
             print(f"  ✅ Approved! AQ set to {algo_aq}/5")
         elif choice == 'r':
-            supabase.table("submissions").update({"status": "rejected"}).eq("id", sub["id"]).execute()
+            supabase.update("submissions", {"status": "rejected"}, "id", sub["id"])
             rejected_count += 1
             print(f"  ❌ Rejected.")
         else:
