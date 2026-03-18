@@ -177,8 +177,21 @@ section[data-testid="stSidebar"] hr { border-color: #333 !important; }
 .cd-tag { font-size: 0.52rem; font-weight: 600; padding: 1px 5px; border-radius: 3px; background: #f0efec; color: #888; }
 
 /* Info buttons */
+/* Expanders */
 .stExpander { border: 1px solid #e0e0e0 !important; border-radius: 8px !important; background: white !important; }
+.stExpander, .stExpander * { color: #333 !important; }
+.stExpander summary span { color: #1a1a1a !important; font-weight: 600 !important; }
+.stExpander a { color: #2d6a4f !important; text-decoration: underline !important; }
+
+/* Force light mode on main content only (not sidebar) */
 .stApp header { background: transparent !important; }
+.main .stMarkdown, .main .stMarkdown p, .main .stMarkdown li, .main .stMarkdown span { color: #333 !important; }
+.main .stSelectbox label, .main .stSlider label { color: #333 !important; }
+.main [data-testid="stForm"] { background: white !important; border: 1px solid #e0e0e0 !important; border-radius: 8px !important; }
+.main [data-testid="stForm"], .main [data-testid="stForm"] * { color: #333 !important; }
+.main [data-testid="stForm"] a { color: #2d6a4f !important; }
+.main [data-testid="stAlert"] { color: #333 !important; }
+.main .stSelectbox > div > div { background: white !important; border: 1px solid #ddd !important; }
 
 /* Footer */
 .ft { text-align: center; padding: 1.5rem 0 0.5rem; font-size: 0.65rem; color: #bbb; line-height: 1.6; }
