@@ -8,6 +8,12 @@ from streamlit_folium import st_folium
 import math, json, os, time
 import requests
 import polyline as pl
+from supabase import create_client
+import datetime
+
+@st.cache_resource
+def get_supabase():
+    return create_client(st.secrets["supabase"]["url"], st.secrets["supabase"]["key"])
 
 st.set_page_config(page_title="Kayang Lakarin?", page_icon="🏃", layout="centered",
                    initial_sidebar_state="collapsed")
@@ -488,21 +494,27 @@ with st.expander("Contribute a space"):
                 for e in err: st.error(e)
             else:
                 fc = sco.strip() if sc == "Other" else sc
-                sub = {"name": sn.strip(), "lat": sla, "lng": slo, "city": fc, "type": sty,
-                       "area_ha": sha, "activities": sa, "air_quality_user": saq,
-                       "aq_reason": sqr.strip(), "evidence_url": sev.strip(),
-                       "notes": sno.strip(), "email": sem.strip(), "status": "pending_review"}
-                sp = os.path.join(os.path.dirname(os.path.abspath(__file__)), "submissions.json")
-                xs = []
-                if os.path.exists(sp):
-                    try:
-                        with open(sp) as sf: xs = json.load(sf)
-                    except: xs = []
-                import datetime
-                sub["submitted_at"] = datetime.datetime.now().isoformat()
-                xs.append(sub)
-                with open(sp, "w") as sf: json.dump(xs, sf, indent=2, ensure_ascii=False)
-                st.success(f"Thank you! **{sn.strip()}** in {fc} has been submitted and is now in our review queue.")
+                sub = {
+                    "name": sn.strip(),
+                    "lat": sla,
+                    "lng": slo,
+                    "city": fc,
+                    "type": sty,
+                    "area_ha": sha,
+                    "activities": sa,
+                    "air_quality_user": saq,
+                    "aq_reason": sqr.strip(),
+                    "evidence_url": sev.strip(),
+                    "notes": sno.strip(),
+                    "email": sem.strip(),
+                    "status": "pending_review"
+                }
+                try:
+                    supabase = get_supabase()
+                    supabase.table("submissions").insert(sub).execute()
+                    st.success(f"Thank you! **{sn.strip()}** in {fc} has been submitted and is now in our review queue.")
+                except Exception as e:
+                    st.error(f"Failed to save submission. Please try again later. ({e})")
 
 st.markdown(f"""<div class="ft">
     <strong>Kayang Lakarin?</strong><br>

@@ -1,20 +1,35 @@
 #!/usr/bin/env python3
 """
-Review community submissions for Lakad MNL.
+Review community submissions for Kayang Lakarin.
 Run: python review_submissions.py
 
 Shows each pending submission, lets you approve/reject,
 and merges approved entries into the main dataset.
+
+Requires environment variables:
+  SUPABASE_URL - Your Supabase project URL
+  SUPABASE_KEY - Your Supabase anon/service key
 """
 
 import json
 import os
 import sys
 import math
+from supabase import create_client
 
 SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
-SUBMISSIONS_PATH = os.path.join(SCRIPT_DIR, "submissions.json")
 DATA_PATH = os.path.join(SCRIPT_DIR, "outdoor_areas_data.json")
+
+def get_supabase():
+    url = os.environ.get("SUPABASE_URL")
+    key = os.environ.get("SUPABASE_KEY")
+    if not url or not key:
+        print("Error: SUPABASE_URL and SUPABASE_KEY environment variables required.")
+        print("Set them with:")
+        print('  $env:SUPABASE_URL = "https://your-project.supabase.co"')
+        print('  $env:SUPABASE_KEY = "your-anon-key"')
+        sys.exit(1)
+    return create_client(url, key)
 
 # ── Major roads for AQ scoring (same as generate_data.py) ───────────────────
 MAJOR_ROADS = [
@@ -101,17 +116,17 @@ def generate_aq_note(lat, lng, aq_score, area_ha, park_type):
 
 
 def main():
-    if not os.path.exists(SUBMISSIONS_PATH):
-        print("No submissions file found. Nothing to review.")
-        return
-
-    with open(SUBMISSIONS_PATH) as f:
-        submissions = json.load(f)
-
-    pending = [s for s in submissions if s.get("status") == "pending_review"]
+    supabase = get_supabase()
+    
+    print("Fetching pending submissions from Supabase...")
+    result = supabase.table("submissions").select("*").eq("status", "pending_review").execute()
+    pending = result.data
+    
     if not pending:
         print("🎉 No pending submissions. All caught up!")
         return
+
+    print(f"Found {len(pending)} pending submission(s).\n")
 
     with open(DATA_PATH) as f:
         dataset = json.load(f)
@@ -123,16 +138,18 @@ def main():
         print(f"\n{'='*60}")
         print(f"📋 Submission {i+1}/{len(pending)}")
         print(f"{'='*60}")
+        print(f"  ID:          {sub.get('id', '?')}")
         print(f"  Name:        {sub['name']}")
         print(f"  City:        {sub['city']}")
         print(f"  Type:        {sub['type']}")
         print(f"  Coordinates: {sub['lat']}, {sub['lng']}")
         print(f"  Area:        {sub.get('area_ha', '?')} ha")
-        print(f"  Activities:  {', '.join(sub.get('activities', []))}")
+        activities = sub.get('activities', []) or []
+        print(f"  Activities:  {', '.join(activities)}")
         print(f"  User AQ:     {sub.get('air_quality_user', '?')}/5")
         print(f"  AQ reason:   {sub.get('aq_reason', 'N/A')}")
-        print(f"  Evidence:    {sub.get('evidence_url', 'None')}")
-        print(f"  Notes:       {sub.get('notes', 'None')}")
+        print(f"  Evidence:    {sub.get('evidence_url') or 'None'}")
+        print(f"  Notes:       {sub.get('notes') or 'None'}")
         print(f"  Submitted:   {sub.get('submitted_at', '?')}")
 
         # Compute algorithmic AQ
@@ -153,38 +170,36 @@ def main():
             aq_note = generate_aq_note(sub["lat"], sub["lng"], algo_aq, sub.get("area_ha", 1), sub["type"])
             new_entry = {
                 "name": sub["name"],
-                "lat": sub["lat"],
-                "lng": sub["lng"],
+                "lat": float(sub["lat"]),
+                "lng": float(sub["lng"]),
                 "city": sub["city"],
                 "type": sub["type"],
                 "air_quality": algo_aq,
                 "aq_note": aq_note,
-                "area_ha": sub.get("area_ha", 1),
-                "activities": sub.get("activities", ["walking"]),
+                "area_ha": float(sub.get("area_ha", 1) or 1),
+                "activities": sub.get("activities") or ["walking"],
             }
             dataset.append(new_entry)
-            sub["status"] = "approved"
+            supabase.table("submissions").update({"status": "approved"}).eq("id", sub["id"]).execute()
             approved_count += 1
             print(f"  ✅ Approved! AQ set to {algo_aq}/5")
         elif choice == 'r':
-            sub["status"] = "rejected"
+            supabase.table("submissions").update({"status": "rejected"}).eq("id", sub["id"]).execute()
             rejected_count += 1
             print(f"  ❌ Rejected.")
         else:
             print(f"  ⏭️ Skipped.")
 
-    # Save updates
+    # Save updated dataset
     with open(DATA_PATH, "w") as f:
         json.dump(dataset, f, indent=2, ensure_ascii=False)
-    with open(SUBMISSIONS_PATH, "w") as f:
-        json.dump(submissions, f, indent=2, ensure_ascii=False)
 
     print(f"\n{'='*60}")
     print(f"✅ Done! Approved: {approved_count}, Rejected: {rejected_count}")
     print(f"   Dataset now has {len(dataset)} areas")
     if approved_count > 0:
         print(f"   Don't forget to commit & push:")
-        print(f"   git add . && git commit -m 'Add {approved_count} community submissions' && git push")
+        print(f"   git add outdoor_areas_data.json && git commit -m 'Add {approved_count} community submissions' && git push")
 
 
 if __name__ == "__main__":
