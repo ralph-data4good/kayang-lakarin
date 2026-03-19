@@ -229,6 +229,14 @@ iframe[title="streamlit_folium.st_folium"] { height: 420px; }
 .stExpander summary span { color: #1a1a1a !important; font-weight: 600 !important; }
 .stExpander a { color: #2d6a4f !important; text-decoration: underline !important; }
 
+/* Sidebar toggle */
+[data-testid="collapsedControl"] { top: 0.6rem !important; }
+[data-testid="collapsedControl"] button {
+    background: #1b4332 !important; border: none !important; border-radius: 8px !important;
+    padding: 6px 10px !important; box-shadow: 0 1px 4px rgba(0,0,0,0.12) !important;
+}
+[data-testid="collapsedControl"] svg { color: #fff !important; }
+
 /* Force light mode on main content only (not sidebar) */
 .stApp header { background: transparent !important; }
 .main .stMarkdown, .main .stMarkdown p, .main .stMarkdown li, .main .stMarkdown span { color: #333 !important; }
@@ -421,7 +429,7 @@ else:
 # ══════════════════════════════════════════════════════════════════════
 # MAP + RESULTS
 # ══════════════════════════════════════════════════════════════════════
-st.markdown('<div class="lb">Map <span style="font-weight:400;letter-spacing:0;text-transform:none;color:#aaa;font-size:0.6rem;">Tap anywhere to set your starting point</span></div>', unsafe_allow_html=True)
+st.markdown('<div class="lb">Map <span style="font-weight:500;letter-spacing:0;text-transform:none;color:#2d6a4f;font-size:0.6rem;background:rgba(45,106,79,0.08);padding:2px 6px;border-radius:4px;">Tap anywhere to set your starting point</span></div>', unsafe_allow_html=True)
 
 m = folium.Map(location=[user_lat, user_lng], zoom_start=12, tiles="CartoDB positron", control_scale=True)
 
