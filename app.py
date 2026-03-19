@@ -176,12 +176,12 @@ section[data-testid="stSidebar"] .stMultiSelect > div > div {
 section[data-testid="stSidebar"] hr { border-color: #333 !important; }
 
 /* Header */
-.hd { margin-bottom: 1rem; }
+.hd { background: #1b4332; padding: 1.5rem 1.2rem 1.2rem; border-radius: 10px; margin-bottom: 1rem; }
 .hd-t { font-family: 'Datatype','Outfit',sans-serif; font-weight: 800; font-size: 2rem;
-    color: #1a1a1a; line-height: 1; letter-spacing: -0.5px;
+    color: #fff; line-height: 1; letter-spacing: -0.5px;
     font-variation-settings: 'wdth' 100, 'wght' 800; }
-.hd-s { font-size: 0.85rem; color: #666; line-height: 1.55; margin-top: 6px; }
-.hd-s strong { color: #2d6a4f; }
+.hd-s { font-size: 0.85rem; color: rgba(255,255,255,0.75); line-height: 1.55; margin-top: 6px; }
+.hd-s strong { color: #a7d7c5; }
 
 /* Stats */
 .st-row { display: flex; gap: 2px; margin: 0.8rem 0; border-radius: 8px; overflow: hidden; }
@@ -249,6 +249,7 @@ iframe[title="streamlit_folium.st_folium"] { height: 420px; }
 /* Desktop widen */
 @media (min-width: 768px) {
     .block-container { max-width: 960px; }
+    .hd { padding: 2rem 2rem 1.5rem; }
     .hd-t { font-size: 2.6rem; }
     .map-cols { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
 }
