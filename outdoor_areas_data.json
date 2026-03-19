@@ -1,8 +1,8 @@
 [
   {
     "name": "Quezon Memorial Circle",
-    "lat": 14.6515,
-    "lng": 121.04932,
+    "lat": 14.651,
+    "lng": 121.0494,
     "city": "Quezon City",
     "type": "Park & Recreation",
     "air_quality": 4,
@@ -14,12 +14,13 @@
       "picnic",
       "playground",
       "museum"
-    ]
+    ],
+    "entrance_fee": 5
   },
   {
     "name": "La Mesa Eco Park",
-    "lat": 14.71069,
-    "lng": 121.07379,
+    "lat": 14.708,
+    "lng": 121.077,
     "city": "Quezon City",
     "type": "Ecological Park",
     "air_quality": 5,
@@ -31,12 +32,13 @@
       "fishing",
       "picnic",
       "bird watching"
-    ]
+    ],
+    "entrance_fee": 50
   },
   {
     "name": "UP Diliman Sunken Garden",
-    "lat": 14.65514,
-    "lng": 121.071989,
+    "lat": 14.6537,
+    "lng": 121.069,
     "city": "Quezon City",
     "type": "Open Space",
     "air_quality": 4,
@@ -48,12 +50,13 @@
       "frisbee",
       "yoga",
       "kite flying"
-    ]
+    ],
+    "entrance_fee": "free"
   },
   {
     "name": "UP Academic Oval",
-    "lat": 14.65389,
-    "lng": 121.07015,
+    "lat": 14.655,
+    "lng": 121.065,
     "city": "Quezon City",
     "type": "Open Space",
     "air_quality": 4,
@@ -64,12 +67,13 @@
       "cycling",
       "walking",
       "running"
-    ]
+    ],
+    "entrance_fee": "free"
   },
   {
     "name": "UP Lagoon",
-    "lat": 14.654925,
-    "lng": 121.0675,
+    "lat": 14.6555,
+    "lng": 121.072,
     "city": "Quezon City",
     "type": "Open Space",
     "air_quality": 4,
@@ -80,12 +84,13 @@
       "photography",
       "picnic",
       "nature walk"
-    ]
+    ],
+    "entrance_fee": "free"
   },
   {
     "name": "Ninoy Aquino Parks & Wildlife",
-    "lat": 14.65102,
-    "lng": 121.04367,
+    "lat": 14.657,
+    "lng": 121.042,
     "city": "Quezon City",
     "type": "Park & Wildlife",
     "air_quality": 3,
@@ -97,12 +102,13 @@
       "playground",
       "lagoon",
       "wildlife viewing"
-    ]
+    ],
+    "entrance_fee": 5
   },
   {
     "name": "Eastwood Central Park",
-    "lat": 14.6099,
-    "lng": 121.07983,
+    "lat": 14.6095,
+    "lng": 121.0805,
     "city": "Quezon City",
     "type": "Urban Open Space",
     "air_quality": 3,
@@ -113,12 +119,13 @@
       "al fresco dining",
       "concerts",
       "people watching"
-    ]
+    ],
+    "entrance_fee": "free"
   },
   {
     "name": "Liwasang Aurora",
-    "lat": 14.65185,
-    "lng": 121.04899,
+    "lat": 14.65,
+    "lng": 121.051,
     "city": "Quezon City",
     "type": "Urban Plaza",
     "air_quality": 3,
@@ -128,12 +135,13 @@
       "walking",
       "community events",
       "skateboarding"
-    ]
+    ],
+    "entrance_fee": "free"
   },
   {
     "name": "N.S. Amoranto Park",
-    "lat": 14.63011,
-    "lng": 120.99559,
+    "lat": 14.628,
+    "lng": 121.018,
     "city": "Quezon City",
     "type": "Urban Park",
     "air_quality": 3,
@@ -143,12 +151,13 @@
       "walking",
       "community events",
       "playground"
-    ]
+    ],
+    "entrance_fee": "free"
   },
   {
     "name": "Bernardo Park",
-    "lat": 14.62875,
-    "lng": 121.04625,
+    "lat": 14.629,
+    "lng": 121.035,
     "city": "Quezon City",
     "type": "Urban Park",
     "air_quality": 3,
@@ -158,12 +167,13 @@
       "walking",
       "picnic",
       "playground"
-    ]
+    ],
+    "entrance_fee": "free"
   },
   {
     "name": "Corinthian Gardens Park",
-    "lat": 14.59474,
-    "lng": 121.0654,
+    "lat": 14.619,
+    "lng": 121.068,
     "city": "Quezon City",
     "type": "Residential Park",
     "air_quality": 4,
@@ -173,12 +183,13 @@
       "walking",
       "jogging",
       "playground"
-    ]
+    ],
+    "entrance_fee": "free"
   },
   {
     "name": "C.P. Garcia Community Park",
-    "lat": 14.64699,
-    "lng": 121.06028,
+    "lat": 14.648,
+    "lng": 121.065,
     "city": "Quezon City",
     "type": "Community Park",
     "air_quality": 3,
@@ -188,12 +199,13 @@
       "walking",
       "playground",
       "community events"
-    ]
+    ],
+    "entrance_fee": "free"
   },
   {
     "name": "Don Jose Heights Park",
-    "lat": 14.70104,
-    "lng": 121.08026,
+    "lat": 14.67,
+    "lng": 121.083,
     "city": "Quezon City",
     "type": "Community Park",
     "air_quality": 3,
@@ -203,12 +215,13 @@
       "walking",
       "playground",
       "jogging"
-    ]
+    ],
+    "entrance_fee": "free"
   },
   {
     "name": "Acropolis Park",
-    "lat": 14.60625,
-    "lng": 121.07635,
+    "lat": 14.613,
+    "lng": 121.078,
     "city": "Quezon City",
     "type": "Residential Park",
     "air_quality": 3,
@@ -218,12 +231,13 @@
       "walking",
       "jogging",
       "playground"
-    ]
+    ],
+    "entrance_fee": "free"
   },
   {
     "name": "Filinvest Park Batasan",
-    "lat": 14.6964,
-    "lng": 121.10039,
+    "lat": 14.681,
+    "lng": 121.09,
     "city": "Quezon City",
     "type": "Community Park",
     "air_quality": 3,
@@ -234,12 +248,13 @@
       "walking",
       "playground",
       "basketball"
-    ]
+    ],
+    "entrance_fee": "free"
   },
   {
     "name": "North Olympus Park",
-    "lat": 14.73906,
-    "lng": 121.0434,
+    "lat": 14.71,
+    "lng": 121.055,
     "city": "Quezon City",
     "type": "Community Park",
     "air_quality": 3,
@@ -249,12 +264,13 @@
       "walking",
       "playground",
       "community events"
-    ]
+    ],
+    "entrance_fee": "free"
   },
   {
     "name": "Lagro Dulo Park",
-    "lat": 14.71841,
-    "lng": 121.06629,
+    "lat": 14.718,
+    "lng": 121.073,
     "city": "Quezon City",
     "type": "Community Park",
     "air_quality": 3,
@@ -263,12 +279,13 @@
     "activities": [
       "walking",
       "playground"
-    ]
+    ],
+    "entrance_fee": "free"
   },
   {
     "name": "Rosalia Park",
-    "lat": 14.67929,
-    "lng": 121.03754,
+    "lat": 14.677,
+    "lng": 121.042,
     "city": "Quezon City",
     "type": "Community Park",
     "air_quality": 3,
@@ -278,12 +295,13 @@
       "walking",
       "playground",
       "picnic"
-    ]
+    ],
+    "entrance_fee": "free"
   },
   {
     "name": "Mariana Park",
-    "lat": 14.62307,
-    "lng": 121.02884,
+    "lat": 14.62,
+    "lng": 121.032,
     "city": "Quezon City",
     "type": "Neighborhood Park",
     "air_quality": 3,
@@ -292,12 +310,13 @@
     "activities": [
       "walking",
       "playground"
-    ]
+    ],
+    "entrance_fee": "free"
   },
   {
     "name": "Wisdom Park",
-    "lat": 14.61361,
-    "lng": 121.03205,
+    "lat": 14.6175,
+    "lng": 121.035,
     "city": "Quezon City",
     "type": "Garden",
     "air_quality": 3,
@@ -307,12 +326,13 @@
       "walking",
       "meditation",
       "photography"
-    ]
+    ],
+    "entrance_fee": "free"
   },
   {
-    "name": "Madrigal Circle (Dichaves) Park",
-    "lat": 14.59566,
-    "lng": 121.06295,
+    "name": "Madrigal Circle Park",
+    "lat": 14.624,
+    "lng": 121.062,
     "city": "Quezon City",
     "type": "Neighborhood Park",
     "air_quality": 3,
@@ -321,12 +341,13 @@
     "activities": [
       "walking",
       "picnic"
-    ]
+    ],
+    "entrance_fee": "free"
   },
   {
     "name": "Rizal Park (Luneta)",
-    "lat": 14.58272,
-    "lng": 120.97868,
+    "lat": 14.5831,
+    "lng": 120.9794,
     "city": "Manila",
     "type": "National Park",
     "air_quality": 3,
@@ -338,12 +359,13 @@
       "gardens",
       "museum",
       "cultural shows"
-    ]
+    ],
+    "entrance_fee": "free"
   },
   {
     "name": "Arroceros Forest Park",
-    "lat": 14.59428,
-    "lng": 120.98172,
+    "lat": 14.5907,
+    "lng": 120.9832,
     "city": "Manila",
     "type": "Urban Forest",
     "air_quality": 4,
@@ -354,12 +376,13 @@
       "bird watching",
       "photography",
       "environmental education"
-    ]
+    ],
+    "entrance_fee": "free"
   },
   {
     "name": "Manila Baywalk",
-    "lat": 14.59386,
-    "lng": 120.98118,
+    "lat": 14.577,
+    "lng": 120.973,
     "city": "Manila",
     "type": "Coastal Promenade",
     "air_quality": 3,
@@ -370,12 +393,13 @@
       "walking",
       "jogging",
       "photography"
-    ]
+    ],
+    "entrance_fee": "free"
   },
   {
     "name": "Paco Park",
-    "lat": 14.58098,
-    "lng": 120.98843,
+    "lat": 14.581,
+    "lng": 120.987,
     "city": "Manila",
     "type": "Historical Garden",
     "air_quality": 3,
@@ -386,12 +410,13 @@
       "photography",
       "concerts",
       "meditation"
-    ]
+    ],
+    "entrance_fee": 10
   },
   {
-    "name": "ASEAN Gardens (Intramuros)",
-    "lat": 14.5931,
-    "lng": 120.97813,
+    "name": "ASEAN Garden (Intramuros)",
+    "lat": 14.5882,
+    "lng": 120.9748,
     "city": "Manila",
     "type": "Heritage Garden",
     "air_quality": 3,
@@ -401,12 +426,13 @@
       "walking",
       "photography",
       "sightseeing"
-    ]
+    ],
+    "entrance_fee": "free"
   },
   {
     "name": "Remedios Circle",
-    "lat": 14.57038,
-    "lng": 120.98652,
+    "lat": 14.5705,
+    "lng": 120.9868,
     "city": "Manila",
     "type": "Urban Plaza",
     "air_quality": 2,
@@ -416,12 +442,13 @@
       "walking",
       "al fresco dining",
       "people watching"
-    ]
+    ],
+    "entrance_fee": "free"
   },
   {
     "name": "Plaza Rueda",
-    "lat": 14.58209,
-    "lng": 120.98517,
+    "lat": 14.581,
+    "lng": 120.985,
     "city": "Manila",
     "type": "Urban Plaza",
     "air_quality": 2,
@@ -430,12 +457,13 @@
     "activities": [
       "walking",
       "community events"
-    ]
+    ],
+    "entrance_fee": "free"
   },
   {
     "name": "Pandacan Linear Park",
-    "lat": 14.59166,
-    "lng": 121.00762,
+    "lat": 14.593,
+    "lng": 120.998,
     "city": "Manila",
     "type": "Linear Park",
     "air_quality": 3,
@@ -445,12 +473,13 @@
       "walking",
       "jogging",
       "river walk"
-    ]
+    ],
+    "entrance_fee": "free"
   },
   {
     "name": "Earnshaw Linear Park",
-    "lat": 14.58746,
-    "lng": 121.01846,
+    "lat": 14.595,
+    "lng": 120.996,
     "city": "Manila",
     "type": "Linear Park",
     "air_quality": 2,
@@ -459,12 +488,13 @@
     "activities": [
       "walking",
       "jogging"
-    ]
+    ],
+    "entrance_fee": "free"
   },
   {
     "name": "Agrifina Circle",
-    "lat": 14.58428,
-    "lng": 120.98143,
+    "lat": 14.585,
+    "lng": 120.979,
     "city": "Manila",
     "type": "Open Space",
     "air_quality": 3,
@@ -473,12 +503,13 @@
     "activities": [
       "walking",
       "photography"
-    ]
+    ],
+    "entrance_fee": "free"
   },
   {
     "name": "Bacood Park",
-    "lat": 14.59722,
-    "lng": 121.01596,
+    "lat": 14.6,
+    "lng": 120.992,
     "city": "Manila",
     "type": "Neighborhood Park",
     "air_quality": 2,
@@ -487,12 +518,13 @@
     "activities": [
       "walking",
       "playground"
-    ]
+    ],
+    "entrance_fee": "free"
   },
   {
     "name": "Estero de Magdalena Linear Park",
-    "lat": 14.60688,
-    "lng": 120.97702,
+    "lat": 14.609,
+    "lng": 120.973,
     "city": "Manila",
     "type": "Linear Park",
     "air_quality": 2,
@@ -501,12 +533,13 @@
     "activities": [
       "walking",
       "jogging"
-    ]
+    ],
+    "entrance_fee": "free"
   },
   {
     "name": "APEC Sculpture Garden",
-    "lat": 14.55514,
-    "lng": 120.982,
+    "lat": 14.552,
+    "lng": 120.984,
     "city": "Pasay",
     "type": "Garden",
     "air_quality": 3,
@@ -516,12 +549,13 @@
       "walking",
       "photography",
       "sightseeing"
-    ]
+    ],
+    "entrance_fee": "free"
   },
   {
-    "name": "China-Philippines Friendship Park (Plaza Yuchengco)",
-    "lat": 14.59661,
-    "lng": 120.97759,
+    "name": "China-Philippines Friendship Park",
+    "lat": 14.589,
+    "lng": 120.973,
     "city": "Manila",
     "type": "Heritage Garden",
     "air_quality": 3,
@@ -531,12 +565,13 @@
       "walking",
       "photography",
       "sightseeing"
-    ]
+    ],
+    "entrance_fee": "free"
   },
   {
     "name": "San Diego Garden (Intramuros)",
-    "lat": 14.58582,
-    "lng": 120.97571,
+    "lat": 14.587,
+    "lng": 120.971,
     "city": "Manila",
     "type": "Heritage Garden",
     "air_quality": 3,
@@ -546,12 +581,13 @@
       "walking",
       "photography",
       "weddings"
-    ]
+    ],
+    "entrance_fee": "free"
   },
   {
     "name": "Bonifacio Shrine",
-    "lat": 14.59094,
-    "lng": 120.98108,
+    "lat": 14.587,
+    "lng": 120.983,
     "city": "Manila",
     "type": "Historical Park",
     "air_quality": 2,
@@ -561,12 +597,13 @@
       "walking",
       "photography",
       "sightseeing"
-    ]
+    ],
+    "entrance_fee": "free"
   },
   {
     "name": "Ayala Triangle Gardens",
-    "lat": 14.55707,
-    "lng": 121.02449,
+    "lat": 14.5565,
+    "lng": 121.024,
     "city": "Makati",
     "type": "Urban Park",
     "air_quality": 3,
@@ -577,12 +614,13 @@
       "lunchtime picnic",
       "concerts",
       "yoga"
-    ]
+    ],
+    "entrance_fee": "free"
   },
   {
-    "name": "Washington Sycip Park (Makati)",
-    "lat": 14.55387,
-    "lng": 121.01799,
+    "name": "Washington Sycip Park",
+    "lat": 14.5585,
+    "lng": 121.0205,
     "city": "Makati",
     "type": "Urban Park",
     "air_quality": 3,
@@ -593,12 +631,13 @@
       "reading",
       "relaxation",
       "zen garden"
-    ]
+    ],
+    "entrance_fee": "free"
   },
   {
     "name": "Salcedo Park",
-    "lat": 14.56033,
-    "lng": 121.02292,
+    "lat": 14.56,
+    "lng": 121.021,
     "city": "Makati",
     "type": "Urban Park",
     "air_quality": 3,
@@ -609,12 +648,13 @@
       "weekend market",
       "playground",
       "dog park"
-    ]
+    ],
+    "entrance_fee": "free"
   },
   {
     "name": "Legazpi Active Park",
-    "lat": 14.55414,
-    "lng": 121.01683,
+    "lat": 14.5535,
+    "lng": 121.017,
     "city": "Makati",
     "type": "Fitness Park",
     "air_quality": 3,
@@ -626,12 +666,13 @@
       "yoga",
       "calisthenics",
       "playground"
-    ]
+    ],
+    "entrance_fee": "free"
   },
   {
     "name": "Greenbelt Park",
-    "lat": 14.55274,
-    "lng": 121.02225,
+    "lat": 14.552,
+    "lng": 121.0195,
     "city": "Makati",
     "type": "Urban Park",
     "air_quality": 3,
@@ -641,12 +682,13 @@
       "walking",
       "photography",
       "al fresco dining"
-    ]
+    ],
+    "entrance_fee": "free"
   },
   {
     "name": "Circuit Makati Park",
-    "lat": 14.57688,
-    "lng": 121.01991,
+    "lat": 14.553,
+    "lng": 121.015,
     "city": "Makati",
     "type": "Events Ground",
     "air_quality": 3,
@@ -657,12 +699,13 @@
       "outdoor events",
       "food festivals",
       "concerts"
-    ]
+    ],
+    "entrance_fee": "free"
   },
   {
     "name": "Makati Poblacion Park",
-    "lat": 14.56719,
-    "lng": 121.03373,
+    "lat": 14.5645,
+    "lng": 121.0295,
     "city": "Makati",
     "type": "Urban Park",
     "air_quality": 3,
@@ -671,12 +714,13 @@
     "activities": [
       "walking",
       "community events"
-    ]
+    ],
+    "entrance_fee": "free"
   },
   {
     "name": "Guadalupe Linear Park",
-    "lat": 14.56817,
-    "lng": 121.04955,
+    "lat": 14.567,
+    "lng": 121.043,
     "city": "Makati",
     "type": "Linear Park",
     "air_quality": 2,
@@ -686,12 +730,13 @@
       "walking",
       "jogging",
       "river walk"
-    ]
+    ],
+    "entrance_fee": "free"
   },
   {
     "name": "BGC Greenway Park",
-    "lat": 14.54543,
-    "lng": 121.04503,
+    "lat": 14.551,
+    "lng": 121.048,
     "city": "Taguig (BGC)",
     "type": "Linear Park",
     "air_quality": 3,
@@ -702,12 +747,13 @@
       "jogging",
       "cycling",
       "dog walking"
-    ]
+    ],
+    "entrance_fee": "free"
   },
   {
     "name": "Track 30th Park",
-    "lat": 14.55212,
-    "lng": 121.05089,
+    "lat": 14.5505,
+    "lng": 121.0495,
     "city": "Taguig (BGC)",
     "type": "Fitness Park",
     "air_quality": 3,
@@ -718,12 +764,13 @@
       "yoga",
       "fitness",
       "meditation"
-    ]
+    ],
+    "entrance_fee": "free"
   },
   {
     "name": "Terra 28th Park",
-    "lat": 14.54927,
-    "lng": 121.05031,
+    "lat": 14.55,
+    "lng": 121.0505,
     "city": "Taguig (BGC)",
     "type": "Urban Park",
     "air_quality": 3,
@@ -733,12 +780,13 @@
       "playground",
       "walking",
       "picnic"
-    ]
+    ],
+    "entrance_fee": "free"
   },
   {
     "name": "Burgos Circle",
-    "lat": 14.55273,
-    "lng": 121.04439,
+    "lat": 14.5535,
+    "lng": 121.0485,
     "city": "Taguig (BGC)",
     "type": "Urban Plaza",
     "air_quality": 3,
@@ -748,12 +796,13 @@
       "walking",
       "al fresco dining",
       "people watching"
-    ]
+    ],
+    "entrance_fee": "free"
   },
   {
     "name": "Forbes Town Park",
-    "lat": 14.54753,
-    "lng": 121.03841,
+    "lat": 14.553,
+    "lng": 121.046,
     "city": "Taguig (BGC)",
     "type": "Urban Park",
     "air_quality": 3,
@@ -763,12 +812,13 @@
       "walking",
       "picnic",
       "lagoon"
-    ]
+    ],
+    "entrance_fee": "free"
   },
   {
     "name": "De Jesus Oval Park",
-    "lat": 14.54891,
-    "lng": 121.04488,
+    "lat": 14.5465,
+    "lng": 121.049,
     "city": "Taguig (BGC)",
     "type": "Open Space",
     "air_quality": 3,
@@ -778,12 +828,13 @@
       "walking",
       "jogging",
       "community events"
-    ]
+    ],
+    "entrance_fee": "free"
   },
   {
-    "name": "Mind Museum (Jose Yao Campos) Park",
-    "lat": 14.55292,
-    "lng": 121.0461,
+    "name": "Mind Museum Park",
+    "lat": 14.552,
+    "lng": 121.044,
     "city": "Taguig (BGC)",
     "type": "Open Space",
     "air_quality": 3,
@@ -794,12 +845,13 @@
       "kite flying",
       "playground",
       "walking"
-    ]
+    ],
+    "entrance_fee": "free"
   },
   {
     "name": "Alveo Central Plaza",
-    "lat": 14.54811,
-    "lng": 121.04889,
+    "lat": 14.548,
+    "lng": 121.047,
     "city": "Taguig (BGC)",
     "type": "Urban Plaza",
     "air_quality": 3,
@@ -809,26 +861,44 @@
       "walking",
       "events",
       "al fresco dining"
-    ]
+    ],
+    "entrance_fee": "free"
   },
   {
-    "name": "DOST Wellness Garden",
-    "lat": 14.4903,
-    "lng": 121.04973,
+    "name": "J.Y. Campos Park",
+    "lat": 14.5495,
+    "lng": 121.051,
+    "city": "Taguig (BGC)",
+    "type": "Open Space",
+    "air_quality": 3,
+    "aq_note": "Adjacent to C-5 (0.2 km) - green cover provides partial buffer",
+    "area_ha": 0.5,
+    "activities": [
+      "walking",
+      "picnic",
+      "playground"
+    ],
+    "entrance_fee": "free"
+  },
+  {
+    "name": "DOST Plaza",
+    "lat": 14.495,
+    "lng": 121.041,
     "city": "Taguig",
-    "type": "Wellness Garden",
+    "type": "Urban Plaza",
     "air_quality": 3,
     "aq_note": "Urban setting with moderate traffic exposure - SLEX/Skyway is 1.9 km away",
     "area_ha": 0.5,
     "activities": [
       "walking",
       "events"
-    ]
+    ],
+    "entrance_fee": "free"
   },
   {
-    "name": "FTI (Arca South) Park",
-    "lat": 14.50753,
-    "lng": 121.04864,
+    "name": "FTI Park",
+    "lat": 14.513,
+    "lng": 121.064,
     "city": "Taguig",
     "type": "Open Space",
     "air_quality": 3,
@@ -838,12 +908,13 @@
       "walking",
       "jogging",
       "community events"
-    ]
+    ],
+    "entrance_fee": "free"
   },
   {
     "name": "Plaza Bonifacio (Taguig)",
-    "lat": 14.54155,
-    "lng": 121.08086,
+    "lat": 14.526,
+    "lng": 121.071,
     "city": "Taguig",
     "type": "Heritage Plaza",
     "air_quality": 3,
@@ -852,12 +923,13 @@
     "activities": [
       "walking",
       "sightseeing"
-    ]
+    ],
+    "entrance_fee": "free"
   },
   {
-    "name": "Pasig RAVE (Maybunga Rainforest) Park",
-    "lat": 14.57534,
-    "lng": 121.09773,
+    "name": "Pasig RAVE Park",
+    "lat": 14.575,
+    "lng": 121.086,
     "city": "Pasig",
     "type": "Adventure Park",
     "air_quality": 4,
@@ -868,12 +940,13 @@
       "wall climbing",
       "obstacle course",
       "camping"
-    ]
+    ],
+    "entrance_fee": 100
   },
   {
     "name": "Capitol Commons Park",
-    "lat": 14.57588,
-    "lng": 121.06388,
+    "lat": 14.574,
+    "lng": 121.061,
     "city": "Pasig",
     "type": "Urban Park",
     "air_quality": 3,
@@ -884,12 +957,13 @@
       "jogging",
       "playground",
       "events"
-    ]
+    ],
+    "entrance_fee": "free"
   },
   {
     "name": "Ortigas Park",
-    "lat": 14.58687,
-    "lng": 121.06144,
+    "lat": 14.587,
+    "lng": 121.06,
     "city": "Pasig",
     "type": "Urban Park",
     "air_quality": 3,
@@ -899,12 +973,13 @@
       "walking",
       "jogging",
       "picnic"
-    ]
+    ],
+    "entrance_fee": "free"
   },
   {
-    "name": "Kapitolyo Park 6",
-    "lat": 14.57114,
-    "lng": 121.0582,
+    "name": "Kapitolyo Park",
+    "lat": 14.571,
+    "lng": 121.059,
     "city": "Pasig",
     "type": "Neighborhood Park",
     "air_quality": 3,
@@ -914,12 +989,13 @@
       "walking",
       "playground",
       "community events"
-    ]
+    ],
+    "entrance_fee": "free"
   },
   {
     "name": "Plaza Rizal (Pasig)",
-    "lat": 14.56063,
-    "lng": 121.07631,
+    "lat": 14.574,
+    "lng": 121.08,
     "city": "Pasig",
     "type": "Heritage Plaza",
     "air_quality": 2,
@@ -928,12 +1004,13 @@
     "activities": [
       "walking",
       "sightseeing"
-    ]
+    ],
+    "entrance_fee": "free"
   },
   {
     "name": "Marikina River Park",
-    "lat": 14.6329,
-    "lng": 121.09301,
+    "lat": 14.636,
+    "lng": 121.101,
     "city": "Marikina",
     "type": "Riverfront Park",
     "air_quality": 4,
@@ -945,12 +1022,13 @@
       "skateboarding",
       "river walk",
       "food park"
-    ]
+    ],
+    "entrance_fee": "free"
   },
   {
     "name": "Marikina Freedom Park",
-    "lat": 14.63294,
-    "lng": 121.09829,
+    "lat": 14.63,
+    "lng": 121.096,
     "city": "Marikina",
     "type": "Urban Park",
     "air_quality": 3,
@@ -960,7 +1038,8 @@
       "walking",
       "playground",
       "community events"
-    ]
+    ],
+    "entrance_fee": "free"
   },
   {
     "name": "Evolution Park Marikina",
@@ -975,12 +1054,13 @@
       "walking",
       "playground",
       "community events"
-    ]
+    ],
+    "entrance_fee": "free"
   },
   {
-    "name": "Hacienda Heights Village Park",
-    "lat": 14.64239,
-    "lng": 121.12074,
+    "name": "Hacienda Heights Park",
+    "lat": 14.638,
+    "lng": 121.12,
     "city": "Marikina",
     "type": "Residential Park",
     "air_quality": 4,
@@ -990,12 +1070,13 @@
       "walking",
       "jogging",
       "playground"
-    ]
+    ],
+    "entrance_fee": "free"
   },
   {
     "name": "Hardin ng Pag-asa",
-    "lat": 14.58343,
-    "lng": 121.03671,
+    "lat": 14.583,
+    "lng": 121.038,
     "city": "Mandaluyong",
     "type": "Community Park",
     "air_quality": 3,
@@ -1005,12 +1086,13 @@
       "walking",
       "playground",
       "community events"
-    ]
+    ],
+    "entrance_fee": "free"
   },
   {
     "name": "Maysilo Circle Park",
-    "lat": 14.57829,
-    "lng": 121.03394,
+    "lat": 14.577,
+    "lng": 121.038,
     "city": "Mandaluyong",
     "type": "Urban Park",
     "air_quality": 2,
@@ -1019,7 +1101,8 @@
     "activities": [
       "walking",
       "jogging"
-    ]
+    ],
+    "entrance_fee": "free"
   },
   {
     "name": "Vergara Linear Park",
@@ -1033,7 +1116,8 @@
     "activities": [
       "walking",
       "jogging"
-    ]
+    ],
+    "entrance_fee": "free"
   },
   {
     "name": "Greenhills Central Garden",
@@ -1048,12 +1132,13 @@
       "walking",
       "playground",
       "picnic"
-    ]
+    ],
+    "entrance_fee": "free"
   },
   {
     "name": "Jackson Park",
-    "lat": 14.59468,
-    "lng": 121.04298,
+    "lat": 14.602,
+    "lng": 121.044,
     "city": "San Juan",
     "type": "Neighborhood Park",
     "air_quality": 3,
@@ -1062,12 +1147,13 @@
     "activities": [
       "walking",
       "playground"
-    ]
+    ],
+    "entrance_fee": "free"
   },
   {
     "name": "Johnson Park",
-    "lat": 14.60842,
-    "lng": 121.04296,
+    "lat": 14.604,
+    "lng": 121.046,
     "city": "San Juan",
     "type": "Neighborhood Park",
     "air_quality": 3,
@@ -1077,12 +1163,13 @@
       "walking",
       "playground",
       "jogging"
-    ]
+    ],
+    "entrance_fee": "free"
   },
   {
-    "name": "McKinley Park (San Juan)",
-    "lat": 14.60388,
-    "lng": 121.04818,
+    "name": "McKinley Park",
+    "lat": 14.605,
+    "lng": 121.045,
     "city": "San Juan",
     "type": "Neighborhood Park",
     "air_quality": 3,
@@ -1091,12 +1178,13 @@
     "activities": [
       "walking",
       "playground"
-    ]
+    ],
+    "entrance_fee": "free"
   },
   {
     "name": "San Juan Mini Park",
-    "lat": 14.60399,
-    "lng": 121.02802,
+    "lat": 14.599,
+    "lng": 121.036,
     "city": "San Juan",
     "type": "Pocket Park",
     "air_quality": 2,
@@ -1105,7 +1193,8 @@
     "activities": [
       "walking",
       "playground"
-    ]
+    ],
+    "entrance_fee": "free"
   },
   {
     "name": "Ermita\u00f1o Linear Park",
@@ -1119,7 +1208,8 @@
     "activities": [
       "walking",
       "jogging"
-    ]
+    ],
+    "entrance_fee": "free"
   },
   {
     "name": "Filinvest City Linear Park",
@@ -1135,12 +1225,13 @@
       "cycling",
       "walking",
       "playground"
-    ]
+    ],
+    "entrance_fee": "free"
   },
   {
     "name": "Filinvest City Central Park",
-    "lat": 14.41701,
-    "lng": 121.03538,
+    "lat": 14.419,
+    "lng": 121.031,
     "city": "Muntinlupa",
     "type": "Urban Park",
     "air_quality": 4,
@@ -1151,12 +1242,13 @@
       "events",
       "concerts",
       "picnic"
-    ]
+    ],
+    "entrance_fee": "free"
   },
   {
     "name": "Spectrum Linear Park",
-    "lat": 14.41917,
-    "lng": 121.0363,
+    "lat": 14.418,
+    "lng": 121.029,
     "city": "Muntinlupa",
     "type": "Linear Park",
     "air_quality": 4,
@@ -1166,12 +1258,13 @@
       "walking",
       "jogging",
       "outdoor art"
-    ]
+    ],
+    "entrance_fee": "free"
   },
   {
     "name": "Alabang River Park",
-    "lat": 14.41453,
-    "lng": 121.04015,
+    "lat": 14.415,
+    "lng": 121.04,
     "city": "Muntinlupa",
     "type": "Riverfront Park",
     "air_quality": 3,
@@ -1181,27 +1274,29 @@
       "walking",
       "jogging",
       "river walk"
-    ]
+    ],
+    "entrance_fee": "free"
   },
   {
     "name": "Muntinlupa Sunken Garden",
-    "lat": 14.38436,
-    "lng": 121.03388,
+    "lat": 14.41,
+    "lng": 121.05,
     "city": "Muntinlupa",
     "type": "Historical Park",
     "air_quality": 3,
     "aq_note": "Urban setting with moderate traffic exposure - SLEX/Skyway is 2.2 km away",
-    "area_ha": 2,
+    "area_ha": 1.5,
     "activities": [
       "walking",
       "photography",
       "sightseeing"
-    ]
+    ],
+    "entrance_fee": "free"
   },
   {
     "name": "Sucat People's Park",
-    "lat": 14.45669,
-    "lng": 121.05456,
+    "lat": 14.457,
+    "lng": 121.044,
     "city": "Muntinlupa",
     "type": "Community Park",
     "air_quality": 3,
@@ -1212,12 +1307,13 @@
       "playground",
       "basketball",
       "community events"
-    ]
+    ],
+    "entrance_fee": "free"
   },
   {
-    "name": "Las Pi\u00f1as-Para\u00f1aque Wetland Park",
-    "lat": 14.48937,
-    "lng": 120.97765,
+    "name": "LPPCHEA Wetland Park",
+    "lat": 14.483,
+    "lng": 120.965,
     "city": "Las Pi\u00f1as / Para\u00f1aque",
     "type": "Wetland / Ecotourism",
     "air_quality": 5,
@@ -1227,14 +1323,14 @@
       "bird watching",
       "kayaking",
       "mangrove tour",
-      "nature photography",
-      "nature trail"
-    ]
+      "nature photography"
+    ],
+    "entrance_fee": "free"
   },
   {
     "name": "Aguirre Central Park",
-    "lat": 14.44512,
-    "lng": 121.02687,
+    "lat": 14.45,
+    "lng": 121.013,
     "city": "Para\u00f1aque",
     "type": "Community Park",
     "air_quality": 3,
@@ -1245,12 +1341,13 @@
       "jogging",
       "playground",
       "basketball"
-    ]
+    ],
+    "entrance_fee": "free"
   },
   {
     "name": "Don Galo Park",
-    "lat": 14.50496,
-    "lng": 120.99104,
+    "lat": 14.481,
+    "lng": 120.981,
     "city": "Para\u00f1aque",
     "type": "Neighborhood Park",
     "air_quality": 2,
@@ -1259,12 +1356,13 @@
     "activities": [
       "walking",
       "playground"
-    ]
+    ],
+    "entrance_fee": "free"
   },
   {
     "name": "Guadalajara Park",
-    "lat": 14.49169,
-    "lng": 121.02229,
+    "lat": 14.468,
+    "lng": 121.02,
     "city": "Para\u00f1aque",
     "type": "Residential Park",
     "air_quality": 3,
@@ -1274,12 +1372,13 @@
       "walking",
       "jogging",
       "playground"
-    ]
+    ],
+    "entrance_fee": "free"
   },
   {
     "name": "Sun Valley Park",
-    "lat": 14.48957,
-    "lng": 121.03785,
+    "lat": 14.478,
+    "lng": 121.018,
     "city": "Para\u00f1aque",
     "type": "Community Park",
     "air_quality": 2,
@@ -1289,12 +1388,13 @@
       "walking",
       "playground",
       "basketball"
-    ]
+    ],
+    "entrance_fee": "free"
   },
   {
     "name": "Pilar Friendship Park",
-    "lat": 14.41704,
-    "lng": 121.00831,
+    "lat": 14.46,
+    "lng": 120.992,
     "city": "Las Pi\u00f1as",
     "type": "Community Park",
     "air_quality": 3,
@@ -1304,12 +1404,13 @@
       "walking",
       "playground",
       "community events"
-    ]
+    ],
+    "entrance_fee": "free"
   },
   {
     "name": "Philamlife Village Park",
-    "lat": 14.44612,
-    "lng": 120.97778,
+    "lat": 14.453,
+    "lng": 120.995,
     "city": "Las Pi\u00f1as",
     "type": "Residential Park",
     "air_quality": 3,
@@ -1319,12 +1420,13 @@
       "walking",
       "jogging",
       "playground"
-    ]
+    ],
+    "entrance_fee": "free"
   },
   {
     "name": "Valenzuela People's Park",
-    "lat": 14.69222,
-    "lng": 120.97012,
+    "lat": 14.693,
+    "lng": 120.975,
     "city": "Valenzuela",
     "type": "Urban Park",
     "air_quality": 3,
@@ -1336,12 +1438,13 @@
       "playground",
       "basketball",
       "events"
-    ]
+    ],
+    "entrance_fee": "free"
   },
   {
     "name": "Valenzuela Family Park",
-    "lat": 14.68876,
-    "lng": 120.97955,
+    "lat": 14.692,
+    "lng": 120.972,
     "city": "Valenzuela",
     "type": "Community Park",
     "air_quality": 3,
@@ -1351,12 +1454,13 @@
       "walking",
       "playground",
       "picnic"
-    ]
+    ],
+    "entrance_fee": "free"
   },
   {
     "name": "Arkong Bato Park",
-    "lat": 14.69529,
-    "lng": 120.95396,
+    "lat": 14.685,
+    "lng": 120.971,
     "city": "Valenzuela",
     "type": "Heritage Park",
     "air_quality": 3,
@@ -1366,12 +1470,13 @@
       "walking",
       "sightseeing",
       "community events"
-    ]
+    ],
+    "entrance_fee": "free"
   },
   {
     "name": "Glorieta Park (Tala)",
-    "lat": 14.76802,
-    "lng": 121.0596,
+    "lat": 14.75,
+    "lng": 121.007,
     "city": "Caloocan",
     "type": "Community Park",
     "air_quality": 3,
@@ -1381,12 +1486,13 @@
       "walking",
       "playground",
       "community events"
-    ]
+    ],
+    "entrance_fee": "free"
   },
   {
     "name": "Mother Ignacia Park",
-    "lat": 14.65414,
-    "lng": 120.9931,
+    "lat": 14.653,
+    "lng": 120.975,
     "city": "Caloocan",
     "type": "Neighborhood Park",
     "air_quality": 2,
@@ -1395,12 +1501,13 @@
     "activities": [
       "walking",
       "playground"
-    ]
+    ],
+    "entrance_fee": "free"
   },
   {
     "name": "Navotas Centennial Park",
-    "lat": 14.65072,
-    "lng": 120.94759,
+    "lat": 14.666,
+    "lng": 120.95,
     "city": "Navotas",
     "type": "Urban Park",
     "air_quality": 2,
@@ -1410,12 +1517,13 @@
       "walking",
       "playground",
       "community events"
-    ]
+    ],
+    "entrance_fee": "free"
   },
   {
     "name": "Malabon People's Park",
-    "lat": 14.67138,
-    "lng": 120.96038,
+    "lat": 14.669,
+    "lng": 120.96,
     "city": "Malabon",
     "type": "Urban Park",
     "air_quality": 2,
@@ -1425,7 +1533,8 @@
       "walking",
       "playground",
       "community events"
-    ]
+    ],
+    "entrance_fee": "free"
   },
   {
     "name": "Meridian Park",
@@ -1440,12 +1549,13 @@
       "walking",
       "jogging",
       "events"
-    ]
+    ],
+    "entrance_fee": "free"
   },
   {
     "name": "Hinulugang Taktak",
-    "lat": 14.59413,
-    "lng": 121.16801,
+    "lat": 14.586,
+    "lng": 121.165,
     "city": "Antipolo (near MM)",
     "type": "National Park",
     "air_quality": 5,
@@ -1456,23 +1566,8 @@
       "hiking",
       "picnic",
       "sightseeing"
-    ]
-  },
-  {
-    "name": "UP - Washington Sycip Park (UP Diliman)",
-    "lat": 14.65744,
-    "lng": 121.06662,
-    "city": "Quezon City",
-    "type": "Native Tree Park",
-    "air_quality": 5,
-    "aq_note": "Nestled within UP Diliman's 500-hectare campus - with dense native tree canopy providing natural air filtration",
-    "area_ha": 0.5,
-    "activities": [
-      "walking",
-      "bird watching",
-      "native tree walk",
-      "photography"
-    ]
+    ],
+    "entrance_fee": 30
   },
   {
     "name": "Vertis North Rain Garden",
@@ -1480,13 +1575,14 @@
     "lng": 121.03691,
     "city": "Quezon City",
     "type": "Urban Park",
-    "air_quality": 3,
+    "air_quality": 2,
     "aq_note": "Close to Quezon Avenue (0.4 km) - limited vegetation buffer",
     "area_ha": 0.5,
     "activities": [
       "walking",
       "jogging",
       "cycling"
-    ]
+    ],
+    "entrance_fee": "free"
   }
 ]

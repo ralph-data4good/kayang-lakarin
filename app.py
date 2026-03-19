@@ -92,6 +92,11 @@ def aq_lbl(s):
     if s >= 3: return ("Moderate air", "#b8860b")
     return ("Poor air", "#c0392b")
 
+def fee_str(fee):
+    if fee == "free": return "Free entrance"
+    if isinstance(fee, (int, float)) and fee > 0: return f"P{int(fee)} entrance"
+    return ""
+
 REFS = {
     "Quezon City (Cubao)": (14.6218, 121.0555),
     "Quezon City (Commonwealth)": (14.6760, 121.0870),
@@ -392,9 +397,11 @@ else:
 for a in results:
     _, col = aq_lbl(a["air_quality"])
     c = a["commute"]
+    fee = fee_str(a.get("entrance_fee"))
+    fee_line = f"<br>{fee}" if fee else ""
     folium.Marker([a["lat"], a["lng"]],
         tooltip=f'{a["name"]} — {a["jeep_time"]}m',
-        popup=folium.Popup(f'<div style="font-family:Outfit,sans-serif;font-size:11px;min-width:160px;"><b>{a["name"]}</b><br>{a["city"]} · {a["distance_km"]:.1f} km<br>Jeepney {a["jeep_time"]} min, P{c["jeepney"]["cost"]}<br>Grab {c["grab"]["time_min"]} min, P{c["grab"]["cost_range"][0]}-{c["grab"]["cost_range"][1]}</div>', max_width=200),
+        popup=folium.Popup(f'<div style="font-family:Outfit,sans-serif;font-size:11px;min-width:160px;"><b>{a["name"]}</b><br>{a["city"]} · {a["distance_km"]:.1f} km<br>Jeepney {a["jeep_time"]} min, P{c["jeepney"]["cost"]}<br>Grab {c["grab"]["time_min"]} min, P{c["grab"]["cost_range"][0]}-{c["grab"]["cost_range"][1]}{fee_line}</div>', max_width=200),
         icon=folium.DivIcon(html=f'<div style="width:18px;height:18px;background:{col};border:2px solid #fff;border-radius:50%;box-shadow:0 1px 3px rgba(0,0,0,0.2);"></div>',
         icon_size=(18,18), icon_anchor=(9,9))).add_to(m)
     if c["driving_geometry"]:
@@ -426,6 +433,7 @@ if results:
         gl, gh = c["grab"]["cost_range"]
         wk = f' · {c["walk"]["time_min"]} min walk' if c.get("walk") else ""
         dk = f'{a["distance_km"]:.1f} km' if a["has_route"] else f'~{a["distance_km"]:.1f} km'
+        fee = fee_str(a.get("entrance_fee"))
         tg = "".join(f'<span class="cd-tag">{t}</span>' for t in a["activities"][:4])
         if len(a["activities"]) > 4: tg += f'<span class="cd-tag">+{len(a["activities"])-4}</span>'
 
@@ -433,7 +441,7 @@ if results:
             <div class="cd-n">{a["jeep_time"]}<br><span style="font-size:0.45rem;font-weight:500;color:#888;letter-spacing:0.5px;">MIN</span></div>
             <div class="cd-b">
                 <div class="cd-t">{a["name"]}</div>
-                <div class="cd-m">{a["city"]} · {a["type"]} · {dk}{wk}</div>
+                <div class="cd-m">{a["city"]} · {a["type"]} · {dk}{wk}{(" · " + fee) if fee else ""}</div>
                 <div class="cd-m"><b>Jeepney</b> {a["jeep_time"]} min, P{c["jeepney"]["cost"]} · <b>Grab</b> {c["grab"]["time_min"]} min, P{gl}-{gh}</div>
                 <div class="cd-m"><span class="cd-d" style="background:{aq_col}"></span>{aq_txt} - {a["aq_note"]}</div>
                 <div class="cd-tags">{tg}</div>
@@ -458,6 +466,10 @@ with st.expander("Contribute a space"):
                 "Heritage Garden", "Fitness Park", "Adventure Park", "Coastal Promenade",
                 "Open Space", "Urban Plaza", "Neighborhood Park", "Other"])
             sha = st.number_input("Area (ha)", 0.0, 500.0, 0.0, step=0.5)
+            sfee = st.selectbox("Entrance fee", ["Free", "P5", "P10", "P20", "P30", "P50", "P100", "Other amount"])
+        sfee_other = 0
+        if sfee == "Other amount":
+            sfee_other = st.number_input("Fee amount (PHP)", 0, 1000, 0, step=5)
         sco = ""
         if sc == "Other": sco = st.text_input("Specify city")
         lc1, lc2 = st.columns(2)
@@ -495,6 +507,7 @@ with st.expander("Contribute a space"):
                 for e in err: st.error(e)
             else:
                 fc = sco.strip() if sc == "Other" else sc
+                fee_val = "free" if sfee == "Free" else (sfee_other if sfee == "Other amount" else int(sfee.replace("P", "")))
                 sub = {
                     "name": sn.strip(),
                     "lat": sla,
@@ -502,6 +515,7 @@ with st.expander("Contribute a space"):
                     "city": fc,
                     "type": sty,
                     "area_ha": sha,
+                    "entrance_fee": fee_val,
                     "activities": sa,
                     "air_quality_user": saq,
                     "aq_reason": sqr.strip(),
