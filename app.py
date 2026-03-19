@@ -161,6 +161,7 @@ section[data-testid="stSidebar"] hr { border-color: #333 !important; }
 /* Map */
 .mf { border-radius: 10px; overflow: hidden; border: 1px solid #ddd; }
 .mf iframe { border-radius: 10px; }
+iframe[title="streamlit_folium.st_folium"] { height: 420px; }
 
 /* Cards */
 .cl { max-height: 70vh; overflow-y: auto; }
