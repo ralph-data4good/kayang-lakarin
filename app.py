@@ -108,12 +108,11 @@ def aq_lbl(s):
     return ("Poor air", "#c0392b")
 
 def fee_str(fee):
-    if fee == "free": return "Free entrance"
-    if isinstance(fee, (int, float)) and fee > 0: return f"P{int(fee)} entrance"
-    if isinstance(fee, str):
+    if isinstance(fee, (int, float)) and fee > 0: return f"P{int(fee)}"
+    if isinstance(fee, str) and fee != "free":
         try:
             v = int(fee)
-            if v > 0: return f"P{v} entrance"
+            if v > 0: return f"P{v}"
         except (ValueError, TypeError):
             pass
     return ""
@@ -201,11 +200,14 @@ iframe[title="streamlit_folium.st_folium"] { height: 420px; }
     border-right: 1px solid #eee; padding: 8px 2px;
     font-family: 'Datatype',monospace; font-weight: 700; font-size: 1.1rem; color: #2d6a4f;
     font-variation-settings: 'wdth' 85, 'wght' 700; }
-.cd-b { padding: 8px 12px; }
+.cd-b { padding: 7px 12px; }
 .cd-t { font-weight: 700; font-size: 0.82rem; color: #1a1a1a; line-height: 1.25; }
-.cd-m { font-size: 0.68rem; color: #999; line-height: 1.5; }
-.cd-m b { color: #555; font-weight: 600; }
-.cd-d { display: inline-block; width: 6px; height: 6px; border-radius: 50%; margin-right: 3px; vertical-align: middle; }
+.cd-m { font-size: 0.68rem; color: #666; line-height: 1.4; }
+.cd-m b { color: #666; font-weight: 500; }
+.cd-d { display: inline-block; width: 8px; height: 8px; border-radius: 50%; margin-right: 3px; vertical-align: middle; }
+.cd-sep { margin: 0 2px; color: #bbb; }
+.cd-cur { color: #999; }
+.cd-fee { display: inline-block; font-size: 0.56rem; font-weight: 600; padding: 0 4px; border-radius: 3px; background: #fff3e0; color: #e65100; margin-left: 4px; vertical-align: middle; }
 .cd-tags { display: flex; flex-wrap: wrap; gap: 2px; margin-top: 3px; }
 .cd-tag { font-size: 0.52rem; font-weight: 600; padding: 1px 5px; border-radius: 3px; background: #f0efec; color: #888; }
 
@@ -259,7 +261,8 @@ else:
     didx = 0
     clk_lbl = None
 
-sel = st.selectbox("Starting from", disp, index=didx)
+st.markdown('<div class="lb">Where are you?</div>', unsafe_allow_html=True)
+sel = st.selectbox("Starting from", disp, index=didx, label_visibility="collapsed")
 
 if has_click and sel == clk_lbl:
     user_lat, user_lng = st.session_state.click_lat, st.session_state.click_lng
@@ -389,14 +392,15 @@ if results:
     near = results[0]
     avg = sum(r["jeep_time"] for r in results) / len(results)
     gaq = sum(1 for r in results if r["air_quality"] >= 4)
+    near_col = "#2d6a4f" if near['jeep_time'] < 20 else ("#b8860b" if near['jeep_time'] < 40 else "#c0392b")
     st.markdown(f"""<div class="st-row">
         <div class="st-c"><div class="st-n">{len(results)}</div><div class="st-l">Spaces found</div></div>
-        <div class="st-c"><div class="st-n">{near['jeep_time']}</div><div class="st-l">Min nearest</div></div>
+        <div class="st-c" style="border-left:2px solid {near_col}"><div class="st-n" style="color:{near_col};font-size:1.5rem">{near['jeep_time']}</div><div class="st-l">Min nearest</div></div>
         <div class="st-c"><div class="st-n">{avg:.0f}</div><div class="st-l">Min avg</div></div>
         <div class="st-c"><div class="st-n">{gaq}</div><div class="st-l">Good air</div></div>
     </div>""", unsafe_allow_html=True)
 else:
-    st.info("No spaces match your current filters. Try adding more cities, lowering the air quality minimum, or increasing the max commute time in the sidebar.")
+    st.markdown('<div style="text-align:center;padding:2rem 1rem;color:#999;font-size:0.85rem;">No spaces match your filters. Try widening your search in the sidebar.</div>', unsafe_allow_html=True)
 
 # ══════════════════════════════════════════════════════════════════════
 # MAP + RESULTS
@@ -419,7 +423,7 @@ for a in results:
     _, col = aq_lbl(a["air_quality"])
     c = a["commute"]
     fee = fee_str(a.get("entrance_fee"))
-    fee_line = f"<br>{fee}" if fee else ""
+    fee_line = f"<br>{fee} entrance" if fee else ""
     folium.Marker([a["lat"], a["lng"]],
         tooltip=f'{a["name"]} — {a["jeep_time"]}m',
         popup=folium.Popup(f'<div style="font-family:Outfit,sans-serif;font-size:11px;min-width:160px;"><b>{a["name"]}</b><br>{a["city"]} · {a["distance_km"]:.1f} km<br>Jeepney {a["jeep_time"]} min, P{c["jeepney"]["cost"]}<br>Grab {c["grab"]["time_min"]} min, P{c["grab"]["cost_range"][0]}-{c["grab"]["cost_range"][1]}{fee_line}</div>', max_width=200),
@@ -431,6 +435,9 @@ for a in results:
             folium.PolyLine(c["walking_geometry"], color="#555", weight=1.5, opacity=0.35, dash_array="4 5").add_to(m)
     else:
         folium.PolyLine([[user_lat, user_lng], [a["lat"], a["lng"]]], color=col, weight=1, opacity=0.25, dash_array="5 5").add_to(m)
+
+if not results:
+    m.fit_bounds([[14.35, 120.90], [14.78, 121.17]])
 
 st.markdown('<div class="mf">', unsafe_allow_html=True)
 map_out = st_folium(m, width=None, height=420, returned_objects=["last_clicked"])
@@ -447,23 +454,25 @@ if results:
     src = "via road routes" if osrm_ok else "estimated distances"
     st.markdown(f'<div class="lb">{len(results)} results, {src}</div>', unsafe_allow_html=True)
 
+    S = '<span class="cd-sep">&middot;</span>'
     html = '<div class="cl">'
     for a in results:
         aq_txt, aq_col = aq_lbl(a["air_quality"])
         c = a["commute"]
         gl, gh = c["grab"]["cost_range"]
-        wk = f' · {c["walk"]["time_min"]} min walk' if c.get("walk") else ""
+        wk = f'{S}{c["walk"]["time_min"]} min walk' if c.get("walk") else ""
         dk = f'{a["distance_km"]:.1f} km' if a["has_route"] else f'~{a["distance_km"]:.1f} km'
         fee = fee_str(a.get("entrance_fee"))
-        tg = "".join(f'<span class="cd-tag">{t}</span>' for t in a["activities"][:4])
-        if len(a["activities"]) > 4: tg += f'<span class="cd-tag">+{len(a["activities"])-4}</span>'
+        fee_html = f'<span class="cd-fee">{fee}</span>' if fee else ""
+        tg = "".join(f'<span class="cd-tag">{t}</span>' for t in a["activities"][:3])
+        if len(a["activities"]) > 3: tg += f'<span class="cd-tag">+{len(a["activities"])-3}</span>'
 
-        html += f'''<div class="cd">
-            <div class="cd-n">{a["jeep_time"]}<br><span style="font-size:0.45rem;font-weight:500;color:#888;letter-spacing:0.5px;">MIN</span></div>
+        html += f'''<div class="cd" style="border-left:3px solid {aq_col}">
+            <div class="cd-n">{a["jeep_time"]}<br><span style="font-size:0.42rem;font-weight:400;color:#aaa;letter-spacing:1px;">MIN</span></div>
             <div class="cd-b">
-                <div class="cd-t">{a["name"]}</div>
-                <div class="cd-m">{a["city"]} · {a["type"]} · {dk}{wk}{(" · " + fee) if fee else ""}</div>
-                <div class="cd-m"><b>Jeepney</b> {a["jeep_time"]} min, P{c["jeepney"]["cost"]} · <b>Grab</b> {c["grab"]["time_min"]} min, P{gl}-{gh}</div>
+                <div class="cd-t">{a["name"]}{fee_html}</div>
+                <div class="cd-m">{a["city"]}{S}{a["type"]}{S}{dk}{wk}</div>
+                <div class="cd-m"><b>Jeepney</b> {a["jeep_time"]} min, <span class="cd-cur">P</span>{c["jeepney"]["cost"]}{S}<b>Grab</b> {c["grab"]["time_min"]} min, <span class="cd-cur">P</span>{gl}-{gh}</div>
                 <div class="cd-m"><span class="cd-d" style="background:{aq_col}"></span>{aq_txt} - {a["aq_note"]}</div>
                 <div class="cd-tags">{tg}</div>
             </div>
