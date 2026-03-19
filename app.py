@@ -5,7 +5,7 @@ Mobile-first outdoor commute finder for Metro Manila.
 import streamlit as st
 import folium
 from streamlit_folium import st_folium
-import math, json, os, time
+import math, json, time
 import requests
 import polyline as pl
 from supabase import create_client
@@ -84,8 +84,23 @@ def commute_fallback(km):
         "jeepney": {"time_min": round(rd/7*60+20), "cost": 40}, "grab": {"time_min": round(rd/10*60+15), "cost_range": (200, 500)}}
 
 # ── Data ──────────────────────────────────────────────────────────────
-_P = os.path.join(os.path.dirname(os.path.abspath(__file__)), "outdoor_areas_data.json")
-with open(_P) as _f: AREAS = json.load(_f)
+@st.cache_data(ttl=300, show_spinner=False)
+def load_areas():
+    sb = get_supabase()
+    resp = sb.table("outdoor_areas").select("*").execute()
+    areas = resp.data
+    for a in areas:
+        fee = a.get("entrance_fee", "free")
+        if fee != "free":
+            try:
+                a["entrance_fee"] = int(fee)
+            except (ValueError, TypeError):
+                a["entrance_fee"] = fee
+        if isinstance(a.get("activities"), str):
+            a["activities"] = json.loads(a["activities"])
+    return areas
+
+AREAS = load_areas()
 
 def aq_lbl(s):
     if s >= 4: return ("Good air", "#2d6a4f")
@@ -95,6 +110,12 @@ def aq_lbl(s):
 def fee_str(fee):
     if fee == "free": return "Free entrance"
     if isinstance(fee, (int, float)) and fee > 0: return f"P{int(fee)} entrance"
+    if isinstance(fee, str):
+        try:
+            v = int(fee)
+            if v > 0: return f"P{v} entrance"
+        except (ValueError, TypeError):
+            pass
     return ""
 
 REFS = {
