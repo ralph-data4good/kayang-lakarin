@@ -455,6 +455,7 @@ if results:
     st.markdown(f'<div class="lb">{len(results)} results, {src}</div>', unsafe_allow_html=True)
 
     S = '<span class="cd-sep">&middot;</span>'
+    AQ_TINT = {"#2d6a4f": "rgba(45,106,79,0.07)", "#b8860b": "rgba(184,134,11,0.07)", "#c0392b": "rgba(192,57,43,0.07)"}
     html = '<div class="cl">'
     for a in results:
         aq_txt, aq_col = aq_lbl(a["air_quality"])
@@ -466,9 +467,10 @@ if results:
         fee_html = f'<span class="cd-fee">{fee}</span>' if fee else ""
         tg = "".join(f'<span class="cd-tag">{t}</span>' for t in a["activities"][:3])
         if len(a["activities"]) > 3: tg += f'<span class="cd-tag">+{len(a["activities"])-3}</span>'
+        tint = AQ_TINT.get(aq_col, "#fafaf8")
 
-        html += f'''<div class="cd" style="border-left:3px solid {aq_col}">
-            <div class="cd-n">{a["jeep_time"]}<br><span style="font-size:0.42rem;font-weight:400;color:#aaa;letter-spacing:1px;">MIN</span></div>
+        html += f'''<div class="cd">
+            <div class="cd-n" style="background:{tint}">{a["jeep_time"]}<br><span style="font-size:0.42rem;font-weight:400;color:#aaa;letter-spacing:1px;">MIN</span></div>
             <div class="cd-b">
                 <div class="cd-t">{a["name"]}{fee_html}</div>
                 <div class="cd-m">{a["city"]}{S}{a["type"]}{S}{dk}{wk}</div>
