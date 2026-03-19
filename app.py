@@ -230,12 +230,17 @@ iframe[title="streamlit_folium.st_folium"] { height: 420px; }
 .stExpander a { color: #2d6a4f !important; text-decoration: underline !important; }
 
 /* Sidebar toggle */
-[data-testid="collapsedControl"] { top: 0.6rem !important; }
+[data-testid="collapsedControl"] { top: 0.6rem !important; left: 0.6rem !important; }
 [data-testid="collapsedControl"] button {
     background: #1b4332 !important; border: none !important; border-radius: 8px !important;
-    padding: 6px 10px !important; box-shadow: 0 1px 4px rgba(0,0,0,0.12) !important;
+    padding: 8px 14px 8px 10px !important; box-shadow: 0 2px 8px rgba(0,0,0,0.15) !important;
+    display: flex !important; align-items: center !important; gap: 4px !important;
 }
-[data-testid="collapsedControl"] svg { color: #fff !important; }
+[data-testid="collapsedControl"] button::after {
+    content: "Filters"; color: #fff; font-family: 'Outfit',sans-serif;
+    font-size: 0.65rem; font-weight: 600; letter-spacing: 0.5px;
+}
+[data-testid="collapsedControl"] svg { color: #fff !important; width: 14px !important; height: 14px !important; }
 
 /* Force light mode on main content only (not sidebar) */
 .stApp header { background: transparent !important; }
