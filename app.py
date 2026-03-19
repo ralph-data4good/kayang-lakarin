@@ -117,6 +117,17 @@ def fee_str(fee):
             pass
     return ""
 
+# ── Icons (inline SVG) ───────────────────────────────────────────────
+IC_SPACES = '<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="{color}" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="8" cy="8" r="5"/><circle cx="16" cy="10" r="4"/><line x1="8" y1="13" x2="8" y2="21"/><line x1="16" y1="14" x2="16" y2="21"/><line x1="4" y1="21" x2="20" y2="21"/></svg>'
+IC_NEAREST = '<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="{color}" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="14" cy="12" r="9"/><polyline points="14,7 14,12 18,14"/><circle cx="5" cy="5" r="1.5"/><path d="M5 8 L5 14 L3 18"/><path d="M5 11 L7 13"/><path d="M5 14 L7 18"/></svg>'
+IC_AVG = '<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="{color}" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="4" cy="20" r="2"/><circle cx="20" cy="4" r="2"/><path d="M4 18 C4 10, 12 14, 12 8 C12 6, 16 4, 20 6"/></svg>'
+IC_AIR = '<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="{color}" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M17 8 C8 10, 6 16, 4 21"/><path d="M17 8 C17 8, 18 3, 13 3 C8 3, 6 8, 10 10"/><line x1="2" y1="15" x2="8" y2="15"/><line x1="3" y1="18" x2="7" y2="18"/></svg>'
+IC_JEEPNEY = '<svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="{color}" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M2 16 L2 10 C2 8, 4 7, 6 7 L18 7 C20 7, 22 8, 22 10 L22 16"/><line x1="2" y1="16" x2="22" y2="16"/><line x1="2" y1="12" x2="22" y2="12"/><circle cx="6" cy="19" r="1.5"/><circle cx="18" cy="19" r="1.5"/><line x1="7.5" y1="19" x2="16.5" y2="19"/><rect x="9" y="4" width="6" height="3" rx="1"/></svg>'
+IC_CAR = '<svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="{color}" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 15 L3 15 C2 15, 1 14, 1 13 L1 11 L4 8 L8 6 L16 6 L20 8 L23 11 L23 13 C23 14, 22 15, 21 15 L19 15"/><line x1="7" y1="15" x2="17" y2="15"/><circle cx="6" cy="16.5" r="2"/><circle cx="18" cy="16.5" r="2"/></svg>'
+IC_WALK = '<svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="{color}" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="4" r="2"/><path d="M10 9 L14 9 L16 15 L13 15 L14 22"/><path d="M10 9 L8 15 L11 15 L10 22"/></svg>'
+IC_JEEPNEY_POP = IC_JEEPNEY.replace('width="12" height="12"', 'width="14" height="14" style="vertical-align:middle;margin-right:2px"')
+IC_CAR_POP = IC_CAR.replace('width="12" height="12"', 'width="14" height="14" style="vertical-align:middle;margin-right:2px"')
+
 REFS = {
     "Quezon City (Cubao)": (14.6218, 121.0555),
     "Quezon City (Commonwealth)": (14.6760, 121.0870),
@@ -225,6 +236,10 @@ iframe[title="streamlit_folium.st_folium"] { height: 420px; }
 .main [data-testid="stForm"] { background: white !important; border: 1px solid #e0e0e0 !important; border-radius: 8px !important; }
 .main [data-testid="stForm"], .main [data-testid="stForm"] * { color: #333 !important; }
 .main [data-testid="stForm"] a { color: #2d6a4f !important; }
+.main [data-testid="stForm"] input:not([type="checkbox"]),
+.main [data-testid="stForm"] textarea { border: 1px solid #ccc !important; }
+.st-c svg { display: block; margin: 0 auto 4px; }
+.cd-m svg { vertical-align: middle; margin-right: 2px; }
 .main [data-testid="stAlert"] { color: #333 !important; }
 .main .stSelectbox > div > div { background: white !important; border: 1px solid #ddd !important; }
 
@@ -394,10 +409,10 @@ if results:
     gaq = sum(1 for r in results if r["air_quality"] >= 4)
     near_col = "#2d6a4f" if near['jeep_time'] < 20 else ("#b8860b" if near['jeep_time'] < 40 else "#c0392b")
     st.markdown(f"""<div class="st-row">
-        <div class="st-c"><div class="st-n">{len(results)}</div><div class="st-l">Spaces found</div></div>
-        <div class="st-c" style="border-left:2px solid {near_col}"><div class="st-n" style="color:{near_col};font-size:1.5rem">{near['jeep_time']}</div><div class="st-l">Min nearest</div></div>
-        <div class="st-c"><div class="st-n">{avg:.0f}</div><div class="st-l">Min avg</div></div>
-        <div class="st-c"><div class="st-n">{gaq}</div><div class="st-l">Good air</div></div>
+        <div class="st-c">{IC_SPACES.format(color="#999")}<div class="st-n">{len(results)}</div><div class="st-l">Spaces found</div></div>
+        <div class="st-c" style="border-left:2px solid {near_col}">{IC_NEAREST.format(color=near_col)}<div class="st-n" style="color:{near_col};font-size:1.5rem">{near['jeep_time']}</div><div class="st-l">Min nearest</div></div>
+        <div class="st-c">{IC_AVG.format(color="#999")}<div class="st-n">{avg:.0f}</div><div class="st-l">Min avg</div></div>
+        <div class="st-c">{IC_AIR.format(color="#2d6a4f")}<div class="st-n">{gaq}</div><div class="st-l">Good air</div></div>
     </div>""", unsafe_allow_html=True)
 else:
     st.markdown('<div style="text-align:center;padding:2rem 1rem;color:#999;font-size:0.85rem;">No spaces match your filters. Try widening your search in the sidebar.</div>', unsafe_allow_html=True)
@@ -426,7 +441,7 @@ for a in results:
     fee_line = f"<br>{fee} entrance" if fee else ""
     folium.Marker([a["lat"], a["lng"]],
         tooltip=f'{a["name"]} — {a["jeep_time"]}m',
-        popup=folium.Popup(f'<div style="font-family:Outfit,sans-serif;font-size:11px;min-width:160px;"><b>{a["name"]}</b><br>{a["city"]} · {a["distance_km"]:.1f} km<br>Jeepney {a["jeep_time"]} min, P{c["jeepney"]["cost"]}<br>Grab {c["grab"]["time_min"]} min, P{c["grab"]["cost_range"][0]}-{c["grab"]["cost_range"][1]}{fee_line}</div>', max_width=200),
+        popup=folium.Popup(f'<div style="font-family:Outfit,sans-serif;font-size:11px;min-width:160px;"><b>{a["name"]}</b><br>{a["city"]} · {a["distance_km"]:.1f} km<br>{IC_JEEPNEY_POP.format(color="#666")} {a["jeep_time"]} min, P{c["jeepney"]["cost"]}<br>{IC_CAR_POP.format(color="#666")} {c["grab"]["time_min"]} min, P{c["grab"]["cost_range"][0]}-{c["grab"]["cost_range"][1]}{fee_line}</div>', max_width=200),
         icon=folium.DivIcon(html=f'<div style="width:18px;height:18px;background:{col};border:2px solid #fff;border-radius:50%;box-shadow:0 1px 3px rgba(0,0,0,0.2);"></div>',
         icon_size=(18,18), icon_anchor=(9,9))).add_to(m)
     if c["driving_geometry"]:
@@ -461,7 +476,7 @@ if results:
         aq_txt, aq_col = aq_lbl(a["air_quality"])
         c = a["commute"]
         gl, gh = c["grab"]["cost_range"]
-        wk = f'{S}{c["walk"]["time_min"]} min walk' if c.get("walk") else ""
+        wk = f'{S}{IC_WALK.format(color="#999")} {c["walk"]["time_min"]} min walk' if c.get("walk") else ""
         dk = f'{a["distance_km"]:.1f} km' if a["has_route"] else f'~{a["distance_km"]:.1f} km'
         fee = fee_str(a.get("entrance_fee"))
         fee_html = f'<span class="cd-fee">{fee}</span>' if fee else ""
@@ -474,7 +489,7 @@ if results:
             <div class="cd-b">
                 <div class="cd-t">{a["name"]}{fee_html}</div>
                 <div class="cd-m">{a["city"]}{S}{a["type"]}{S}{dk}{wk}</div>
-                <div class="cd-m"><b>Jeepney</b> {a["jeep_time"]} min, <span class="cd-cur">P</span>{c["jeepney"]["cost"]}{S}<b>Grab</b> {c["grab"]["time_min"]} min, <span class="cd-cur">P</span>{gl}-{gh}</div>
+                <div class="cd-m">{IC_JEEPNEY.format(color="#666")} {a["jeep_time"]} min, <span class="cd-cur">P</span>{c["jeepney"]["cost"]}{S}{IC_CAR.format(color="#666")} {c["grab"]["time_min"]} min, <span class="cd-cur">P</span>{gl}-{gh}</div>
                 <div class="cd-m"><span class="cd-d" style="background:{aq_col}"></span>{aq_txt} - {a["aq_note"]}</div>
                 <div class="cd-tags">{tg}</div>
             </div>
