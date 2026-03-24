@@ -1586,5 +1586,65 @@
       "cycling"
     ],
     "entrance_fee": "free"
+  },
+  {
+    "name": "Sitio San Roque Tanimang Bayan",
+    "lat": 14.6499,
+    "lng": 121.0403,
+    "city": "Quezon City",
+    "type": "Community Garden",
+    "air_quality": 2,
+    "aq_note": "Adjacent to EDSA and North Avenue (0.2 km) - heavy traffic exposure, minimal green buffer",
+    "area_ha": 0.3,
+    "activities": ["nature walk", "photography", "picnic", "other"],
+    "entrance_fee": "free"
+  },
+  {
+    "name": "Potrero MRF Eco-Garden & Playground",
+    "lat": 14.6685,
+    "lng": 120.9625,
+    "city": "Malabon",
+    "type": "Community Garden",
+    "air_quality": 2,
+    "aq_note": "Industrial/residential area near NLEX - moderate traffic, composting garden provides localized green cover",
+    "area_ha": 0.4,
+    "activities": ["walking", "playground", "nature walk", "photography", "other"],
+    "entrance_fee": "free"
+  },
+  {
+    "name": "Ugong Urban Vegetable Garden",
+    "lat": 14.5855,
+    "lng": 121.0915,
+    "city": "Pasig",
+    "type": "Community Garden",
+    "air_quality": 3,
+    "aq_note": "Along Marikina River bank in Barangay Ugong - river buffer provides moderate air quality, some distance from C-5",
+    "area_ha": 0.3,
+    "activities": ["walking", "nature walk", "photography", "other"],
+    "entrance_fee": "free"
+  },
+  {
+    "name": "The Good Food Farm (Pamayanang Diego Silang)",
+    "lat": 14.534,
+    "lng": 121.058,
+    "city": "Taguig",
+    "type": "Community Garden",
+    "air_quality": 3,
+    "aq_note": "Inside Pamayanang Diego Silang housing compound in Barangay Ususan - sheltered from main roads by residential buildings",
+    "area_ha": 0.2,
+    "activities": ["nature walk", "photography", "other"],
+    "entrance_fee": "free"
+  },
+  {
+    "name": "Buhay sa Gulay Urban Farm (Tondo)",
+    "lat": 14.6135,
+    "lng": 120.965,
+    "city": "Manila",
+    "type": "Community Garden",
+    "air_quality": 1,
+    "aq_note": "Dense urban area in Tondo, adjacent to major port roads - heavy traffic and industrial exposure, minimal vegetation buffer",
+    "area_ha": 0.2,
+    "activities": ["nature walk", "photography", "other"],
+    "entrance_fee": "free"
   }
 ]

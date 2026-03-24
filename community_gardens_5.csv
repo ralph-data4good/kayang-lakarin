@@ -1,0 +1,6 @@
+name,lat,lng,city,type,air_quality,aq_note,area_ha,activities,entrance_fee
+Sitio San Roque Tanimang Bayan,14.6499,121.0403,Quezon City,Community Garden,2,"Adjacent to EDSA and North Avenue (0.2 km) - heavy traffic exposure, minimal green buffer",0.3,"[""nature walk"", ""photography"", ""picnic"", ""other""]",free
+Potrero MRF Eco-Garden & Playground,14.6685,120.9625,Malabon,Community Garden,2,"Industrial/residential area near NLEX - moderate traffic, composting garden provides localized green cover",0.4,"[""walking"", ""playground"", ""nature walk"", ""photography"", ""other""]",free
+Ugong Urban Vegetable Garden,14.5855,121.0915,Pasig,Community Garden,3,"Along Marikina River bank in Barangay Ugong - river buffer provides moderate air quality, some distance from C-5",0.3,"[""walking"", ""nature walk"", ""photography"", ""other""]",free
+The Good Food Farm (Pamayanang Diego Silang),14.534,121.058,Taguig,Community Garden,3,Inside Pamayanang Diego Silang housing compound in Barangay Ususan - sheltered from main roads by residential buildings,0.2,"[""nature walk"", ""photography"", ""other""]",free
+Buhay sa Gulay Urban Farm (Tondo),14.6135,120.965,Manila,Community Garden,1,"Dense urban area in Tondo, adjacent to major port roads - heavy traffic and industrial exposure, minimal vegetation buffer",0.2,"[""nature walk"", ""photography"", ""other""]",free

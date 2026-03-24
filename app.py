@@ -523,7 +523,7 @@ with st.expander("Contribute a space"):
             sc = st.selectbox("City *", [""] + sorted(set(a["city"] for a in AREAS)) + ["Other"])
         with c2:
             sty = st.selectbox("Type *", ["", "Urban Park", "Ecological Park", "Linear Park", "Community Park",
-                "Riverfront Park", "Urban Forest", "Wetland / Ecotourism", "National Park",
+                "Community Garden", "Riverfront Park", "Urban Forest", "Wetland / Ecotourism", "National Park",
                 "Heritage Garden", "Fitness Park", "Adventure Park", "Coastal Promenade",
                 "Open Space", "Urban Plaza", "Neighborhood Park", "Other"])
             sha = st.number_input("Area (ha)", 0.0, 500.0, 0.0, step=0.5)
