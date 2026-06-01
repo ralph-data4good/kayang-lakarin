@@ -292,6 +292,10 @@ iframe[title="streamlit_folium.st_folium"] { height: 420px; }
 .stExpander, .stExpander * { color: #333 !important; }
 .stExpander summary span { color: #1a1a1a !important; font-weight: 600 !important; }
 .stExpander a { color: #2d6a4f !important; text-decoration: underline !important; }
+.stExpander h5 { font-size: 0.7rem !important; font-weight: 700 !important; text-transform: uppercase;
+    letter-spacing: 0.8px; color: #2f5d44 !important; margin: 0.9rem 0 0.3rem !important; }
+.stExpander h5:first-child { margin-top: 0 !important; }
+.stExpander [data-testid="stMarkdownContainer"] li { margin-bottom: 2px; }
 
 /* Force light mode on main content only (not sidebar) */
 .stApp header { background: transparent !important; }
@@ -412,35 +416,30 @@ st.markdown('</div>', unsafe_allow_html=True)
 # ── Info buttons ──────────────────────────────────────────────────────
 with st.expander("How the numbers work"):
     st.markdown(f"""
-**Start here: this is a guide, not gospel.** Think of it as a smart estimate to help you
-compare options and pick where to go - not a promise of exact times. The numbers are honest
-about what they are: travel times and air quality are *modeled estimates*, and whether a
-place actually feels good to reach depends on things no map can see - shade, sidewalks,
-safety, weather, and whether you feel welcome there. We would rather tell you that up front.
+##### Real talk muna
+Gabay 'to, hindi gospel. Gamitin para i-compare ang options at magdesisyon kung saan pupunta -
+hindi promise ng eksaktong oras. Honest tayo: yung travel times at air quality ay
+**estimates lang** (modeled). Kung sulit ba talaga puntahan? Depende pa rin sa di kayang
+i-map - shade, sidewalk, safety, panahon, at kung welcome ka ba doon. Sinasabi na namin agad.
 
-**Getting there.** Routes come from [OSRM](https://project-osrm.org/), an open-source engine
-built on OpenStreetMap. It gives free-flow driving times, so we adjust for real Metro Manila
-conditions: **x2.2 for jeepney** (all those stops and detours) and **x1.6 for Grab**
-(traffic, plus waiting for your ride). These are daytime averages - rush hour (7-9am, 5-8pm)
-can add 30-50%, and a quiet early morning will beat what you see here.
+##### Papunta diyan
+- Routes galing sa [OSRM](https://project-osrm.org/) - open-source, naka-base sa OpenStreetMap.
+- Free-flow driving times yon, kaya ina-adjust namin sa totoong MM traffic: **x2.2 jeepney** (dami stop, paliko-liko) at **x1.6 Grab** (traffic plus hintay sa sundo).
+- Daytime average 'to. Rush hour (7-9am, 5-8pm): **+30-50%**. Madaling-araw? Mas mabilis pa.
 
-**What it costs.** Jeepney fares follow the LTFRB 2024 rates: P13 for the first 4 km, then
-P1.80 for every km after. Grab is estimated at P45 base plus P14/km, with a x0.85-1.35 range
-to account for surge.
+##### Presyo
+- **Jeep:** P13 first 4 km, tapos +P1.80 kada km after (LTFRB 2024 rates).
+- **Grab:** ~P45 base + P14/km, may x0.85-1.35 surge range.
 
-**Air quality, honestly.** We score each space 1-5 from three things we can measure well:
-how far it sits from big roads (EDSA, C-5, Commonwealth), its size in hectares, and how green
-it is - forests and wetlands breathe easier than concrete plazas. Most scores are estimates,
-tagged `est.`. Three places - La Mesa, Arroceros, and the LPPCHEA Wetland - get a `measured`
-tag because their scores lean on published DENR monitoring. None of these are live readings.
+##### Hangin, walang plastikan
+- Score **1-5**, base sa tatlong kaya naming sukatin: layo sa malalaking kalsada (EDSA, C-5, Commonwealth), laki (hectares), at gaano kaberde - mas humihinga ang forest at wetland kaysa concrete plaza.
+- Karamihan estimate, tagged `est.`. Tatlo lang - **La Mesa, Arroceros, LPPCHEA Wetland** - may `measured` tag kasi naka-base sa published DENR monitoring. Pero hindi 'to live readings, ha.
 
-**How sure we are of the spot.** Most pins are checked against satellite imagery. Community
-gardens and other grassroots spaces are pinned at the barangay or general area and tagged
-`approx. location` - their edges are fluid and defined by the people who use them, which is
-exactly the point.
+##### Gaano ka-sigurado yung pin
+- Karamihan na-check sa satellite imagery. Yung community gardens at grassroots spaces, naka-pin sa barangay o general area lang, tagged `approx. location` - kasi fluid yung hangganan nila, defined ng mga gumagamit. Yun mismo yung point.
 
-**If routing is down,** we fall back to a straight-line estimate scaled by x1.35 (a fair guess
-for Metro Manila's road grid), and mark those distances with a `~` so you know.
+##### Pag down ang routing
+- Babalik kami sa straight-line estimate, scaled **x1.35** (fair guess for MM roads), at may `~` para alam mo agad.
     """)
 
 with st.expander("Data sources"):
