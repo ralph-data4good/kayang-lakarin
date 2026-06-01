@@ -17,7 +17,9 @@
     ],
     "entrance_fee": 5,
     "aq_method": "modeled",
-    "coord_confidence": "verified"
+    "coord_confidence": "verified",
+    "source": "OpenStreetMap + editorial",
+    "last_reviewed": "2026-03-19"
   },
   {
     "name": "La Mesa Eco Park",
@@ -37,7 +39,9 @@
     ],
     "entrance_fee": 50,
     "aq_method": "measured",
-    "coord_confidence": "verified"
+    "coord_confidence": "verified",
+    "source": "DENR monitoring",
+    "last_reviewed": "2026-03-19"
   },
   {
     "name": "UP Diliman Sunken Garden",
@@ -57,7 +61,9 @@
     ],
     "entrance_fee": "free",
     "aq_method": "modeled",
-    "coord_confidence": "verified"
+    "coord_confidence": "verified",
+    "source": "OpenStreetMap + editorial",
+    "last_reviewed": "2026-03-19"
   },
   {
     "name": "UP Academic Oval",
@@ -76,7 +82,9 @@
     ],
     "entrance_fee": "free",
     "aq_method": "modeled",
-    "coord_confidence": "verified"
+    "coord_confidence": "verified",
+    "source": "OpenStreetMap + editorial",
+    "last_reviewed": "2026-03-19"
   },
   {
     "name": "UP Lagoon",
@@ -95,7 +103,9 @@
     ],
     "entrance_fee": "free",
     "aq_method": "modeled",
-    "coord_confidence": "verified"
+    "coord_confidence": "verified",
+    "source": "OpenStreetMap + editorial",
+    "last_reviewed": "2026-03-19"
   },
   {
     "name": "Ninoy Aquino Parks & Wildlife",
@@ -115,7 +125,9 @@
     ],
     "entrance_fee": 5,
     "aq_method": "modeled",
-    "coord_confidence": "verified"
+    "coord_confidence": "verified",
+    "source": "OpenStreetMap + editorial",
+    "last_reviewed": "2026-03-19"
   },
   {
     "name": "Eastwood Central Park",
@@ -134,7 +146,9 @@
     ],
     "entrance_fee": "free",
     "aq_method": "modeled",
-    "coord_confidence": "verified"
+    "coord_confidence": "verified",
+    "source": "OpenStreetMap + editorial",
+    "last_reviewed": "2026-03-19"
   },
   {
     "name": "Liwasang Aurora",
@@ -152,7 +166,9 @@
     ],
     "entrance_fee": "free",
     "aq_method": "modeled",
-    "coord_confidence": "verified"
+    "coord_confidence": "verified",
+    "source": "OpenStreetMap + editorial",
+    "last_reviewed": "2026-03-19"
   },
   {
     "name": "N.S. Amoranto Park",
@@ -170,7 +186,9 @@
     ],
     "entrance_fee": "free",
     "aq_method": "modeled",
-    "coord_confidence": "verified"
+    "coord_confidence": "verified",
+    "source": "OpenStreetMap + editorial",
+    "last_reviewed": "2026-03-19"
   },
   {
     "name": "Bernardo Park",
@@ -188,7 +206,9 @@
     ],
     "entrance_fee": "free",
     "aq_method": "modeled",
-    "coord_confidence": "verified"
+    "coord_confidence": "verified",
+    "source": "OpenStreetMap + editorial",
+    "last_reviewed": "2026-03-19"
   },
   {
     "name": "Corinthian Gardens Park",
@@ -206,7 +226,9 @@
     ],
     "entrance_fee": "free",
     "aq_method": "modeled",
-    "coord_confidence": "verified"
+    "coord_confidence": "verified",
+    "source": "OpenStreetMap + editorial",
+    "last_reviewed": "2026-03-19"
   },
   {
     "name": "C.P. Garcia Community Park",
@@ -224,7 +246,9 @@
     ],
     "entrance_fee": "free",
     "aq_method": "modeled",
-    "coord_confidence": "verified"
+    "coord_confidence": "verified",
+    "source": "OpenStreetMap + editorial",
+    "last_reviewed": "2026-03-19"
   },
   {
     "name": "Don Jose Heights Park",
@@ -242,7 +266,9 @@
     ],
     "entrance_fee": "free",
     "aq_method": "modeled",
-    "coord_confidence": "verified"
+    "coord_confidence": "verified",
+    "source": "OpenStreetMap + editorial",
+    "last_reviewed": "2026-03-19"
   },
   {
     "name": "Acropolis Park",
@@ -260,7 +286,9 @@
     ],
     "entrance_fee": "free",
     "aq_method": "modeled",
-    "coord_confidence": "verified"
+    "coord_confidence": "verified",
+    "source": "OpenStreetMap + editorial",
+    "last_reviewed": "2026-03-19"
   },
   {
     "name": "Filinvest Park Batasan",
@@ -279,7 +307,9 @@
     ],
     "entrance_fee": "free",
     "aq_method": "modeled",
-    "coord_confidence": "verified"
+    "coord_confidence": "verified",
+    "source": "OpenStreetMap + editorial",
+    "last_reviewed": "2026-03-19"
   },
   {
     "name": "North Olympus Park",
@@ -297,7 +327,9 @@
     ],
     "entrance_fee": "free",
     "aq_method": "modeled",
-    "coord_confidence": "verified"
+    "coord_confidence": "verified",
+    "source": "OpenStreetMap + editorial",
+    "last_reviewed": "2026-03-19"
   },
   {
     "name": "Lagro Dulo Park",
@@ -314,7 +346,9 @@
     ],
     "entrance_fee": "free",
     "aq_method": "modeled",
-    "coord_confidence": "verified"
+    "coord_confidence": "verified",
+    "source": "OpenStreetMap + editorial",
+    "last_reviewed": "2026-03-19"
   },
   {
     "name": "Rosalia Park",
@@ -332,7 +366,9 @@
     ],
     "entrance_fee": "free",
     "aq_method": "modeled",
-    "coord_confidence": "verified"
+    "coord_confidence": "verified",
+    "source": "OpenStreetMap + editorial",
+    "last_reviewed": "2026-03-19"
   },
   {
     "name": "Mariana Park",
@@ -349,7 +385,9 @@
     ],
     "entrance_fee": "free",
     "aq_method": "modeled",
-    "coord_confidence": "verified"
+    "coord_confidence": "verified",
+    "source": "OpenStreetMap + editorial",
+    "last_reviewed": "2026-03-19"
   },
   {
     "name": "Wisdom Park",
@@ -367,7 +405,9 @@
     ],
     "entrance_fee": "free",
     "aq_method": "modeled",
-    "coord_confidence": "verified"
+    "coord_confidence": "verified",
+    "source": "OpenStreetMap + editorial",
+    "last_reviewed": "2026-03-19"
   },
   {
     "name": "Madrigal Circle (Dichaves) Park",
@@ -384,7 +424,9 @@
     ],
     "entrance_fee": "free",
     "aq_method": "modeled",
-    "coord_confidence": "verified"
+    "coord_confidence": "verified",
+    "source": "OpenStreetMap + editorial",
+    "last_reviewed": "2026-03-19"
   },
   {
     "name": "Rizal Park (Luneta)",
@@ -404,7 +446,9 @@
     ],
     "entrance_fee": "free",
     "aq_method": "modeled",
-    "coord_confidence": "verified"
+    "coord_confidence": "verified",
+    "source": "OpenStreetMap + editorial",
+    "last_reviewed": "2026-03-19"
   },
   {
     "name": "Arroceros Forest Park",
@@ -423,7 +467,9 @@
     ],
     "entrance_fee": "free",
     "aq_method": "measured",
-    "coord_confidence": "verified"
+    "coord_confidence": "verified",
+    "source": "DENR monitoring",
+    "last_reviewed": "2026-03-19"
   },
   {
     "name": "Manila Baywalk",
@@ -442,7 +488,9 @@
     ],
     "entrance_fee": "free",
     "aq_method": "modeled",
-    "coord_confidence": "verified"
+    "coord_confidence": "verified",
+    "source": "OpenStreetMap + editorial",
+    "last_reviewed": "2026-03-19"
   },
   {
     "name": "Paco Park",
@@ -461,7 +509,9 @@
     ],
     "entrance_fee": 10,
     "aq_method": "modeled",
-    "coord_confidence": "verified"
+    "coord_confidence": "verified",
+    "source": "OpenStreetMap + editorial",
+    "last_reviewed": "2026-03-19"
   },
   {
     "name": "ASEAN Gardens (Intramuros)",
@@ -479,7 +529,9 @@
     ],
     "entrance_fee": "free",
     "aq_method": "modeled",
-    "coord_confidence": "verified"
+    "coord_confidence": "verified",
+    "source": "OpenStreetMap + editorial",
+    "last_reviewed": "2026-03-19"
   },
   {
     "name": "Remedios Circle",
@@ -497,7 +549,9 @@
     ],
     "entrance_fee": "free",
     "aq_method": "modeled",
-    "coord_confidence": "verified"
+    "coord_confidence": "verified",
+    "source": "OpenStreetMap + editorial",
+    "last_reviewed": "2026-03-19"
   },
   {
     "name": "Plaza Rueda",
@@ -514,7 +568,9 @@
     ],
     "entrance_fee": "free",
     "aq_method": "modeled",
-    "coord_confidence": "verified"
+    "coord_confidence": "verified",
+    "source": "OpenStreetMap + editorial",
+    "last_reviewed": "2026-03-19"
   },
   {
     "name": "Pandacan Linear Park",
@@ -532,7 +588,9 @@
     ],
     "entrance_fee": "free",
     "aq_method": "modeled",
-    "coord_confidence": "verified"
+    "coord_confidence": "verified",
+    "source": "OpenStreetMap + editorial",
+    "last_reviewed": "2026-03-19"
   },
   {
     "name": "Earnshaw Linear Park",
@@ -549,7 +607,9 @@
     ],
     "entrance_fee": "free",
     "aq_method": "modeled",
-    "coord_confidence": "verified"
+    "coord_confidence": "verified",
+    "source": "OpenStreetMap + editorial",
+    "last_reviewed": "2026-03-19"
   },
   {
     "name": "Agrifina Circle",
@@ -566,7 +626,9 @@
     ],
     "entrance_fee": "free",
     "aq_method": "modeled",
-    "coord_confidence": "verified"
+    "coord_confidence": "verified",
+    "source": "OpenStreetMap + editorial",
+    "last_reviewed": "2026-03-19"
   },
   {
     "name": "Bacood Park",
@@ -583,7 +645,9 @@
     ],
     "entrance_fee": "free",
     "aq_method": "modeled",
-    "coord_confidence": "verified"
+    "coord_confidence": "verified",
+    "source": "OpenStreetMap + editorial",
+    "last_reviewed": "2026-03-19"
   },
   {
     "name": "Estero de Magdalena Linear Park",
@@ -600,7 +664,9 @@
     ],
     "entrance_fee": "free",
     "aq_method": "modeled",
-    "coord_confidence": "verified"
+    "coord_confidence": "verified",
+    "source": "OpenStreetMap + editorial",
+    "last_reviewed": "2026-03-19"
   },
   {
     "name": "APEC Sculpture Garden",
@@ -618,7 +684,9 @@
     ],
     "entrance_fee": "free",
     "aq_method": "modeled",
-    "coord_confidence": "verified"
+    "coord_confidence": "verified",
+    "source": "OpenStreetMap + editorial",
+    "last_reviewed": "2026-03-19"
   },
   {
     "name": "China-Philippines Friendship Park (Plaza Yuchengco)",
@@ -636,7 +704,9 @@
     ],
     "entrance_fee": "free",
     "aq_method": "modeled",
-    "coord_confidence": "verified"
+    "coord_confidence": "verified",
+    "source": "OpenStreetMap + editorial",
+    "last_reviewed": "2026-03-19"
   },
   {
     "name": "San Diego Garden (Intramuros)",
@@ -654,7 +724,9 @@
     ],
     "entrance_fee": "free",
     "aq_method": "modeled",
-    "coord_confidence": "verified"
+    "coord_confidence": "verified",
+    "source": "OpenStreetMap + editorial",
+    "last_reviewed": "2026-03-19"
   },
   {
     "name": "Bonifacio Shrine",
@@ -672,7 +744,9 @@
     ],
     "entrance_fee": "free",
     "aq_method": "modeled",
-    "coord_confidence": "verified"
+    "coord_confidence": "verified",
+    "source": "OpenStreetMap + editorial",
+    "last_reviewed": "2026-03-19"
   },
   {
     "name": "Ayala Triangle Gardens",
@@ -691,7 +765,9 @@
     ],
     "entrance_fee": "free",
     "aq_method": "modeled",
-    "coord_confidence": "verified"
+    "coord_confidence": "verified",
+    "source": "OpenStreetMap + editorial",
+    "last_reviewed": "2026-03-19"
   },
   {
     "name": "Washington Sycip Park (Makati)",
@@ -710,7 +786,9 @@
     ],
     "entrance_fee": "free",
     "aq_method": "modeled",
-    "coord_confidence": "verified"
+    "coord_confidence": "verified",
+    "source": "OpenStreetMap + editorial",
+    "last_reviewed": "2026-03-19"
   },
   {
     "name": "Salcedo Park",
@@ -729,7 +807,9 @@
     ],
     "entrance_fee": "free",
     "aq_method": "modeled",
-    "coord_confidence": "verified"
+    "coord_confidence": "verified",
+    "source": "OpenStreetMap + editorial",
+    "last_reviewed": "2026-03-19"
   },
   {
     "name": "Legazpi Active Park",
@@ -749,7 +829,9 @@
     ],
     "entrance_fee": "free",
     "aq_method": "modeled",
-    "coord_confidence": "verified"
+    "coord_confidence": "verified",
+    "source": "OpenStreetMap + editorial",
+    "last_reviewed": "2026-03-19"
   },
   {
     "name": "Greenbelt Park",
@@ -767,7 +849,9 @@
     ],
     "entrance_fee": "free",
     "aq_method": "modeled",
-    "coord_confidence": "verified"
+    "coord_confidence": "verified",
+    "source": "OpenStreetMap + editorial",
+    "last_reviewed": "2026-03-19"
   },
   {
     "name": "Circuit Makati Park",
@@ -786,7 +870,9 @@
     ],
     "entrance_fee": "free",
     "aq_method": "modeled",
-    "coord_confidence": "verified"
+    "coord_confidence": "verified",
+    "source": "OpenStreetMap + editorial",
+    "last_reviewed": "2026-03-19"
   },
   {
     "name": "Makati Poblacion Park",
@@ -803,7 +889,9 @@
     ],
     "entrance_fee": "free",
     "aq_method": "modeled",
-    "coord_confidence": "verified"
+    "coord_confidence": "verified",
+    "source": "OpenStreetMap + editorial",
+    "last_reviewed": "2026-03-19"
   },
   {
     "name": "Guadalupe Linear Park",
@@ -821,7 +909,9 @@
     ],
     "entrance_fee": "free",
     "aq_method": "modeled",
-    "coord_confidence": "verified"
+    "coord_confidence": "verified",
+    "source": "OpenStreetMap + editorial",
+    "last_reviewed": "2026-03-19"
   },
   {
     "name": "BGC Greenway Park",
@@ -840,7 +930,9 @@
     ],
     "entrance_fee": "free",
     "aq_method": "modeled",
-    "coord_confidence": "verified"
+    "coord_confidence": "verified",
+    "source": "OpenStreetMap + editorial",
+    "last_reviewed": "2026-03-19"
   },
   {
     "name": "Track 30th Park",
@@ -859,7 +951,9 @@
     ],
     "entrance_fee": "free",
     "aq_method": "modeled",
-    "coord_confidence": "verified"
+    "coord_confidence": "verified",
+    "source": "OpenStreetMap + editorial",
+    "last_reviewed": "2026-03-19"
   },
   {
     "name": "Terra 28th Park",
@@ -877,7 +971,9 @@
     ],
     "entrance_fee": "free",
     "aq_method": "modeled",
-    "coord_confidence": "verified"
+    "coord_confidence": "verified",
+    "source": "OpenStreetMap + editorial",
+    "last_reviewed": "2026-03-19"
   },
   {
     "name": "Burgos Circle",
@@ -895,7 +991,9 @@
     ],
     "entrance_fee": "free",
     "aq_method": "modeled",
-    "coord_confidence": "verified"
+    "coord_confidence": "verified",
+    "source": "OpenStreetMap + editorial",
+    "last_reviewed": "2026-03-19"
   },
   {
     "name": "Forbes Town Park",
@@ -913,7 +1011,9 @@
     ],
     "entrance_fee": "free",
     "aq_method": "modeled",
-    "coord_confidence": "verified"
+    "coord_confidence": "verified",
+    "source": "OpenStreetMap + editorial",
+    "last_reviewed": "2026-03-19"
   },
   {
     "name": "De Jesus Oval Park",
@@ -931,7 +1031,9 @@
     ],
     "entrance_fee": "free",
     "aq_method": "modeled",
-    "coord_confidence": "verified"
+    "coord_confidence": "verified",
+    "source": "OpenStreetMap + editorial",
+    "last_reviewed": "2026-03-19"
   },
   {
     "name": "Mind Museum (Jose Yao Campos) Park",
@@ -950,7 +1052,9 @@
     ],
     "entrance_fee": "free",
     "aq_method": "modeled",
-    "coord_confidence": "verified"
+    "coord_confidence": "verified",
+    "source": "OpenStreetMap + editorial",
+    "last_reviewed": "2026-03-19"
   },
   {
     "name": "Alveo Central Plaza",
@@ -968,7 +1072,9 @@
     ],
     "entrance_fee": "free",
     "aq_method": "modeled",
-    "coord_confidence": "verified"
+    "coord_confidence": "verified",
+    "source": "OpenStreetMap + editorial",
+    "last_reviewed": "2026-03-19"
   },
   {
     "name": "DOST Wellness Garden",
@@ -985,7 +1091,9 @@
     ],
     "entrance_fee": "free",
     "aq_method": "modeled",
-    "coord_confidence": "verified"
+    "coord_confidence": "verified",
+    "source": "OpenStreetMap + editorial",
+    "last_reviewed": "2026-03-19"
   },
   {
     "name": "FTI (Arca South) Park",
@@ -1003,7 +1111,9 @@
     ],
     "entrance_fee": "free",
     "aq_method": "modeled",
-    "coord_confidence": "verified"
+    "coord_confidence": "verified",
+    "source": "OpenStreetMap + editorial",
+    "last_reviewed": "2026-03-19"
   },
   {
     "name": "Plaza Bonifacio (Taguig)",
@@ -1020,7 +1130,9 @@
     ],
     "entrance_fee": "free",
     "aq_method": "modeled",
-    "coord_confidence": "verified"
+    "coord_confidence": "verified",
+    "source": "OpenStreetMap + editorial",
+    "last_reviewed": "2026-03-19"
   },
   {
     "name": "Pasig RAVE (Maybunga Rainforest) Park",
@@ -1039,7 +1151,9 @@
     ],
     "entrance_fee": 100,
     "aq_method": "modeled",
-    "coord_confidence": "verified"
+    "coord_confidence": "verified",
+    "source": "OpenStreetMap + editorial",
+    "last_reviewed": "2026-03-19"
   },
   {
     "name": "Capitol Commons Park",
@@ -1058,7 +1172,9 @@
     ],
     "entrance_fee": "free",
     "aq_method": "modeled",
-    "coord_confidence": "verified"
+    "coord_confidence": "verified",
+    "source": "OpenStreetMap + editorial",
+    "last_reviewed": "2026-03-19"
   },
   {
     "name": "Ortigas Park",
@@ -1076,7 +1192,9 @@
     ],
     "entrance_fee": "free",
     "aq_method": "modeled",
-    "coord_confidence": "verified"
+    "coord_confidence": "verified",
+    "source": "OpenStreetMap + editorial",
+    "last_reviewed": "2026-03-19"
   },
   {
     "name": "Kapitolyo Park 6",
@@ -1094,7 +1212,9 @@
     ],
     "entrance_fee": "free",
     "aq_method": "modeled",
-    "coord_confidence": "verified"
+    "coord_confidence": "verified",
+    "source": "OpenStreetMap + editorial",
+    "last_reviewed": "2026-03-19"
   },
   {
     "name": "Plaza Rizal (Pasig)",
@@ -1111,7 +1231,9 @@
     ],
     "entrance_fee": "free",
     "aq_method": "modeled",
-    "coord_confidence": "verified"
+    "coord_confidence": "verified",
+    "source": "OpenStreetMap + editorial",
+    "last_reviewed": "2026-03-19"
   },
   {
     "name": "Marikina River Park",
@@ -1131,7 +1253,9 @@
     ],
     "entrance_fee": "free",
     "aq_method": "modeled",
-    "coord_confidence": "verified"
+    "coord_confidence": "verified",
+    "source": "OpenStreetMap + editorial",
+    "last_reviewed": "2026-03-19"
   },
   {
     "name": "Marikina Freedom Park",
@@ -1149,7 +1273,9 @@
     ],
     "entrance_fee": "free",
     "aq_method": "modeled",
-    "coord_confidence": "verified"
+    "coord_confidence": "verified",
+    "source": "OpenStreetMap + editorial",
+    "last_reviewed": "2026-03-19"
   },
   {
     "name": "Evolution Park Marikina",
@@ -1167,7 +1293,9 @@
     ],
     "entrance_fee": "free",
     "aq_method": "modeled",
-    "coord_confidence": "verified"
+    "coord_confidence": "verified",
+    "source": "OpenStreetMap + editorial",
+    "last_reviewed": "2026-03-19"
   },
   {
     "name": "Hacienda Heights Village Park",
@@ -1185,7 +1313,9 @@
     ],
     "entrance_fee": "free",
     "aq_method": "modeled",
-    "coord_confidence": "verified"
+    "coord_confidence": "verified",
+    "source": "OpenStreetMap + editorial",
+    "last_reviewed": "2026-03-19"
   },
   {
     "name": "Hardin ng Pag-asa",
@@ -1203,7 +1333,9 @@
     ],
     "entrance_fee": "free",
     "aq_method": "modeled",
-    "coord_confidence": "verified"
+    "coord_confidence": "verified",
+    "source": "OpenStreetMap + editorial",
+    "last_reviewed": "2026-03-19"
   },
   {
     "name": "Maysilo Circle Park",
@@ -1220,7 +1352,9 @@
     ],
     "entrance_fee": "free",
     "aq_method": "modeled",
-    "coord_confidence": "verified"
+    "coord_confidence": "verified",
+    "source": "OpenStreetMap + editorial",
+    "last_reviewed": "2026-03-19"
   },
   {
     "name": "Vergara Linear Park",
@@ -1237,7 +1371,9 @@
     ],
     "entrance_fee": "free",
     "aq_method": "modeled",
-    "coord_confidence": "verified"
+    "coord_confidence": "verified",
+    "source": "OpenStreetMap + editorial",
+    "last_reviewed": "2026-03-19"
   },
   {
     "name": "Greenhills Central Garden",
@@ -1255,7 +1391,9 @@
     ],
     "entrance_fee": "free",
     "aq_method": "modeled",
-    "coord_confidence": "verified"
+    "coord_confidence": "verified",
+    "source": "OpenStreetMap + editorial",
+    "last_reviewed": "2026-03-19"
   },
   {
     "name": "Jackson Park",
@@ -1272,7 +1410,9 @@
     ],
     "entrance_fee": "free",
     "aq_method": "modeled",
-    "coord_confidence": "verified"
+    "coord_confidence": "verified",
+    "source": "OpenStreetMap + editorial",
+    "last_reviewed": "2026-03-19"
   },
   {
     "name": "Johnson Park",
@@ -1290,7 +1430,9 @@
     ],
     "entrance_fee": "free",
     "aq_method": "modeled",
-    "coord_confidence": "verified"
+    "coord_confidence": "verified",
+    "source": "OpenStreetMap + editorial",
+    "last_reviewed": "2026-03-19"
   },
   {
     "name": "McKinley Park (San Juan)",
@@ -1307,7 +1449,9 @@
     ],
     "entrance_fee": "free",
     "aq_method": "modeled",
-    "coord_confidence": "verified"
+    "coord_confidence": "verified",
+    "source": "OpenStreetMap + editorial",
+    "last_reviewed": "2026-03-19"
   },
   {
     "name": "San Juan Mini Park",
@@ -1324,7 +1468,9 @@
     ],
     "entrance_fee": "free",
     "aq_method": "modeled",
-    "coord_confidence": "verified"
+    "coord_confidence": "verified",
+    "source": "OpenStreetMap + editorial",
+    "last_reviewed": "2026-03-19"
   },
   {
     "name": "Ermitano Linear Park",
@@ -1341,7 +1487,9 @@
     ],
     "entrance_fee": "free",
     "aq_method": "modeled",
-    "coord_confidence": "verified"
+    "coord_confidence": "verified",
+    "source": "OpenStreetMap + editorial",
+    "last_reviewed": "2026-03-19"
   },
   {
     "name": "Filinvest City Linear Park",
@@ -1360,7 +1508,9 @@
     ],
     "entrance_fee": "free",
     "aq_method": "modeled",
-    "coord_confidence": "verified"
+    "coord_confidence": "verified",
+    "source": "OpenStreetMap + editorial",
+    "last_reviewed": "2026-03-19"
   },
   {
     "name": "Filinvest City Central Park",
@@ -1379,7 +1529,9 @@
     ],
     "entrance_fee": "free",
     "aq_method": "modeled",
-    "coord_confidence": "verified"
+    "coord_confidence": "verified",
+    "source": "OpenStreetMap + editorial",
+    "last_reviewed": "2026-03-19"
   },
   {
     "name": "Spectrum Linear Park",
@@ -1397,7 +1549,9 @@
     ],
     "entrance_fee": "free",
     "aq_method": "modeled",
-    "coord_confidence": "verified"
+    "coord_confidence": "verified",
+    "source": "OpenStreetMap + editorial",
+    "last_reviewed": "2026-03-19"
   },
   {
     "name": "Alabang River Park",
@@ -1415,7 +1569,9 @@
     ],
     "entrance_fee": "free",
     "aq_method": "modeled",
-    "coord_confidence": "verified"
+    "coord_confidence": "verified",
+    "source": "OpenStreetMap + editorial",
+    "last_reviewed": "2026-03-19"
   },
   {
     "name": "Muntinlupa Sunken Garden",
@@ -1433,7 +1589,9 @@
     ],
     "entrance_fee": "free",
     "aq_method": "modeled",
-    "coord_confidence": "verified"
+    "coord_confidence": "verified",
+    "source": "OpenStreetMap + editorial",
+    "last_reviewed": "2026-03-19"
   },
   {
     "name": "Sucat People's Park",
@@ -1452,7 +1610,9 @@
     ],
     "entrance_fee": "free",
     "aq_method": "modeled",
-    "coord_confidence": "verified"
+    "coord_confidence": "verified",
+    "source": "OpenStreetMap + editorial",
+    "last_reviewed": "2026-03-19"
   },
   {
     "name": "Las Pinas-Paranaque Wetland Park",
@@ -1472,7 +1632,9 @@
     ],
     "entrance_fee": "free",
     "aq_method": "measured",
-    "coord_confidence": "verified"
+    "coord_confidence": "verified",
+    "source": "DENR monitoring",
+    "last_reviewed": "2026-03-19"
   },
   {
     "name": "Aguirre Central Park",
@@ -1491,7 +1653,9 @@
     ],
     "entrance_fee": "free",
     "aq_method": "modeled",
-    "coord_confidence": "verified"
+    "coord_confidence": "verified",
+    "source": "OpenStreetMap + editorial",
+    "last_reviewed": "2026-03-19"
   },
   {
     "name": "Don Galo Park",
@@ -1508,7 +1672,9 @@
     ],
     "entrance_fee": "free",
     "aq_method": "modeled",
-    "coord_confidence": "verified"
+    "coord_confidence": "verified",
+    "source": "OpenStreetMap + editorial",
+    "last_reviewed": "2026-03-19"
   },
   {
     "name": "Guadalajara Park",
@@ -1526,7 +1692,9 @@
     ],
     "entrance_fee": "free",
     "aq_method": "modeled",
-    "coord_confidence": "verified"
+    "coord_confidence": "verified",
+    "source": "OpenStreetMap + editorial",
+    "last_reviewed": "2026-03-19"
   },
   {
     "name": "Sun Valley Park",
@@ -1544,7 +1712,9 @@
     ],
     "entrance_fee": "free",
     "aq_method": "modeled",
-    "coord_confidence": "verified"
+    "coord_confidence": "verified",
+    "source": "OpenStreetMap + editorial",
+    "last_reviewed": "2026-03-19"
   },
   {
     "name": "Pilar Friendship Park",
@@ -1562,7 +1732,9 @@
     ],
     "entrance_fee": "free",
     "aq_method": "modeled",
-    "coord_confidence": "verified"
+    "coord_confidence": "verified",
+    "source": "OpenStreetMap + editorial",
+    "last_reviewed": "2026-03-19"
   },
   {
     "name": "Philamlife Village Park",
@@ -1580,7 +1752,9 @@
     ],
     "entrance_fee": "free",
     "aq_method": "modeled",
-    "coord_confidence": "verified"
+    "coord_confidence": "verified",
+    "source": "OpenStreetMap + editorial",
+    "last_reviewed": "2026-03-19"
   },
   {
     "name": "Valenzuela People's Park",
@@ -1600,7 +1774,9 @@
     ],
     "entrance_fee": "free",
     "aq_method": "modeled",
-    "coord_confidence": "verified"
+    "coord_confidence": "verified",
+    "source": "OpenStreetMap + editorial",
+    "last_reviewed": "2026-03-19"
   },
   {
     "name": "Valenzuela Family Park",
@@ -1618,7 +1794,9 @@
     ],
     "entrance_fee": "free",
     "aq_method": "modeled",
-    "coord_confidence": "verified"
+    "coord_confidence": "verified",
+    "source": "OpenStreetMap + editorial",
+    "last_reviewed": "2026-03-19"
   },
   {
     "name": "Arkong Bato Park",
@@ -1636,7 +1814,9 @@
     ],
     "entrance_fee": "free",
     "aq_method": "modeled",
-    "coord_confidence": "verified"
+    "coord_confidence": "verified",
+    "source": "OpenStreetMap + editorial",
+    "last_reviewed": "2026-03-19"
   },
   {
     "name": "Glorieta Park (Tala)",
@@ -1654,7 +1834,9 @@
     ],
     "entrance_fee": "free",
     "aq_method": "modeled",
-    "coord_confidence": "verified"
+    "coord_confidence": "verified",
+    "source": "OpenStreetMap + editorial",
+    "last_reviewed": "2026-03-19"
   },
   {
     "name": "Mother Ignacia Park",
@@ -1671,7 +1853,9 @@
     ],
     "entrance_fee": "free",
     "aq_method": "modeled",
-    "coord_confidence": "verified"
+    "coord_confidence": "verified",
+    "source": "OpenStreetMap + editorial",
+    "last_reviewed": "2026-03-19"
   },
   {
     "name": "Navotas Centennial Park",
@@ -1689,7 +1873,9 @@
     ],
     "entrance_fee": "free",
     "aq_method": "modeled",
-    "coord_confidence": "verified"
+    "coord_confidence": "verified",
+    "source": "OpenStreetMap + editorial",
+    "last_reviewed": "2026-03-19"
   },
   {
     "name": "Malabon People's Park",
@@ -1707,7 +1893,9 @@
     ],
     "entrance_fee": "free",
     "aq_method": "modeled",
-    "coord_confidence": "verified"
+    "coord_confidence": "verified",
+    "source": "OpenStreetMap + editorial",
+    "last_reviewed": "2026-03-19"
   },
   {
     "name": "Meridian Park",
@@ -1725,7 +1913,9 @@
     ],
     "entrance_fee": "free",
     "aq_method": "modeled",
-    "coord_confidence": "verified"
+    "coord_confidence": "verified",
+    "source": "OpenStreetMap + editorial",
+    "last_reviewed": "2026-03-19"
   },
   {
     "name": "Hinulugang Taktak",
@@ -1744,7 +1934,9 @@
     ],
     "entrance_fee": 30,
     "aq_method": "modeled",
-    "coord_confidence": "verified"
+    "coord_confidence": "verified",
+    "source": "OpenStreetMap + editorial",
+    "last_reviewed": "2026-03-19"
   },
   {
     "name": "UP - Washington Sycip Park (UP Diliman)",
@@ -1763,7 +1955,9 @@
     ],
     "entrance_fee": "free",
     "aq_method": "modeled",
-    "coord_confidence": "verified"
+    "coord_confidence": "verified",
+    "source": "OpenStreetMap + editorial",
+    "last_reviewed": "2026-03-19"
   },
   {
     "name": "Vertis North Rain Garden",
@@ -1781,7 +1975,9 @@
     ],
     "entrance_fee": "free",
     "aq_method": "modeled",
-    "coord_confidence": "verified"
+    "coord_confidence": "verified",
+    "source": "OpenStreetMap + editorial",
+    "last_reviewed": "2026-03-19"
   },
   {
     "name": "Sitio San Roque Tanimang Bayan",
@@ -1800,7 +1996,9 @@
     ],
     "entrance_fee": "free",
     "aq_method": "modeled",
-    "coord_confidence": "approximate"
+    "coord_confidence": "approximate",
+    "source": "Community submission",
+    "last_reviewed": "2026-03-24"
   },
   {
     "name": "Potrero MRF Eco-Garden & Playground",
@@ -1820,7 +2018,9 @@
     ],
     "entrance_fee": "free",
     "aq_method": "modeled",
-    "coord_confidence": "approximate"
+    "coord_confidence": "approximate",
+    "source": "Community submission",
+    "last_reviewed": "2026-03-24"
   },
   {
     "name": "Ugong Urban Vegetable Garden",
@@ -1839,7 +2039,9 @@
     ],
     "entrance_fee": "free",
     "aq_method": "modeled",
-    "coord_confidence": "approximate"
+    "coord_confidence": "approximate",
+    "source": "Community submission",
+    "last_reviewed": "2026-03-24"
   },
   {
     "name": "The Good Food Farm (Pamayanang Diego Silang)",
@@ -1857,7 +2059,9 @@
     ],
     "entrance_fee": "free",
     "aq_method": "modeled",
-    "coord_confidence": "approximate"
+    "coord_confidence": "approximate",
+    "source": "Community submission",
+    "last_reviewed": "2026-03-24"
   },
   {
     "name": "Buhay sa Gulay Urban Farm (Tondo)",
@@ -1875,6 +2079,8 @@
     ],
     "entrance_fee": "free",
     "aq_method": "modeled",
-    "coord_confidence": "approximate"
+    "coord_confidence": "approximate",
+    "source": "Community submission",
+    "last_reviewed": "2026-03-24"
   }
 ]

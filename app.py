@@ -117,6 +117,15 @@ def aq_lbl(s):
     if s >= 3: return ("Moderate air", "#b8860b")
     return ("Poor air", "#c0392b")
 
+_MON = ["", "Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"]
+def reviewed_str(d):
+    if not d: return ""
+    try:
+        parts = str(d).split("-")
+        return f"{_MON[int(parts[1])]} {parts[0]}"
+    except (IndexError, ValueError):
+        return str(d)
+
 def fee_str(fee):
     if isinstance(fee, (int, float)) and fee > 0: return f"P{int(fee)}"
     if isinstance(fee, str) and fee != "free":
@@ -237,6 +246,7 @@ iframe[title="streamlit_folium.st_folium"] { height: 420px; }
 .cd-q-approx { color: #b8860b; }
 .note { font-size: 0.62rem; color: #999; line-height: 1.45; margin: -2px 0 8px; }
 .note b { color: #777; font-weight: 600; }
+.cd-prov { font-size: 0.5rem; color: #bbb; letter-spacing: 0.3px; margin-top: 4px; text-transform: uppercase; font-weight: 600; }
 
 /* Info buttons */
 /* Expanders */
@@ -367,6 +377,13 @@ Google Maps satellite imagery.
 
 Air quality overrides for La Mesa Watershed, LPPCHEA Wetland, and Arroceros Forest
 are based on published DENR monitoring data.
+
+**Provenance and review.** Each entry carries its own source and a `Reviewed` date, shown
+at the bottom of every card, so you can see where the information came from and how fresh
+it is. The bulk of the dataset was last verified in March 2026; community-submitted spaces
+are dated when they were reviewed. A map is not finished when it launches - keeping these
+entries correct as parks, entrances, and routes change is ongoing data work, and the dates
+are there to keep that honest.
 
 Live air quality readings:
 [IQAir Manila](https://www.iqair.com/philippines/metro-manila/manila) ·
@@ -537,6 +554,11 @@ if results:
                 if a.get("aq_method") == "measured"
                 else '<span class="cd-q cd-q-est" title="Modeled estimate, not a live reading">est.</span>')
         approx = f'{S}<span class="cd-q cd-q-approx" title="Mapped to barangay or centroid level">approx. location</span>' if a.get("coord_confidence") == "approximate" else ""
+        rev = reviewed_str(a.get("last_reviewed"))
+        prov_bits = []
+        if rev: prov_bits.append(f"Reviewed {rev}")
+        if a.get("source"): prov_bits.append(a["source"])
+        prov = f'<div class="cd-prov">{" &middot; ".join(prov_bits)}</div>' if prov_bits else ""
 
         html += f'''<div class="cd">
             <div class="cd-n" style="background:{tint}">{a["jeep_time"]}<br><span style="font-size:0.42rem;font-weight:400;color:#aaa;letter-spacing:1px;">MIN</span></div>
@@ -546,6 +568,7 @@ if results:
                 <div class="cd-m">{IC_JEEPNEY.format(color="#666")} {a["jeep_time"]} min, <span class="cd-cur">P</span>{c["jeepney"]["cost"]}{S}{IC_CAR.format(color="#666")} {c["grab"]["time_min"]} min, <span class="cd-cur">P</span>{gl}-{gh}</div>
                 <div class="cd-m"><span class="cd-d" style="background:{aq_col}"></span>{aq_txt} {aq_q} - {a["aq_note"]}</div>
                 <div class="cd-tags">{tg}</div>
+                {prov}
             </div>
         </div>'''
     html += '</div>'
