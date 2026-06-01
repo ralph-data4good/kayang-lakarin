@@ -247,6 +247,8 @@ iframe[title="streamlit_folium.st_folium"] { height: 420px; }
 .note { font-size: 0.62rem; color: #999; line-height: 1.45; margin: -2px 0 8px; }
 .note b { color: #777; font-weight: 600; }
 .cd-prov { font-size: 0.5rem; color: #bbb; letter-spacing: 0.3px; margin-top: 4px; text-transform: uppercase; font-weight: 600; }
+.gap { font-size: 0.72rem; color: #7a4a00; line-height: 1.45; background: #fff8ec; border-left: 3px solid #b8860b; border-radius: 0 6px 6px 0; padding: 8px 12px; margin: 0 0 10px; }
+.gap b { color: #5c3800; font-weight: 700; }
 
 /* Info buttons */
 /* Expanders */
@@ -478,6 +480,17 @@ if results:
     if not osrm_ok:
         disc += " Distances marked ~ are <b>straight-line approximations</b> (road routing unavailable)."
     st.markdown(f'<div class="note">{disc}</div>', unsafe_allow_html=True)
+
+    gap_msg = ""
+    if near["jeep_time"] >= 40:
+        gap_msg = (f'<b>Access gap.</b> The nearest green space from here is <b>{near["jeep_time"]} min</b> '
+                   f'away by jeepney. Green-space access is not evenly distributed across Metro Manila - '
+                   f'who has a park within walking distance, and who has to travel for it?')
+    elif gaq == 0:
+        gap_msg = ('<b>Access gap.</b> No good-air green spaces are within reach from here - the closest '
+                   'options sit near heavy traffic. Cleaner outdoor space is not equally available everywhere.')
+    if gap_msg:
+        st.markdown(f'<div class="gap">{gap_msg}</div>', unsafe_allow_html=True)
 else:
     st.markdown('<div style="text-align:center;padding:2rem 1rem;color:#999;font-size:0.85rem;">No spaces match your filters. Try widening your search in the sidebar.</div>', unsafe_allow_html=True)
 
