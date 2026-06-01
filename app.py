@@ -213,7 +213,7 @@ html, .stApp { font-family: 'Outfit', sans-serif; background: #f5f2ed; }
 .chips + div [data-testid="stPopover"] button,
 [data-testid="stPopover"] button {
     background: #fff !important; border: 1px solid #d8d2c4 !important; border-radius: 999px !important;
-    color: #1b4332 !important; font-weight: 600 !important; font-size: 0.72rem !important;
+    color: #2f5d44 !important; font-weight: 600 !important; font-size: 0.72rem !important;
     min-height: 40px !important; padding: 6px 10px !important; box-shadow: none !important;
     white-space: normal !important; line-height: 1.1 !important;
 }
@@ -222,16 +222,16 @@ html, .stApp { font-family: 'Outfit', sans-serif; background: #f5f2ed; }
 .main .stSelectbox > div > div { min-height: 44px; display: flex; align-items: center; }
 
 /* Header / app-bar */
-.hd { background: #1b4332; padding: 1.1rem 1.2rem; border-radius: 14px; margin-bottom: 0.85rem;
-    box-shadow: 0 2px 12px rgba(27,67,50,0.15); }
+.hd { background: #2f5d44; padding: 1.1rem 1.2rem; border-radius: 14px; margin-bottom: 0.85rem;
+    box-shadow: 0 2px 12px rgba(47,93,68,0.18); }
 .hd-bar { display: flex; align-items: center; gap: 9px; }
 .hd-logo { display: flex; align-items: center; justify-content: center; width: 30px; height: 30px;
-    background: rgba(167,215,197,0.18); border-radius: 9px; flex-shrink: 0; }
+    background: rgba(188,211,95,0.20); border-radius: 9px; flex-shrink: 0; }
 .hd-t { font-family: 'Datatype','Outfit',sans-serif; font-weight: 800; font-size: 1.6rem;
     color: #fff; line-height: 1; letter-spacing: -0.5px;
     font-variation-settings: 'wdth' 100, 'wght' 800; }
 .hd-s { font-size: 0.78rem; color: rgba(255,255,255,0.72); line-height: 1.5; margin-top: 8px; }
-.hd-s strong { color: #a7d7c5; font-weight: 600; }
+.hd-s strong { color: #bcd35f; font-weight: 600; }
 
 /* Stats */
 .st-row { display: flex; gap: 2px; margin: 0.8rem 0; border-radius: 8px; overflow: hidden; }
@@ -266,7 +266,7 @@ iframe[title="streamlit_folium.st_folium"] { height: 420px; }
 .cd-m { font-size: 0.69rem; color: #666; line-height: 1.45; margin-top: 2px; }
 .cd-m b { color: #666; font-weight: 500; }
 .cd-time { text-align: right; flex-shrink: 0; padding-left: 2px; }
-.cd-time-n { font-family: 'Datatype',monospace; font-weight: 700; font-size: 1.4rem; color: #1b4332;
+.cd-time-n { font-family: 'Datatype',monospace; font-weight: 700; font-size: 1.4rem; color: #2f5d44;
     line-height: 1; font-variation-settings: 'wdth' 90, 'wght' 700; }
 .cd-time-l { font-size: 0.48rem; color: #aaa; text-transform: uppercase; letter-spacing: 1px;
     font-weight: 700; margin-top: 3px; }
@@ -325,7 +325,7 @@ iframe[title="streamlit_folium.st_folium"] { height: 420px; }
 # ══════════════════════════════════════════════════════════════════════
 st.markdown(f"""<div class="hd">
     <div class="hd-bar">
-        <span class="hd-logo"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#a7d7c5" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M11 20 C11 14, 8 8, 4 6 C4 12, 7 17, 11 20Z"/><path d="M13 20 C13 13, 16 7, 21 5 C21 12, 18 17, 13 20Z"/><line x1="12" y1="20" x2="12" y2="22"/></svg></span>
+        <span class="hd-logo"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#bcd35f" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M11 20 C11 14, 8 8, 4 6 C4 12, 7 17, 11 20Z"/><path d="M13 20 C13 13, 16 7, 21 5 C21 12, 18 17, 13 20Z"/><line x1="12" y1="20" x2="12" y2="22"/></svg></span>
         <div class="hd-t">Kayang Lakarin?</div>
     </div>
     <div class="hd-s">The nearest place to run, walk, or exercise outdoors in Metro Manila -
@@ -385,8 +385,14 @@ with fc2:
     with st.popover(f"Max {time_v}m", use_container_width=True):
         max_time = st.slider("Max commute (min, jeepney)", 10, 120, value=60, step=5, key="f_time")
         st.caption(f"Up to {max_time} min by jeepney")
+if not cities_v:
+    city_lbl = "Add city +"
+elif len(cities_v) == 1:
+    city_lbl = f"{cities_v[0]} +"
+else:
+    city_lbl = f"{cities_v[0]} +{len(cities_v)-1}"
 with fc3:
-    with st.popover(f"City ({len(cities_v)})", use_container_width=True):
+    with st.popover(city_lbl, use_container_width=True):
         sel_cities = st.multiselect("Cities", all_cities, default=["Quezon City"], key="f_cities",
                                     label_visibility="collapsed")
 with fc4:
@@ -406,36 +412,35 @@ st.markdown('</div>', unsafe_allow_html=True)
 # ── Info buttons ──────────────────────────────────────────────────────
 with st.expander("How the numbers work"):
     st.markdown(f"""
-**What this map can and can't tell you.** This is a simplified model of the city, not a
-live feed. It is built to help you compare options and decide where to go - not to
-guarantee exact times or conditions. Travel times are modeled estimates, air quality is
-a modeled score (not a live reading), and reaching a space also depends on things this map
-can't see: safety, shade, sidewalks, weather, and who feels welcome there.
+**Start here: this is a guide, not gospel.** Think of it as a smart estimate to help you
+compare options and pick where to go - not a promise of exact times. The numbers are honest
+about what they are: travel times and air quality are *modeled estimates*, and whether a
+place actually feels good to reach depends on things no map can see - shade, sidewalks,
+safety, weather, and whether you feel welcome there. We would rather tell you that up front.
 
-**Routes** come from [OSRM](https://project-osrm.org/) (open source, uses OpenStreetMap road data).
-OSRM returns free-flow travel times, so we apply Metro Manila traffic multipliers:
-**x2.2 for jeepney** (frequent stops, loading/unloading, route indirection) and
-**x1.6 for Grab** (traffic congestion, plus pickup wait time).
+**Getting there.** Routes come from [OSRM](https://project-osrm.org/), an open-source engine
+built on OpenStreetMap. It gives free-flow driving times, so we adjust for real Metro Manila
+conditions: **x2.2 for jeepney** (all those stops and detours) and **x1.6 for Grab**
+(traffic, plus waiting for your ride). These are daytime averages - rush hour (7-9am, 5-8pm)
+can add 30-50%, and a quiet early morning will beat what you see here.
 
-These are daytime averages. Rush hour (7-9am, 5-8pm) can add 30-50% more.
-Late night or early morning will be faster than shown.
+**What it costs.** Jeepney fares follow the LTFRB 2024 rates: P13 for the first 4 km, then
+P1.80 for every km after. Grab is estimated at P45 base plus P14/km, with a x0.85-1.35 range
+to account for surge.
 
-**Fares:** Jeepney base fare is P13 for the first 4 km, plus P1.80 per km after that (LTFRB 2024 rates).
-Grab estimates use P45 base + P14/km, with a x0.85-1.35 surge range.
+**Air quality, honestly.** We score each space 1-5 from three things we can measure well:
+how far it sits from big roads (EDSA, C-5, Commonwealth), its size in hectares, and how green
+it is - forests and wetlands breathe easier than concrete plazas. Most scores are estimates,
+tagged `est.`. Three places - La Mesa, Arroceros, and the LPPCHEA Wetland - get a `measured`
+tag because their scores lean on published DENR monitoring. None of these are live readings.
 
-**Air quality** is scored 1-5 based on three factors: distance from major arterial roads
-(EDSA, C-5, Commonwealth, etc.), park size in hectares, and vegetation type.
-Forests and wetlands score higher than plazas. Most scores are **modeled estimates**, shown
-as `est.` on each card. Three sites - La Mesa, Arroceros, and the LPPCHEA Wetland - carry a
-`measured` tag because their scores draw on published DENR monitoring data. None of these
-are real-time readings.
+**How sure we are of the spot.** Most pins are checked against satellite imagery. Community
+gardens and other grassroots spaces are pinned at the barangay or general area and tagged
+`approx. location` - their edges are fluid and defined by the people who use them, which is
+exactly the point.
 
-**Location confidence.** Most coordinates are verified against satellite imagery. Community
-gardens and informal spaces are often mapped at the barangay or centroid level and are
-marked `approx. location`, because their exact extent is fluid and community-defined.
-
-When OSRM is unavailable, distances use a x1.35 straight-line-to-road multiplier
-(typical for Metro Manila's road network) and are marked with a `~`.
+**If routing is down,** we fall back to a straight-line estimate scaled by x1.35 (a fair guess
+for Metro Manila's road grid), and mark those distances with a `~` so you know.
     """)
 
 with st.expander("Data sources"):
