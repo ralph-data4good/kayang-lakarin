@@ -5,7 +5,7 @@ Mobile-first outdoor commute finder for Metro Manila.
 import streamlit as st
 import folium
 from streamlit_folium import st_folium
-import math, json, time
+import math, json, time, os
 import requests
 import polyline as pl
 from supabase import create_client
@@ -84,11 +84,9 @@ def commute_fallback(km):
         "jeepney": {"time_min": round(rd/7*60+20), "cost": 40}, "grab": {"time_min": round(rd/10*60+15), "cost_range": (200, 500)}}
 
 # ── Data ──────────────────────────────────────────────────────────────
-@st.cache_data(ttl=300, show_spinner=False)
-def load_areas():
-    sb = get_supabase()
-    resp = sb.table("outdoor_areas").select("*").execute()
-    areas = resp.data
+_LOCAL_AREAS = os.path.join(os.path.dirname(os.path.abspath(__file__)), "outdoor_areas_data.json")
+
+def _normalize(areas):
     for a in areas:
         fee = a.get("entrance_fee", "free")
         if fee != "free":
@@ -99,6 +97,18 @@ def load_areas():
         if isinstance(a.get("activities"), str):
             a["activities"] = json.loads(a["activities"])
     return areas
+
+@st.cache_data(ttl=300, show_spinner=False)
+def load_areas():
+    try:
+        sb = get_supabase()
+        resp = sb.table("outdoor_areas").select("*").execute()
+        if resp.data:
+            return _normalize(resp.data)
+        raise ValueError("Supabase returned no rows")
+    except Exception:
+        with open(_LOCAL_AREAS, encoding="utf-8") as f:
+            return _normalize(json.load(f))
 
 AREAS = load_areas()
 
