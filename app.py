@@ -231,6 +231,12 @@ iframe[title="streamlit_folium.st_folium"] { height: 420px; }
 .cd-fee { display: inline-block; font-size: 0.56rem; font-weight: 600; padding: 0 4px; border-radius: 3px; background: #fff3e0; color: #e65100; margin-left: 4px; vertical-align: middle; }
 .cd-tags { display: flex; flex-wrap: wrap; gap: 2px; margin-top: 3px; }
 .cd-tag { font-size: 0.52rem; font-weight: 600; padding: 1px 5px; border-radius: 3px; background: #f0efec; color: #888; }
+.cd-q { font-size: 0.52rem; font-weight: 600; letter-spacing: 0.3px; text-transform: uppercase; margin-left: 4px; vertical-align: middle; }
+.cd-q-est { color: #aaa; }
+.cd-q-meas { color: #2d6a4f; }
+.cd-q-approx { color: #b8860b; }
+.note { font-size: 0.62rem; color: #999; line-height: 1.45; margin: -2px 0 8px; }
+.note b { color: #777; font-weight: 600; }
 
 /* Info buttons */
 /* Expanders */
@@ -318,7 +324,13 @@ else:
 # ── Info buttons ──────────────────────────────────────────────────────
 with st.expander("How the numbers work"):
     st.markdown(f"""
-Routes come from [OSRM](https://project-osrm.org/) (open source, uses OpenStreetMap road data).
+**What this map can and can't tell you.** This is a simplified model of the city, not a
+live feed. It is built to help you compare options and decide where to go - not to
+guarantee exact times or conditions. Travel times are modeled estimates, air quality is
+a modeled score (not a live reading), and reaching a space also depends on things this map
+can't see: safety, shade, sidewalks, weather, and who feels welcome there.
+
+**Routes** come from [OSRM](https://project-osrm.org/) (open source, uses OpenStreetMap road data).
 OSRM returns free-flow travel times, so we apply Metro Manila traffic multipliers:
 **x2.2 for jeepney** (frequent stops, loading/unloading, route indirection) and
 **x1.6 for Grab** (traffic congestion, plus pickup wait time).
@@ -331,11 +343,17 @@ Grab estimates use P45 base + P14/km, with a x0.85-1.35 surge range.
 
 **Air quality** is scored 1-5 based on three factors: distance from major arterial roads
 (EDSA, C-5, Commonwealth, etc.), park size in hectares, and vegetation type.
-Forests and wetlands score higher than plazas. Select sites have manual overrides
-from DENR monitoring data. These are estimates, not real-time readings.
+Forests and wetlands score higher than plazas. Most scores are **modeled estimates**, shown
+as `est.` on each card. Three sites - La Mesa, Arroceros, and the LPPCHEA Wetland - carry a
+`measured` tag because their scores draw on published DENR monitoring data. None of these
+are real-time readings.
+
+**Location confidence.** Most coordinates are verified against satellite imagery. Community
+gardens and informal spaces are often mapped at the barangay or centroid level and are
+marked `approx. location`, because their exact extent is fluid and community-defined.
 
 When OSRM is unavailable, distances use a x1.35 straight-line-to-road multiplier
-(typical for Metro Manila's road network).
+(typical for Metro Manila's road network) and are marked with a `~`.
     """)
 
 with st.expander("Data sources"):
@@ -438,6 +456,11 @@ if results:
         <div class="st-c">{IC_AVG.format(color="#999")}<div class="st-n">{avg:.0f}</div><div class="st-l">Min avg</div></div>
         <div class="st-c">{IC_AIR.format(color="#2d6a4f")}<div class="st-n">{gaq}</div><div class="st-l">Good air</div></div>
     </div>""", unsafe_allow_html=True)
+    disc = ("Travel times are <b>modeled daytime estimates</b> - rush hour runs slower. "
+            "Air quality is a <b>modeled score</b>, not a live reading.")
+    if not osrm_ok:
+        disc += " Distances marked ~ are <b>straight-line approximations</b> (road routing unavailable)."
+    st.markdown(f'<div class="note">{disc}</div>', unsafe_allow_html=True)
 else:
     st.markdown('<div style="text-align:center;padding:2rem 1rem;color:#999;font-size:0.85rem;">No spaces match your filters. Try widening your search in the sidebar.</div>', unsafe_allow_html=True)
 
@@ -459,13 +482,16 @@ else:
         icon_size=(24,24), icon_anchor=(12,12))).add_to(m)
 
 for a in results:
-    _, col = aq_lbl(a["air_quality"])
+    aq_txt, col = aq_lbl(a["air_quality"])
     c = a["commute"]
     fee = fee_str(a.get("entrance_fee"))
     fee_line = f"<br>{fee} entrance" if fee else ""
+    aq_meth = "DENR measured" if a.get("aq_method") == "measured" else "estimated"
+    aq_line = f'<br><span style="color:{col}">&#9679;</span> {aq_txt} <span style="color:#aaa">({aq_meth})</span>'
+    approx_line = '<br><span style="color:#b8860b;font-size:10px;">approx. location</span>' if a.get("coord_confidence") == "approximate" else ""
     folium.Marker([a["lat"], a["lng"]],
         tooltip=f'{a["name"]} — {a["jeep_time"]}m',
-        popup=folium.Popup(f'<div style="font-family:Outfit,sans-serif;font-size:11px;min-width:160px;"><b>{a["name"]}</b><br>{a["city"]} · {a["distance_km"]:.1f} km<br>{IC_JEEPNEY_POP.format(color="#666")} {a["jeep_time"]} min, P{c["jeepney"]["cost"]}<br>{IC_CAR_POP.format(color="#666")} {c["grab"]["time_min"]} min, P{c["grab"]["cost_range"][0]}-{c["grab"]["cost_range"][1]}{fee_line}</div>', max_width=200),
+        popup=folium.Popup(f'<div style="font-family:Outfit,sans-serif;font-size:11px;min-width:160px;"><b>{a["name"]}</b><br>{a["city"]} · {a["distance_km"]:.1f} km<br>{IC_JEEPNEY_POP.format(color="#666")} {a["jeep_time"]} min, P{c["jeepney"]["cost"]}<br>{IC_CAR_POP.format(color="#666")} {c["grab"]["time_min"]} min, P{c["grab"]["cost_range"][0]}-{c["grab"]["cost_range"][1]}{aq_line}{fee_line}{approx_line}</div>', max_width=200),
         icon=folium.DivIcon(html=f'<div style="width:18px;height:18px;background:{col};border:2px solid #fff;border-radius:50%;box-shadow:0 1px 3px rgba(0,0,0,0.2);"></div>',
         icon_size=(18,18), icon_anchor=(9,9))).add_to(m)
     if c["driving_geometry"]:
@@ -507,14 +533,18 @@ if results:
         tg = "".join(f'<span class="cd-tag">{t}</span>' for t in a["activities"][:3])
         if len(a["activities"]) > 3: tg += f'<span class="cd-tag">+{len(a["activities"])-3}</span>'
         tint = AQ_TINT.get(aq_col, "#fafaf8")
+        aq_q = ('<span class="cd-q cd-q-meas" title="From published DENR monitoring data">measured</span>'
+                if a.get("aq_method") == "measured"
+                else '<span class="cd-q cd-q-est" title="Modeled estimate, not a live reading">est.</span>')
+        approx = f'{S}<span class="cd-q cd-q-approx" title="Mapped to barangay or centroid level">approx. location</span>' if a.get("coord_confidence") == "approximate" else ""
 
         html += f'''<div class="cd">
             <div class="cd-n" style="background:{tint}">{a["jeep_time"]}<br><span style="font-size:0.42rem;font-weight:400;color:#aaa;letter-spacing:1px;">MIN</span></div>
             <div class="cd-b">
                 <div class="cd-t">{a["name"]}{fee_html}</div>
-                <div class="cd-m">{a["city"]}{S}{a["type"]}{S}{dk}{wk}</div>
+                <div class="cd-m">{a["city"]}{S}{a["type"]}{S}{dk}{wk}{approx}</div>
                 <div class="cd-m">{IC_JEEPNEY.format(color="#666")} {a["jeep_time"]} min, <span class="cd-cur">P</span>{c["jeepney"]["cost"]}{S}{IC_CAR.format(color="#666")} {c["grab"]["time_min"]} min, <span class="cd-cur">P</span>{gl}-{gh}</div>
-                <div class="cd-m"><span class="cd-d" style="background:{aq_col}"></span>{aq_txt} - {a["aq_note"]}</div>
+                <div class="cd-m"><span class="cd-d" style="background:{aq_col}"></span>{aq_txt} {aq_q} - {a["aq_note"]}</div>
                 <div class="cd-tags">{tg}</div>
             </div>
         </div>'''

@@ -15,7 +15,9 @@
       "playground",
       "museum"
     ],
-    "entrance_fee": 5
+    "entrance_fee": 5,
+    "aq_method": "modeled",
+    "coord_confidence": "verified"
   },
   {
     "name": "La Mesa Eco Park",
@@ -33,7 +35,9 @@
       "picnic",
       "bird watching"
     ],
-    "entrance_fee": 50
+    "entrance_fee": 50,
+    "aq_method": "measured",
+    "coord_confidence": "verified"
   },
   {
     "name": "UP Diliman Sunken Garden",
@@ -51,7 +55,9 @@
       "yoga",
       "kite flying"
     ],
-    "entrance_fee": "free"
+    "entrance_fee": "free",
+    "aq_method": "modeled",
+    "coord_confidence": "verified"
   },
   {
     "name": "UP Academic Oval",
@@ -68,7 +74,9 @@
       "walking",
       "running"
     ],
-    "entrance_fee": "free"
+    "entrance_fee": "free",
+    "aq_method": "modeled",
+    "coord_confidence": "verified"
   },
   {
     "name": "UP Lagoon",
@@ -85,7 +93,9 @@
       "picnic",
       "nature walk"
     ],
-    "entrance_fee": "free"
+    "entrance_fee": "free",
+    "aq_method": "modeled",
+    "coord_confidence": "verified"
   },
   {
     "name": "Ninoy Aquino Parks & Wildlife",
@@ -103,7 +113,9 @@
       "lagoon",
       "wildlife viewing"
     ],
-    "entrance_fee": 5
+    "entrance_fee": 5,
+    "aq_method": "modeled",
+    "coord_confidence": "verified"
   },
   {
     "name": "Eastwood Central Park",
@@ -120,7 +132,9 @@
       "concerts",
       "people watching"
     ],
-    "entrance_fee": "free"
+    "entrance_fee": "free",
+    "aq_method": "modeled",
+    "coord_confidence": "verified"
   },
   {
     "name": "Liwasang Aurora",
@@ -136,7 +150,9 @@
       "community events",
       "skateboarding"
     ],
-    "entrance_fee": "free"
+    "entrance_fee": "free",
+    "aq_method": "modeled",
+    "coord_confidence": "verified"
   },
   {
     "name": "N.S. Amoranto Park",
@@ -152,7 +168,9 @@
       "community events",
       "playground"
     ],
-    "entrance_fee": "free"
+    "entrance_fee": "free",
+    "aq_method": "modeled",
+    "coord_confidence": "verified"
   },
   {
     "name": "Bernardo Park",
@@ -168,7 +186,9 @@
       "picnic",
       "playground"
     ],
-    "entrance_fee": "free"
+    "entrance_fee": "free",
+    "aq_method": "modeled",
+    "coord_confidence": "verified"
   },
   {
     "name": "Corinthian Gardens Park",
@@ -184,7 +204,9 @@
       "jogging",
       "playground"
     ],
-    "entrance_fee": "free"
+    "entrance_fee": "free",
+    "aq_method": "modeled",
+    "coord_confidence": "verified"
   },
   {
     "name": "C.P. Garcia Community Park",
@@ -200,7 +222,9 @@
       "playground",
       "community events"
     ],
-    "entrance_fee": "free"
+    "entrance_fee": "free",
+    "aq_method": "modeled",
+    "coord_confidence": "verified"
   },
   {
     "name": "Don Jose Heights Park",
@@ -216,7 +240,9 @@
       "playground",
       "jogging"
     ],
-    "entrance_fee": "free"
+    "entrance_fee": "free",
+    "aq_method": "modeled",
+    "coord_confidence": "verified"
   },
   {
     "name": "Acropolis Park",
@@ -232,7 +258,9 @@
       "jogging",
       "playground"
     ],
-    "entrance_fee": "free"
+    "entrance_fee": "free",
+    "aq_method": "modeled",
+    "coord_confidence": "verified"
   },
   {
     "name": "Filinvest Park Batasan",
@@ -249,7 +277,9 @@
       "playground",
       "basketball"
     ],
-    "entrance_fee": "free"
+    "entrance_fee": "free",
+    "aq_method": "modeled",
+    "coord_confidence": "verified"
   },
   {
     "name": "North Olympus Park",
@@ -265,7 +295,9 @@
       "playground",
       "community events"
     ],
-    "entrance_fee": "free"
+    "entrance_fee": "free",
+    "aq_method": "modeled",
+    "coord_confidence": "verified"
   },
   {
     "name": "Lagro Dulo Park",
@@ -280,7 +312,9 @@
       "walking",
       "playground"
     ],
-    "entrance_fee": "free"
+    "entrance_fee": "free",
+    "aq_method": "modeled",
+    "coord_confidence": "verified"
   },
   {
     "name": "Rosalia Park",
@@ -296,7 +330,9 @@
       "playground",
       "picnic"
     ],
-    "entrance_fee": "free"
+    "entrance_fee": "free",
+    "aq_method": "modeled",
+    "coord_confidence": "verified"
   },
   {
     "name": "Mariana Park",
@@ -311,7 +347,9 @@
       "walking",
       "playground"
     ],
-    "entrance_fee": "free"
+    "entrance_fee": "free",
+    "aq_method": "modeled",
+    "coord_confidence": "verified"
   },
   {
     "name": "Wisdom Park",
@@ -327,7 +365,9 @@
       "meditation",
       "photography"
     ],
-    "entrance_fee": "free"
+    "entrance_fee": "free",
+    "aq_method": "modeled",
+    "coord_confidence": "verified"
   },
   {
     "name": "Madrigal Circle (Dichaves) Park",
@@ -342,7 +382,9 @@
       "walking",
       "picnic"
     ],
-    "entrance_fee": "free"
+    "entrance_fee": "free",
+    "aq_method": "modeled",
+    "coord_confidence": "verified"
   },
   {
     "name": "Rizal Park (Luneta)",
@@ -360,7 +402,9 @@
       "museum",
       "cultural shows"
     ],
-    "entrance_fee": "free"
+    "entrance_fee": "free",
+    "aq_method": "modeled",
+    "coord_confidence": "verified"
   },
   {
     "name": "Arroceros Forest Park",
@@ -377,7 +421,9 @@
       "photography",
       "environmental education"
     ],
-    "entrance_fee": "free"
+    "entrance_fee": "free",
+    "aq_method": "measured",
+    "coord_confidence": "verified"
   },
   {
     "name": "Manila Baywalk",
@@ -394,7 +440,9 @@
       "jogging",
       "photography"
     ],
-    "entrance_fee": "free"
+    "entrance_fee": "free",
+    "aq_method": "modeled",
+    "coord_confidence": "verified"
   },
   {
     "name": "Paco Park",
@@ -411,7 +459,9 @@
       "concerts",
       "meditation"
     ],
-    "entrance_fee": 10
+    "entrance_fee": 10,
+    "aq_method": "modeled",
+    "coord_confidence": "verified"
   },
   {
     "name": "ASEAN Gardens (Intramuros)",
@@ -427,7 +477,9 @@
       "photography",
       "sightseeing"
     ],
-    "entrance_fee": "free"
+    "entrance_fee": "free",
+    "aq_method": "modeled",
+    "coord_confidence": "verified"
   },
   {
     "name": "Remedios Circle",
@@ -443,7 +495,9 @@
       "al fresco dining",
       "people watching"
     ],
-    "entrance_fee": "free"
+    "entrance_fee": "free",
+    "aq_method": "modeled",
+    "coord_confidence": "verified"
   },
   {
     "name": "Plaza Rueda",
@@ -458,7 +512,9 @@
       "walking",
       "community events"
     ],
-    "entrance_fee": "free"
+    "entrance_fee": "free",
+    "aq_method": "modeled",
+    "coord_confidence": "verified"
   },
   {
     "name": "Pandacan Linear Park",
@@ -474,7 +530,9 @@
       "jogging",
       "river walk"
     ],
-    "entrance_fee": "free"
+    "entrance_fee": "free",
+    "aq_method": "modeled",
+    "coord_confidence": "verified"
   },
   {
     "name": "Earnshaw Linear Park",
@@ -489,7 +547,9 @@
       "walking",
       "jogging"
     ],
-    "entrance_fee": "free"
+    "entrance_fee": "free",
+    "aq_method": "modeled",
+    "coord_confidence": "verified"
   },
   {
     "name": "Agrifina Circle",
@@ -504,7 +564,9 @@
       "walking",
       "photography"
     ],
-    "entrance_fee": "free"
+    "entrance_fee": "free",
+    "aq_method": "modeled",
+    "coord_confidence": "verified"
   },
   {
     "name": "Bacood Park",
@@ -519,7 +581,9 @@
       "walking",
       "playground"
     ],
-    "entrance_fee": "free"
+    "entrance_fee": "free",
+    "aq_method": "modeled",
+    "coord_confidence": "verified"
   },
   {
     "name": "Estero de Magdalena Linear Park",
@@ -534,7 +598,9 @@
       "walking",
       "jogging"
     ],
-    "entrance_fee": "free"
+    "entrance_fee": "free",
+    "aq_method": "modeled",
+    "coord_confidence": "verified"
   },
   {
     "name": "APEC Sculpture Garden",
@@ -550,7 +616,9 @@
       "photography",
       "sightseeing"
     ],
-    "entrance_fee": "free"
+    "entrance_fee": "free",
+    "aq_method": "modeled",
+    "coord_confidence": "verified"
   },
   {
     "name": "China-Philippines Friendship Park (Plaza Yuchengco)",
@@ -566,7 +634,9 @@
       "photography",
       "sightseeing"
     ],
-    "entrance_fee": "free"
+    "entrance_fee": "free",
+    "aq_method": "modeled",
+    "coord_confidence": "verified"
   },
   {
     "name": "San Diego Garden (Intramuros)",
@@ -582,7 +652,9 @@
       "photography",
       "weddings"
     ],
-    "entrance_fee": "free"
+    "entrance_fee": "free",
+    "aq_method": "modeled",
+    "coord_confidence": "verified"
   },
   {
     "name": "Bonifacio Shrine",
@@ -598,7 +670,9 @@
       "photography",
       "sightseeing"
     ],
-    "entrance_fee": "free"
+    "entrance_fee": "free",
+    "aq_method": "modeled",
+    "coord_confidence": "verified"
   },
   {
     "name": "Ayala Triangle Gardens",
@@ -615,7 +689,9 @@
       "concerts",
       "yoga"
     ],
-    "entrance_fee": "free"
+    "entrance_fee": "free",
+    "aq_method": "modeled",
+    "coord_confidence": "verified"
   },
   {
     "name": "Washington Sycip Park (Makati)",
@@ -632,7 +708,9 @@
       "relaxation",
       "zen garden"
     ],
-    "entrance_fee": "free"
+    "entrance_fee": "free",
+    "aq_method": "modeled",
+    "coord_confidence": "verified"
   },
   {
     "name": "Salcedo Park",
@@ -649,7 +727,9 @@
       "playground",
       "dog park"
     ],
-    "entrance_fee": "free"
+    "entrance_fee": "free",
+    "aq_method": "modeled",
+    "coord_confidence": "verified"
   },
   {
     "name": "Legazpi Active Park",
@@ -667,7 +747,9 @@
       "calisthenics",
       "playground"
     ],
-    "entrance_fee": "free"
+    "entrance_fee": "free",
+    "aq_method": "modeled",
+    "coord_confidence": "verified"
   },
   {
     "name": "Greenbelt Park",
@@ -683,7 +765,9 @@
       "photography",
       "al fresco dining"
     ],
-    "entrance_fee": "free"
+    "entrance_fee": "free",
+    "aq_method": "modeled",
+    "coord_confidence": "verified"
   },
   {
     "name": "Circuit Makati Park",
@@ -700,7 +784,9 @@
       "food festivals",
       "concerts"
     ],
-    "entrance_fee": "free"
+    "entrance_fee": "free",
+    "aq_method": "modeled",
+    "coord_confidence": "verified"
   },
   {
     "name": "Makati Poblacion Park",
@@ -715,7 +801,9 @@
       "walking",
       "community events"
     ],
-    "entrance_fee": "free"
+    "entrance_fee": "free",
+    "aq_method": "modeled",
+    "coord_confidence": "verified"
   },
   {
     "name": "Guadalupe Linear Park",
@@ -731,7 +819,9 @@
       "jogging",
       "river walk"
     ],
-    "entrance_fee": "free"
+    "entrance_fee": "free",
+    "aq_method": "modeled",
+    "coord_confidence": "verified"
   },
   {
     "name": "BGC Greenway Park",
@@ -748,7 +838,9 @@
       "cycling",
       "dog walking"
     ],
-    "entrance_fee": "free"
+    "entrance_fee": "free",
+    "aq_method": "modeled",
+    "coord_confidence": "verified"
   },
   {
     "name": "Track 30th Park",
@@ -765,7 +857,9 @@
       "fitness",
       "meditation"
     ],
-    "entrance_fee": "free"
+    "entrance_fee": "free",
+    "aq_method": "modeled",
+    "coord_confidence": "verified"
   },
   {
     "name": "Terra 28th Park",
@@ -781,7 +875,9 @@
       "walking",
       "picnic"
     ],
-    "entrance_fee": "free"
+    "entrance_fee": "free",
+    "aq_method": "modeled",
+    "coord_confidence": "verified"
   },
   {
     "name": "Burgos Circle",
@@ -797,7 +893,9 @@
       "al fresco dining",
       "people watching"
     ],
-    "entrance_fee": "free"
+    "entrance_fee": "free",
+    "aq_method": "modeled",
+    "coord_confidence": "verified"
   },
   {
     "name": "Forbes Town Park",
@@ -813,7 +911,9 @@
       "picnic",
       "lagoon"
     ],
-    "entrance_fee": "free"
+    "entrance_fee": "free",
+    "aq_method": "modeled",
+    "coord_confidence": "verified"
   },
   {
     "name": "De Jesus Oval Park",
@@ -829,7 +929,9 @@
       "jogging",
       "community events"
     ],
-    "entrance_fee": "free"
+    "entrance_fee": "free",
+    "aq_method": "modeled",
+    "coord_confidence": "verified"
   },
   {
     "name": "Mind Museum (Jose Yao Campos) Park",
@@ -846,7 +948,9 @@
       "playground",
       "walking"
     ],
-    "entrance_fee": "free"
+    "entrance_fee": "free",
+    "aq_method": "modeled",
+    "coord_confidence": "verified"
   },
   {
     "name": "Alveo Central Plaza",
@@ -862,7 +966,9 @@
       "events",
       "al fresco dining"
     ],
-    "entrance_fee": "free"
+    "entrance_fee": "free",
+    "aq_method": "modeled",
+    "coord_confidence": "verified"
   },
   {
     "name": "DOST Wellness Garden",
@@ -877,7 +983,9 @@
       "walking",
       "events"
     ],
-    "entrance_fee": "free"
+    "entrance_fee": "free",
+    "aq_method": "modeled",
+    "coord_confidence": "verified"
   },
   {
     "name": "FTI (Arca South) Park",
@@ -893,7 +1001,9 @@
       "jogging",
       "community events"
     ],
-    "entrance_fee": "free"
+    "entrance_fee": "free",
+    "aq_method": "modeled",
+    "coord_confidence": "verified"
   },
   {
     "name": "Plaza Bonifacio (Taguig)",
@@ -908,7 +1018,9 @@
       "walking",
       "sightseeing"
     ],
-    "entrance_fee": "free"
+    "entrance_fee": "free",
+    "aq_method": "modeled",
+    "coord_confidence": "verified"
   },
   {
     "name": "Pasig RAVE (Maybunga Rainforest) Park",
@@ -925,7 +1037,9 @@
       "obstacle course",
       "camping"
     ],
-    "entrance_fee": 100
+    "entrance_fee": 100,
+    "aq_method": "modeled",
+    "coord_confidence": "verified"
   },
   {
     "name": "Capitol Commons Park",
@@ -942,7 +1056,9 @@
       "playground",
       "events"
     ],
-    "entrance_fee": "free"
+    "entrance_fee": "free",
+    "aq_method": "modeled",
+    "coord_confidence": "verified"
   },
   {
     "name": "Ortigas Park",
@@ -958,7 +1074,9 @@
       "jogging",
       "picnic"
     ],
-    "entrance_fee": "free"
+    "entrance_fee": "free",
+    "aq_method": "modeled",
+    "coord_confidence": "verified"
   },
   {
     "name": "Kapitolyo Park 6",
@@ -974,7 +1092,9 @@
       "playground",
       "community events"
     ],
-    "entrance_fee": "free"
+    "entrance_fee": "free",
+    "aq_method": "modeled",
+    "coord_confidence": "verified"
   },
   {
     "name": "Plaza Rizal (Pasig)",
@@ -989,7 +1109,9 @@
       "walking",
       "sightseeing"
     ],
-    "entrance_fee": "free"
+    "entrance_fee": "free",
+    "aq_method": "modeled",
+    "coord_confidence": "verified"
   },
   {
     "name": "Marikina River Park",
@@ -1007,7 +1129,9 @@
       "river walk",
       "food park"
     ],
-    "entrance_fee": "free"
+    "entrance_fee": "free",
+    "aq_method": "modeled",
+    "coord_confidence": "verified"
   },
   {
     "name": "Marikina Freedom Park",
@@ -1023,7 +1147,9 @@
       "playground",
       "community events"
     ],
-    "entrance_fee": "free"
+    "entrance_fee": "free",
+    "aq_method": "modeled",
+    "coord_confidence": "verified"
   },
   {
     "name": "Evolution Park Marikina",
@@ -1039,7 +1165,9 @@
       "playground",
       "community events"
     ],
-    "entrance_fee": "free"
+    "entrance_fee": "free",
+    "aq_method": "modeled",
+    "coord_confidence": "verified"
   },
   {
     "name": "Hacienda Heights Village Park",
@@ -1055,7 +1183,9 @@
       "jogging",
       "playground"
     ],
-    "entrance_fee": "free"
+    "entrance_fee": "free",
+    "aq_method": "modeled",
+    "coord_confidence": "verified"
   },
   {
     "name": "Hardin ng Pag-asa",
@@ -1071,7 +1201,9 @@
       "playground",
       "community events"
     ],
-    "entrance_fee": "free"
+    "entrance_fee": "free",
+    "aq_method": "modeled",
+    "coord_confidence": "verified"
   },
   {
     "name": "Maysilo Circle Park",
@@ -1086,7 +1218,9 @@
       "walking",
       "jogging"
     ],
-    "entrance_fee": "free"
+    "entrance_fee": "free",
+    "aq_method": "modeled",
+    "coord_confidence": "verified"
   },
   {
     "name": "Vergara Linear Park",
@@ -1101,7 +1235,9 @@
       "walking",
       "jogging"
     ],
-    "entrance_fee": "free"
+    "entrance_fee": "free",
+    "aq_method": "modeled",
+    "coord_confidence": "verified"
   },
   {
     "name": "Greenhills Central Garden",
@@ -1117,7 +1253,9 @@
       "playground",
       "picnic"
     ],
-    "entrance_fee": "free"
+    "entrance_fee": "free",
+    "aq_method": "modeled",
+    "coord_confidence": "verified"
   },
   {
     "name": "Jackson Park",
@@ -1132,7 +1270,9 @@
       "walking",
       "playground"
     ],
-    "entrance_fee": "free"
+    "entrance_fee": "free",
+    "aq_method": "modeled",
+    "coord_confidence": "verified"
   },
   {
     "name": "Johnson Park",
@@ -1148,7 +1288,9 @@
       "playground",
       "jogging"
     ],
-    "entrance_fee": "free"
+    "entrance_fee": "free",
+    "aq_method": "modeled",
+    "coord_confidence": "verified"
   },
   {
     "name": "McKinley Park (San Juan)",
@@ -1163,7 +1305,9 @@
       "walking",
       "playground"
     ],
-    "entrance_fee": "free"
+    "entrance_fee": "free",
+    "aq_method": "modeled",
+    "coord_confidence": "verified"
   },
   {
     "name": "San Juan Mini Park",
@@ -1178,7 +1322,9 @@
       "walking",
       "playground"
     ],
-    "entrance_fee": "free"
+    "entrance_fee": "free",
+    "aq_method": "modeled",
+    "coord_confidence": "verified"
   },
   {
     "name": "Ermitano Linear Park",
@@ -1193,7 +1339,9 @@
       "walking",
       "jogging"
     ],
-    "entrance_fee": "free"
+    "entrance_fee": "free",
+    "aq_method": "modeled",
+    "coord_confidence": "verified"
   },
   {
     "name": "Filinvest City Linear Park",
@@ -1210,7 +1358,9 @@
       "walking",
       "playground"
     ],
-    "entrance_fee": "free"
+    "entrance_fee": "free",
+    "aq_method": "modeled",
+    "coord_confidence": "verified"
   },
   {
     "name": "Filinvest City Central Park",
@@ -1227,7 +1377,9 @@
       "concerts",
       "picnic"
     ],
-    "entrance_fee": "free"
+    "entrance_fee": "free",
+    "aq_method": "modeled",
+    "coord_confidence": "verified"
   },
   {
     "name": "Spectrum Linear Park",
@@ -1243,7 +1395,9 @@
       "jogging",
       "outdoor art"
     ],
-    "entrance_fee": "free"
+    "entrance_fee": "free",
+    "aq_method": "modeled",
+    "coord_confidence": "verified"
   },
   {
     "name": "Alabang River Park",
@@ -1259,7 +1413,9 @@
       "jogging",
       "river walk"
     ],
-    "entrance_fee": "free"
+    "entrance_fee": "free",
+    "aq_method": "modeled",
+    "coord_confidence": "verified"
   },
   {
     "name": "Muntinlupa Sunken Garden",
@@ -1275,7 +1431,9 @@
       "photography",
       "sightseeing"
     ],
-    "entrance_fee": "free"
+    "entrance_fee": "free",
+    "aq_method": "modeled",
+    "coord_confidence": "verified"
   },
   {
     "name": "Sucat People's Park",
@@ -1292,7 +1450,9 @@
       "basketball",
       "community events"
     ],
-    "entrance_fee": "free"
+    "entrance_fee": "free",
+    "aq_method": "modeled",
+    "coord_confidence": "verified"
   },
   {
     "name": "Las Pinas-Paranaque Wetland Park",
@@ -1310,7 +1470,9 @@
       "nature photography",
       "nature trail"
     ],
-    "entrance_fee": "free"
+    "entrance_fee": "free",
+    "aq_method": "measured",
+    "coord_confidence": "verified"
   },
   {
     "name": "Aguirre Central Park",
@@ -1327,7 +1489,9 @@
       "playground",
       "basketball"
     ],
-    "entrance_fee": "free"
+    "entrance_fee": "free",
+    "aq_method": "modeled",
+    "coord_confidence": "verified"
   },
   {
     "name": "Don Galo Park",
@@ -1342,7 +1506,9 @@
       "walking",
       "playground"
     ],
-    "entrance_fee": "free"
+    "entrance_fee": "free",
+    "aq_method": "modeled",
+    "coord_confidence": "verified"
   },
   {
     "name": "Guadalajara Park",
@@ -1358,7 +1524,9 @@
       "jogging",
       "playground"
     ],
-    "entrance_fee": "free"
+    "entrance_fee": "free",
+    "aq_method": "modeled",
+    "coord_confidence": "verified"
   },
   {
     "name": "Sun Valley Park",
@@ -1374,7 +1542,9 @@
       "playground",
       "basketball"
     ],
-    "entrance_fee": "free"
+    "entrance_fee": "free",
+    "aq_method": "modeled",
+    "coord_confidence": "verified"
   },
   {
     "name": "Pilar Friendship Park",
@@ -1390,7 +1560,9 @@
       "playground",
       "community events"
     ],
-    "entrance_fee": "free"
+    "entrance_fee": "free",
+    "aq_method": "modeled",
+    "coord_confidence": "verified"
   },
   {
     "name": "Philamlife Village Park",
@@ -1406,7 +1578,9 @@
       "jogging",
       "playground"
     ],
-    "entrance_fee": "free"
+    "entrance_fee": "free",
+    "aq_method": "modeled",
+    "coord_confidence": "verified"
   },
   {
     "name": "Valenzuela People's Park",
@@ -1424,7 +1598,9 @@
       "basketball",
       "events"
     ],
-    "entrance_fee": "free"
+    "entrance_fee": "free",
+    "aq_method": "modeled",
+    "coord_confidence": "verified"
   },
   {
     "name": "Valenzuela Family Park",
@@ -1440,7 +1616,9 @@
       "playground",
       "picnic"
     ],
-    "entrance_fee": "free"
+    "entrance_fee": "free",
+    "aq_method": "modeled",
+    "coord_confidence": "verified"
   },
   {
     "name": "Arkong Bato Park",
@@ -1456,7 +1634,9 @@
       "sightseeing",
       "community events"
     ],
-    "entrance_fee": "free"
+    "entrance_fee": "free",
+    "aq_method": "modeled",
+    "coord_confidence": "verified"
   },
   {
     "name": "Glorieta Park (Tala)",
@@ -1472,7 +1652,9 @@
       "playground",
       "community events"
     ],
-    "entrance_fee": "free"
+    "entrance_fee": "free",
+    "aq_method": "modeled",
+    "coord_confidence": "verified"
   },
   {
     "name": "Mother Ignacia Park",
@@ -1487,7 +1669,9 @@
       "walking",
       "playground"
     ],
-    "entrance_fee": "free"
+    "entrance_fee": "free",
+    "aq_method": "modeled",
+    "coord_confidence": "verified"
   },
   {
     "name": "Navotas Centennial Park",
@@ -1503,7 +1687,9 @@
       "playground",
       "community events"
     ],
-    "entrance_fee": "free"
+    "entrance_fee": "free",
+    "aq_method": "modeled",
+    "coord_confidence": "verified"
   },
   {
     "name": "Malabon People's Park",
@@ -1519,7 +1705,9 @@
       "playground",
       "community events"
     ],
-    "entrance_fee": "free"
+    "entrance_fee": "free",
+    "aq_method": "modeled",
+    "coord_confidence": "verified"
   },
   {
     "name": "Meridian Park",
@@ -1535,7 +1723,9 @@
       "jogging",
       "events"
     ],
-    "entrance_fee": "free"
+    "entrance_fee": "free",
+    "aq_method": "modeled",
+    "coord_confidence": "verified"
   },
   {
     "name": "Hinulugang Taktak",
@@ -1552,7 +1742,9 @@
       "picnic",
       "sightseeing"
     ],
-    "entrance_fee": 30
+    "entrance_fee": 30,
+    "aq_method": "modeled",
+    "coord_confidence": "verified"
   },
   {
     "name": "UP - Washington Sycip Park (UP Diliman)",
@@ -1569,7 +1761,9 @@
       "native tree walk",
       "photography"
     ],
-    "entrance_fee": "free"
+    "entrance_fee": "free",
+    "aq_method": "modeled",
+    "coord_confidence": "verified"
   },
   {
     "name": "Vertis North Rain Garden",
@@ -1585,7 +1779,9 @@
       "jogging",
       "cycling"
     ],
-    "entrance_fee": "free"
+    "entrance_fee": "free",
+    "aq_method": "modeled",
+    "coord_confidence": "verified"
   },
   {
     "name": "Sitio San Roque Tanimang Bayan",
@@ -1596,8 +1792,15 @@
     "air_quality": 2,
     "aq_note": "Adjacent to EDSA and North Avenue (0.2 km) - heavy traffic exposure, minimal green buffer",
     "area_ha": 0.3,
-    "activities": ["nature walk", "photography", "picnic", "other"],
-    "entrance_fee": "free"
+    "activities": [
+      "nature walk",
+      "photography",
+      "picnic",
+      "other"
+    ],
+    "entrance_fee": "free",
+    "aq_method": "modeled",
+    "coord_confidence": "approximate"
   },
   {
     "name": "Potrero MRF Eco-Garden & Playground",
@@ -1608,8 +1811,16 @@
     "air_quality": 2,
     "aq_note": "Industrial/residential area near NLEX - moderate traffic, composting garden provides localized green cover",
     "area_ha": 0.4,
-    "activities": ["walking", "playground", "nature walk", "photography", "other"],
-    "entrance_fee": "free"
+    "activities": [
+      "walking",
+      "playground",
+      "nature walk",
+      "photography",
+      "other"
+    ],
+    "entrance_fee": "free",
+    "aq_method": "modeled",
+    "coord_confidence": "approximate"
   },
   {
     "name": "Ugong Urban Vegetable Garden",
@@ -1620,8 +1831,15 @@
     "air_quality": 3,
     "aq_note": "Along Marikina River bank in Barangay Ugong - river buffer provides moderate air quality, some distance from C-5",
     "area_ha": 0.3,
-    "activities": ["walking", "nature walk", "photography", "other"],
-    "entrance_fee": "free"
+    "activities": [
+      "walking",
+      "nature walk",
+      "photography",
+      "other"
+    ],
+    "entrance_fee": "free",
+    "aq_method": "modeled",
+    "coord_confidence": "approximate"
   },
   {
     "name": "The Good Food Farm (Pamayanang Diego Silang)",
@@ -1632,8 +1850,14 @@
     "air_quality": 3,
     "aq_note": "Inside Pamayanang Diego Silang housing compound in Barangay Ususan - sheltered from main roads by residential buildings",
     "area_ha": 0.2,
-    "activities": ["nature walk", "photography", "other"],
-    "entrance_fee": "free"
+    "activities": [
+      "nature walk",
+      "photography",
+      "other"
+    ],
+    "entrance_fee": "free",
+    "aq_method": "modeled",
+    "coord_confidence": "approximate"
   },
   {
     "name": "Buhay sa Gulay Urban Farm (Tondo)",
@@ -1644,7 +1868,13 @@
     "air_quality": 1,
     "aq_note": "Dense urban area in Tondo, adjacent to major port roads - heavy traffic and industrial exposure, minimal vegetation buffer",
     "area_ha": 0.2,
-    "activities": ["nature walk", "photography", "other"],
-    "entrance_fee": "free"
+    "activities": [
+      "nature walk",
+      "photography",
+      "other"
+    ],
+    "entrance_fee": "free",
+    "aq_method": "modeled",
+    "coord_confidence": "approximate"
   }
 ]
