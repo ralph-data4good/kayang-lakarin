@@ -567,8 +567,7 @@ if results:
                 <div class="cd-m">{a["city"]}{S}{a["type"]}{S}{dk}{wk}{approx}</div>
                 <div class="cd-m">{IC_JEEPNEY.format(color="#666")} {a["jeep_time"]} min, <span class="cd-cur">P</span>{c["jeepney"]["cost"]}{S}{IC_CAR.format(color="#666")} {c["grab"]["time_min"]} min, <span class="cd-cur">P</span>{gl}-{gh}</div>
                 <div class="cd-m"><span class="cd-d" style="background:{aq_col}"></span>{aq_txt} {aq_q} - {a["aq_note"]}</div>
-                <div class="cd-tags">{tg}</div>
-                {prov}
+                <div class="cd-tags">{tg}</div>{prov}
             </div>
         </div>'''
     html += '</div>'
