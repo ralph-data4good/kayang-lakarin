@@ -293,9 +293,18 @@ iframe[title="streamlit_folium.st_folium"] { height: 420px; }
 .stExpander summary span { color: #1a1a1a !important; font-weight: 600 !important; }
 .stExpander a { color: #2d6a4f !important; text-decoration: underline !important; }
 .stExpander h5 { font-size: 0.7rem !important; font-weight: 700 !important; text-transform: uppercase;
-    letter-spacing: 0.8px; color: #2f5d44 !important; margin: 0.9rem 0 0.3rem !important; }
+    letter-spacing: 0.8px; color: #2f5d44 !important; margin: 1rem 0 0.35rem !important; }
 .stExpander h5:first-child { margin-top: 0 !important; }
-.stExpander [data-testid="stMarkdownContainer"] li { margin-bottom: 2px; }
+/* Aesthetic custom bullets */
+.stExpander [data-testid="stMarkdownContainer"] ul { list-style: none !important; padding-left: 2px !important; margin: 0.25rem 0 !important; }
+.stExpander [data-testid="stMarkdownContainer"] li { position: relative; padding-left: 18px; margin-bottom: 6px; line-height: 1.5; }
+.stExpander [data-testid="stMarkdownContainer"] li::before {
+    content: ""; position: absolute; left: 2px; top: 0.5em; width: 6px; height: 6px;
+    border-radius: 50%; background: #2f5d44; }
+.stExpander [data-testid="stMarkdownContainer"] li ul { padding-left: 16px !important; margin: 6px 0 0 !important; }
+.stExpander [data-testid="stMarkdownContainer"] li li { margin-bottom: 4px; }
+.stExpander [data-testid="stMarkdownContainer"] li li::before {
+    background: transparent; border: 1.5px solid #9bb86a; width: 6px; height: 6px; top: 0.45em; }
 
 /* Force light mode on main content only (not sidebar) */
 .stApp header { background: transparent !important; }
@@ -416,30 +425,43 @@ st.markdown('</div>', unsafe_allow_html=True)
 # ── Info buttons ──────────────────────────────────────────────────────
 with st.expander("How the numbers work"):
     st.markdown(f"""
-##### Real talk muna
-Gabay 'to, hindi gospel. Gamitin para i-compare ang options at magdesisyon kung saan pupunta -
-hindi promise ng eksaktong oras. Honest tayo: yung travel times at air quality ay
-**estimates lang** (modeled). Kung sulit ba talaga puntahan? Depende pa rin sa di kayang
-i-map - shade, sidewalk, safety, panahon, at kung welcome ka ba doon. Sinasabi na namin agad.
+##### Some caveats
+This is a guide, with asterisks*.
 
-##### Papunta diyan
-- Routes galing sa [OSRM](https://project-osrm.org/) - open-source, naka-base sa OpenStreetMap.
-- Free-flow driving times yon, kaya ina-adjust namin sa totoong MM traffic: **x2.2 jeepney** (dami stop, paliko-liko) at **x1.6 Grab** (traffic plus hintay sa sundo).
-- Daytime average 'to. Rush hour (7-9am, 5-8pm): **+30-50%**. Madaling-araw? Mas mabilis pa.
+Use it to compare options and estimate travel times, not to predict your trip down to the minute.
 
-##### Presyo
-- **Jeep:** P13 first 4 km, tapos +P1.80 kada km after (LTFRB 2024 rates).
-- **Grab:** ~P45 base + P14/km, may x0.85-1.35 surge range.
+Whether a place is worth visiting still depends on things beyond what we can measure here, including sidewalks, safety, weather, energy level, and whether the space actually feels welcoming.
 
-##### Hangin, walang plastikan
-- Score **1-5**, base sa tatlong kaya naming sukatin: layo sa malalaking kalsada (EDSA, C-5, Commonwealth), laki (hectares), at gaano kaberde - mas humihinga ang forest at wetland kaysa concrete plaza.
-- Karamihan estimate, tagged `est.`. Tatlo lang - **La Mesa, Arroceros, LPPCHEA Wetland** - may `measured` tag kasi naka-base sa published DENR monitoring. Pero hindi 'to live readings, ha.
+##### Getting there
+- Routes use **OSRM**, an open-source routing tool based on OpenStreetMap.
+- Base travel times are adjusted for Metro Manila realities:
+    - **Jeepney:** x2.2, because stops, turns, and sakay-baba moments exist.
+    - **Grab:** x1.6, because traffic and pickup waiting time are real.
+- Rush hour can add **30-50%**. Early mornings may be faster, if the roads behave.
 
-##### Gaano ka-sigurado yung pin
-- Karamihan na-check sa satellite imagery. Yung community gardens at grassroots spaces, naka-pin sa barangay o general area lang, tagged `approx. location` - kasi fluid yung hangganan nila, defined ng mga gumagamit. Yun mismo yung point.
+##### Cost
+- **Jeep:** P13 for the first 4 km, then +P1.80/km after.
+- **Grab:** around P45 base fare + P14/km, with possible surge from **x0.85 to x1.35**.
 
-##### Pag down ang routing
-- Babalik kami sa straight-line estimate, scaled **x1.35** (fair guess for MM roads), at may `~` para alam mo agad.
+##### Air quality estimates
+Air quality is scored from **1-5** using three clues:
+- distance from major roads
+- size of the green or open space
+- how green the area actually is
+
+This means forests and wetlands are expected to score better than concrete plazas.
+
+Most scores are estimates, tagged `est.` Only **La Mesa, Arroceros, and LPPCHEA Wetland** have `measured` tags based on published DENR monitoring. These are still not live readings.
+
+##### Pin accuracy
+Most pins were checked using satellite imagery.
+
+For community gardens and grassroots spaces, some pins are only approximate and tagged `approx. location`. Their boundaries can shift because the people using the space define them too.
+
+##### When routing fails
+We use a straight-line estimate, scaled by **x1.35** as a rough Metro Manila road-distance guess.
+
+These fallback results are marked with `~`, so you know we are in estimate mode.
     """)
 
 with st.expander("Data sources"):
