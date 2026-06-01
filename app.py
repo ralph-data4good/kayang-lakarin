@@ -147,6 +147,28 @@ IC_WALK = '<svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="{
 IC_JEEPNEY_POP = IC_JEEPNEY.replace('width="12" height="12"', 'width="14" height="14" style="vertical-align:middle;margin-right:2px"')
 IC_CAR_POP = IC_CAR.replace('width="12" height="12"', 'width="14" height="14" style="vertical-align:middle;margin-right:2px"')
 
+# ── Space-type glyphs (minimal, keyword-mapped, with a park default) ──
+_TYPE_PATHS = {
+    "water":   '<path d="M3 10 C6 7 9 13 12 10 C15 7 18 13 21 10"/><path d="M3 16 C6 13 9 19 12 16 C15 13 18 19 21 16"/>',
+    "garden":  '<path d="M12 21 L12 11"/><path d="M12 13 C9 13 7 11 7 8 C10 8 12 10 12 13Z"/><path d="M12 11 C12 8 14 6 17 6 C17 9 15 11 12 11Z"/>',
+    "forest":  '<path d="M12 3 L6.5 11 L9.5 11 L5.5 17 L18.5 17 L14.5 11 L17.5 11Z"/><line x1="12" y1="17" x2="12" y2="21"/>',
+    "fitness": '<line x1="6" y1="12" x2="18" y2="12"/><line x1="5" y1="9" x2="5" y2="15"/><line x1="19" y1="9" x2="19" y2="15"/><line x1="8.5" y1="10" x2="8.5" y2="14"/><line x1="15.5" y1="10" x2="15.5" y2="14"/>',
+    "plaza":   '<rect x="4" y="4" width="16" height="16" rx="2"/><line x1="4" y1="12" x2="20" y2="12"/><line x1="12" y1="4" x2="12" y2="20"/>',
+    "park":    '<circle cx="12" cy="8.5" r="5.5"/><line x1="12" y1="14" x2="12" y2="21"/>',
+}
+def type_key(t):
+    tl = (t or "").lower()
+    if "wetland" in tl or "coast" in tl or "river" in tl: return "water"
+    if "garden" in tl: return "garden"
+    if "forest" in tl or "tree" in tl or "wildlife" in tl or "ecolog" in tl: return "forest"
+    if "fitness" in tl or "adventure" in tl: return "fitness"
+    if "plaza" in tl or "open" in tl or "events" in tl: return "plaza"
+    return "park"
+def type_svg(t, color, size, sw=1.9):
+    paths = _TYPE_PATHS[type_key(t)]
+    return (f'<svg width="{size}" height="{size}" viewBox="0 0 24 24" fill="none" stroke="{color}" '
+            f'stroke-width="{sw}" stroke-linecap="round" stroke-linejoin="round">{paths}</svg>')
+
 REFS = {
     "Quezon City (Cubao)": (14.6218, 121.0555),
     "Quezon City (Commonwealth)": (14.6760, 121.0870),
@@ -534,8 +556,8 @@ for a in results:
     folium.Marker([a["lat"], a["lng"]],
         tooltip=f'{a["name"]} — {a["jeep_time"]}m',
         popup=folium.Popup(f'<div style="font-family:Outfit,sans-serif;font-size:11px;min-width:160px;"><b>{a["name"]}</b><br>{a["city"]} · {a["distance_km"]:.1f} km<br>{IC_JEEPNEY_POP.format(color="#666")} {a["jeep_time"]} min, P{c["jeepney"]["cost"]}<br>{IC_CAR_POP.format(color="#666")} {c["grab"]["time_min"]} min, P{c["grab"]["cost_range"][0]}-{c["grab"]["cost_range"][1]}{aq_line}{fee_line}{approx_line}</div>', max_width=200),
-        icon=folium.DivIcon(html=f'<div style="width:18px;height:18px;background:{col};border:2px solid #fff;border-radius:50%;box-shadow:0 1px 3px rgba(0,0,0,0.2);"></div>',
-        icon_size=(18,18), icon_anchor=(9,9))).add_to(m)
+        icon=folium.DivIcon(html=f'<div style="width:24px;height:24px;background:{col};border:2px solid #fff;border-radius:50%;box-shadow:0 1px 3px rgba(0,0,0,0.25);display:flex;align-items:center;justify-content:center;">{type_svg(a["type"], "#fff", 13, sw=2)}</div>',
+        icon_size=(24,24), icon_anchor=(12,12))).add_to(m)
     if c["driving_geometry"]:
         folium.PolyLine(c["driving_geometry"], color=col, weight=2.5, opacity=0.55).add_to(m)
         if show_walk and c.get("walking_geometry"):
@@ -585,9 +607,9 @@ if results:
         if a.get("source"): prov_bits.append(a["source"])
         prov = f'<div class="cd-prov">{" &middot; ".join(prov_bits)}</div>' if prov_bits else ""
 
-        leaf = f'<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="{aq_col}" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M5 19 C5 11, 11 5, 19 5 C19 13, 13 19, 5 19Z"/><path d="M5 19 L13 11"/></svg>'
+        glyph = type_svg(a["type"], aq_col, 20)
         html += f'''<div class="cd">
-            <div class="cd-av" style="background:{tint}">{leaf}</div>
+            <div class="cd-av" style="background:{tint}">{glyph}</div>
             <div class="cd-b">
                 <div class="cd-t">{a["name"]}{fee_html}</div>
                 <div class="cd-m">{a["city"]}{S}{a["type"]}{S}{dk}{wk}{approx}</div>
