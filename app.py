@@ -180,27 +180,36 @@ st.markdown("""<style>
 html, .stApp { font-family: 'Outfit', sans-serif; background: #f5f2ed; }
 .block-container { max-width: 720px; padding: 1rem 1rem 2rem; }
 
-/* Sidebar */
-section[data-testid="stSidebar"] { background: #1c1c1c !important; }
-section[data-testid="stSidebar"] * { color: #ccc !important; }
-section[data-testid="stSidebar"] .stMarkdown h3 {
-    color: #fff !important; font-size: 0.65rem; font-weight: 700;
-    letter-spacing: 1.5px; text-transform: uppercase;
-    border-bottom: 1px solid #333; padding-bottom: 5px; margin-top: 1rem;
+/* Search box */
+.main .stTextInput input {
+    background: #fff !important; border: 1px solid #ddd !important; border-radius: 999px !important;
+    padding: 11px 16px !important; font-size: 0.9rem !important; min-height: 44px;
 }
-section[data-testid="stSidebar"] .stSelectbox > div > div,
-section[data-testid="stSidebar"] .stMultiSelect > div > div {
-    background: #2a2a2a !important; border: 1px solid #3a3a3a !important; border-radius: 6px !important;
-}
-section[data-testid="stSidebar"] hr { border-color: #333 !important; }
+.main .stTextInput input:focus { border-color: #2d6a4f !important; box-shadow: 0 0 0 2px rgba(45,106,79,0.12) !important; }
 
-/* Header */
-.hd { background: #1b4332; padding: 1.5rem 1.2rem 1.2rem; border-radius: 10px; margin-bottom: 1rem; }
-.hd-t { font-family: 'Datatype','Outfit',sans-serif; font-weight: 800; font-size: 2rem;
+/* Filter chips (popover triggers) */
+.chips + div [data-testid="stPopover"] button,
+[data-testid="stPopover"] button {
+    background: #fff !important; border: 1px solid #d8d2c4 !important; border-radius: 999px !important;
+    color: #1b4332 !important; font-weight: 600 !important; font-size: 0.72rem !important;
+    min-height: 40px !important; padding: 6px 10px !important; box-shadow: none !important;
+    white-space: normal !important; line-height: 1.1 !important;
+}
+[data-testid="stPopover"] button:hover { border-color: #2d6a4f !important; background: #f7faf8 !important; }
+[data-testid="stHorizontalBlock"] { gap: 8px !important; }
+.main .stSelectbox > div > div { min-height: 44px; display: flex; align-items: center; }
+
+/* Header / app-bar */
+.hd { background: #1b4332; padding: 1.1rem 1.2rem; border-radius: 14px; margin-bottom: 0.85rem;
+    box-shadow: 0 2px 12px rgba(27,67,50,0.15); }
+.hd-bar { display: flex; align-items: center; gap: 9px; }
+.hd-logo { display: flex; align-items: center; justify-content: center; width: 30px; height: 30px;
+    background: rgba(167,215,197,0.18); border-radius: 9px; flex-shrink: 0; }
+.hd-t { font-family: 'Datatype','Outfit',sans-serif; font-weight: 800; font-size: 1.6rem;
     color: #fff; line-height: 1; letter-spacing: -0.5px;
     font-variation-settings: 'wdth' 100, 'wght' 800; }
-.hd-s { font-size: 0.85rem; color: rgba(255,255,255,0.75); line-height: 1.55; margin-top: 6px; }
-.hd-s strong { color: #a7d7c5; }
+.hd-s { font-size: 0.78rem; color: rgba(255,255,255,0.72); line-height: 1.5; margin-top: 8px; }
+.hd-s strong { color: #a7d7c5; font-weight: 600; }
 
 /* Stats */
 .st-row { display: flex; gap: 2px; margin: 0.8rem 0; border-radius: 8px; overflow: hidden; }
@@ -223,17 +232,22 @@ iframe[title="streamlit_folium.st_folium"] { height: 420px; }
 .cl::-webkit-scrollbar { width: 3px; } .cl::-webkit-scrollbar-thumb { background: #ccc; border-radius: 2px; }
 
 .cd {
-    background: white; border-radius: 8px; margin-bottom: 6px; border: 1px solid #e8e8e8;
-    display: grid; grid-template-columns: 48px 1fr; overflow: hidden;
+    background: white; border-radius: 12px; margin-bottom: 8px; border: 1px solid #ebe8e1;
+    display: grid; grid-template-columns: 42px 1fr auto; gap: 11px; align-items: start;
+    padding: 12px 13px; transition: border-color .15s, box-shadow .15s;
 }
-.cd-n { display: flex; align-items: center; justify-content: center; background: #fafaf8;
-    border-right: 1px solid #eee; padding: 8px 2px;
-    font-family: 'Datatype',monospace; font-weight: 700; font-size: 1.1rem; color: #2d6a4f;
-    font-variation-settings: 'wdth' 85, 'wght' 700; }
-.cd-b { padding: 7px 12px; }
-.cd-t { font-weight: 700; font-size: 0.82rem; color: #1a1a1a; line-height: 1.25; }
-.cd-m { font-size: 0.68rem; color: #666; line-height: 1.4; }
+.cd:hover { border-color: #cdd8d1; box-shadow: 0 2px 10px rgba(27,67,50,0.06); }
+.cd-av { width: 42px; height: 42px; border-radius: 12px; display: flex; align-items: center;
+    justify-content: center; flex-shrink: 0; }
+.cd-b { min-width: 0; }
+.cd-t { font-weight: 700; font-size: 0.9rem; color: #1a1a1a; line-height: 1.2; }
+.cd-m { font-size: 0.69rem; color: #666; line-height: 1.45; margin-top: 2px; }
 .cd-m b { color: #666; font-weight: 500; }
+.cd-time { text-align: right; flex-shrink: 0; padding-left: 2px; }
+.cd-time-n { font-family: 'Datatype',monospace; font-weight: 700; font-size: 1.4rem; color: #1b4332;
+    line-height: 1; font-variation-settings: 'wdth' 90, 'wght' 700; }
+.cd-time-l { font-size: 0.48rem; color: #aaa; text-transform: uppercase; letter-spacing: 1px;
+    font-weight: 700; margin-top: 3px; }
 .cd-d { display: inline-block; width: 8px; height: 8px; border-radius: 50%; margin-right: 3px; vertical-align: middle; }
 .cd-sep { margin: 0 2px; color: #bbb; }
 .cd-cur { color: #999; }
@@ -257,19 +271,6 @@ iframe[title="streamlit_folium.st_folium"] { height: 420px; }
 .stExpander summary span { color: #1a1a1a !important; font-weight: 600 !important; }
 .stExpander a { color: #2d6a4f !important; text-decoration: underline !important; }
 
-/* Sidebar toggle */
-[data-testid="collapsedControl"] { top: 0.6rem !important; left: 0.6rem !important; }
-[data-testid="collapsedControl"] button {
-    background: #1b4332 !important; border: none !important; border-radius: 8px !important;
-    padding: 8px 14px 8px 10px !important; box-shadow: 0 2px 8px rgba(0,0,0,0.15) !important;
-    display: flex !important; align-items: center !important; gap: 4px !important;
-}
-[data-testid="collapsedControl"] button::after {
-    content: "Filters"; color: #fff; font-family: 'Outfit',sans-serif;
-    font-size: 0.65rem; font-weight: 600; letter-spacing: 0.5px;
-}
-[data-testid="collapsedControl"] svg { color: #fff !important; width: 14px !important; height: 14px !important; }
-
 /* Force light mode on main content only (not sidebar) */
 .stApp header { background: transparent !important; }
 .main .stMarkdown, .main .stMarkdown p, .main .stMarkdown li, .main .stMarkdown span { color: #333 !important; }
@@ -290,8 +291,9 @@ iframe[title="streamlit_folium.st_folium"] { height: 420px; }
 /* Desktop widen */
 @media (min-width: 768px) {
     .block-container { max-width: 960px; }
-    .hd { padding: 2rem 2rem 1.5rem; }
-    .hd-t { font-size: 2.6rem; }
+    .hd { padding: 1.4rem 1.8rem; }
+    .hd-t { font-size: 2.1rem; }
+    .hd-logo { width: 36px; height: 36px; }
     .map-cols { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
 }
 </style>""", unsafe_allow_html=True)
@@ -300,10 +302,13 @@ iframe[title="streamlit_folium.st_folium"] { height: 420px; }
 # HEADER — renders IMMEDIATELY, visible while OSRM loads
 # ══════════════════════════════════════════════════════════════════════
 st.markdown(f"""<div class="hd">
-    <div class="hd-t">Kayang Lakarin?</div>
-    <div class="hd-s">Find the nearest place to run, walk, or exercise outdoors in Metro Manila.
-    <strong>{len(AREAS)} parks and green spaces</strong> ranked by distance from you, with real road routes,
-    commute costs, and air quality scores. Choose your starting point below.</div>
+    <div class="hd-bar">
+        <span class="hd-logo"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#a7d7c5" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M11 20 C11 14, 8 8, 4 6 C4 12, 7 17, 11 20Z"/><path d="M13 20 C13 13, 16 7, 21 5 C21 12, 18 17, 13 20Z"/><line x1="12" y1="20" x2="12" y2="22"/></svg></span>
+        <div class="hd-t">Kayang Lakarin?</div>
+    </div>
+    <div class="hd-s">The nearest place to run, walk, or exercise outdoors in Metro Manila -
+    <strong>{len(AREAS)} parks and green spaces</strong> ranked by how far they really are from you,
+    with road routes, commute costs, and air quality.</div>
 </div>""", unsafe_allow_html=True)
 
 # ── Location selector — in main body, visible on mobile ──────────────
@@ -332,6 +337,49 @@ elif sel == "Custom...":
     with c2: user_lng = st.number_input("Lng", value=120.9842, format="%.4f", step=0.001)
 else:
     user_lat, user_lng = REFS[sel]
+
+# ── Search + filter chips (replaces sidebar) ─────────────────────────
+st.markdown('<div class="lb">Find a park</div>', unsafe_allow_html=True)
+q = st.text_input("Search parks", placeholder="Search parks by name", label_visibility="collapsed")
+
+all_acts = sorted(set(x for p in AREAS for x in p["activities"]))
+all_cities = sorted(set(a["city"] for a in AREAS))
+aq_d = {1: "Any air", 2: "Fair or better", 3: "Moderate or better", 4: "Good or better", 5: "Excellent only"}
+
+# Read previous values so chip labels reflect the current selection.
+aq_v = st.session_state.get("f_aq", 3)
+time_v = st.session_state.get("f_time", 60)
+cities_v = st.session_state.get("f_cities", ["Quezon City"])
+acts_v = st.session_state.get("f_acts", [])
+
+st.markdown('<div class="chips">', unsafe_allow_html=True)
+fc1, fc2, fc3, fc4 = st.columns(4)
+with fc1:
+    with st.popover(f"Air {aq_v}/5+", use_container_width=True):
+        min_aq = st.slider("Minimum air quality", 1, 5, value=3, key="f_aq",
+                           help="5 = forest or wetland, minimal traffic. 1 = roadside, heavy exhaust.")
+        st.caption(f"{aq_d[min_aq]} ({min_aq}/5)")
+with fc2:
+    with st.popover(f"Max {time_v}m", use_container_width=True):
+        max_time = st.slider("Max commute (min, jeepney)", 10, 120, value=60, step=5, key="f_time")
+        st.caption(f"Up to {max_time} min by jeepney")
+with fc3:
+    with st.popover(f"City ({len(cities_v)})", use_container_width=True):
+        sel_cities = st.multiselect("Cities", all_cities, default=["Quezon City"], key="f_cities",
+                                    label_visibility="collapsed")
+with fc4:
+    with st.popover("Filters", use_container_width=True):
+        st.markdown("**Activities**")
+        sel_acts = st.multiselect("Activities", all_acts, default=[], key="f_acts",
+                                  label_visibility="collapsed")
+        st.markdown("**Minimum size**")
+        min_area = st.select_slider("Size", options=[0, 0.5, 1, 2, 5, 10, 20], value=0,
+            format_func=lambda x: "Any" if x == 0 else f"{x}+ ha", key="f_area", label_visibility="collapsed")
+        st.markdown("**Routing**")
+        use_osrm = st.toggle("Road routes (OSRM)", value=True, key="f_osrm",
+            help="Calculates actual road distances. Turn off for faster straight-line estimates.")
+        show_walk = st.toggle("Walking routes on map", value=False, key="f_walk")
+st.markdown('</div>', unsafe_allow_html=True)
 
 # ── Info buttons ──────────────────────────────────────────────────────
 with st.expander("How the numbers work"):
@@ -393,48 +441,12 @@ Live air quality readings:
     """)
 
 # ══════════════════════════════════════════════════════════════════════
-# SIDEBAR — advanced filters (collapsed on mobile)
-# ══════════════════════════════════════════════════════════════════════
-with st.sidebar:
-    st.markdown("""<div style="text-align:center;padding:1rem 0 0.5rem;">
-        <div style="font-family:'Datatype','Outfit',sans-serif;font-weight:800;font-size:1.1rem;color:#fff;
-                    font-variation-settings:'wdth' 100,'wght' 800;">Filters</div>
-    </div>""", unsafe_allow_html=True)
-
-    st.markdown("### Air Quality")
-    min_aq = st.slider("Min", 1, 5, 3, label_visibility="collapsed",
-                       help="5 = Forest or wetland, minimal traffic. 1 = Roadside, heavy exhaust exposure.")
-    aq_d = {1: "Any", 2: "Fair or better", 3: "Moderate or better", 4: "Good or better", 5: "Excellent only"}
-    st.caption(f"{aq_d[min_aq]} ({min_aq}/5)")
-
-    st.markdown("### Activities")
-    all_acts = sorted(set(a for p in AREAS for a in p["activities"]))
-    sel_acts = st.multiselect("Activities", all_acts, default=[], label_visibility="collapsed")
-
-    st.markdown("### City")
-    all_cities = sorted(set(a["city"] for a in AREAS))
-    sel_cities = st.multiselect("City", all_cities, default=["Quezon City"], label_visibility="collapsed")
-
-    st.markdown("### Min Size")
-    min_area = st.select_slider("Size", options=[0, 0.5, 1, 2, 5, 10, 20], value=0,
-        format_func=lambda x: "Any" if x == 0 else f"{x}+ ha", label_visibility="collapsed")
-
-    st.markdown("### Max Commute")
-    max_time = st.slider("Min", 10, 120, 60, step=5, label_visibility="collapsed")
-    st.caption(f"Up to {max_time} min by jeepney")
-
-    st.markdown("### Routing")
-    use_osrm = st.toggle("Road routes (OSRM)", value=True, help="Calculates actual road distances. Turn off for faster results using straight-line estimates.")
-    show_walk = st.toggle("Walking routes on map", value=False)
-
-    st.markdown("---")
-    st.caption(f"{len(AREAS)} areas · OSM + DENR · OSRM routing · v6")
-
-# ══════════════════════════════════════════════════════════════════════
 # FILTER + ROUTE — header is already visible above
 # ══════════════════════════════════════════════════════════════════════
+ql = q.strip().lower() if q else ""
 pre = []
 for a in AREAS:
+    if ql and ql not in a["name"].lower(): continue
     if a["air_quality"] < min_aq: continue
     if sel_acts and not any(x in a["activities"] for x in sel_acts): continue
     if sel_cities and a["city"] not in sel_cities: continue
@@ -492,7 +504,7 @@ if results:
     if gap_msg:
         st.markdown(f'<div class="gap">{gap_msg}</div>', unsafe_allow_html=True)
 else:
-    st.markdown('<div style="text-align:center;padding:2rem 1rem;color:#999;font-size:0.85rem;">No spaces match your filters. Try widening your search in the sidebar.</div>', unsafe_allow_html=True)
+    st.markdown('<div style="text-align:center;padding:2rem 1rem;color:#999;font-size:0.85rem;">No spaces match your filters. Try widening the filters above or clearing the search.</div>', unsafe_allow_html=True)
 
 # ══════════════════════════════════════════════════════════════════════
 # MAP + RESULTS
@@ -573,8 +585,9 @@ if results:
         if a.get("source"): prov_bits.append(a["source"])
         prov = f'<div class="cd-prov">{" &middot; ".join(prov_bits)}</div>' if prov_bits else ""
 
+        leaf = f'<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="{aq_col}" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M5 19 C5 11, 11 5, 19 5 C19 13, 13 19, 5 19Z"/><path d="M5 19 L13 11"/></svg>'
         html += f'''<div class="cd">
-            <div class="cd-n" style="background:{tint}">{a["jeep_time"]}<br><span style="font-size:0.42rem;font-weight:400;color:#aaa;letter-spacing:1px;">MIN</span></div>
+            <div class="cd-av" style="background:{tint}">{leaf}</div>
             <div class="cd-b">
                 <div class="cd-t">{a["name"]}{fee_html}</div>
                 <div class="cd-m">{a["city"]}{S}{a["type"]}{S}{dk}{wk}{approx}</div>
@@ -582,6 +595,7 @@ if results:
                 <div class="cd-m"><span class="cd-d" style="background:{aq_col}"></span>{aq_txt} {aq_q} - {a["aq_note"]}</div>
                 <div class="cd-tags">{tg}</div>{prov}
             </div>
+            <div class="cd-time"><div class="cd-time-n">{a["jeep_time"]}</div><div class="cd-time-l">min</div></div>
         </div>'''
     html += '</div>'
     st.markdown(html, unsafe_allow_html=True)
